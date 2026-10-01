@@ -55,29 +55,47 @@
       text-decoration: underline;
     }
 
-    .hero {
-      background-color: #f2f5f8;
-      text-align: center;
-      padding: 90px 20px;
-    }
+.hero {
+  background:
+    linear-gradient(
+      rgba(5, 30, 55, 0.88),
+      rgba(5, 30, 55, 0.82)
+    ),
+    radial-gradient(
+      circle at center,
+      rgba(212, 166, 73, 0.20),
+      transparent 55%
+    );
+
+  color: white;
+  text-align: center;
+  padding: 105px 20px;
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
     .hero h1 {
-      color: #0b2d4f;
-      font-size: 46px;
-      margin-bottom: 10px;
-    }
+  color: white;
+  font-size: 52px;
+  margin-bottom: 18px;
+}
 
-    .hero h2 {
-      color: #a47522;
-      font-size: 24px;
-      font-weight: normal;
-    }
+.hero h2 {
+  color: #e5b75c;
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
 
-    .hero p {
-      max-width: 750px;
-      margin: 25px auto;
-      font-size: 19px;
-    }
+.hero p {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  font-size: 19px;
+  line-height: 1.7;
+}
 
     .button {
       display: inline-block;
@@ -87,7 +105,23 @@
       text-decoration: none;
       border-radius: 5px;
       margin-top: 10px;
-    }
+    } .hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons .button {
+  margin: 8px;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.secondary-button:hover {
+  background-color: white;
+  color: #0b2d4f;
+}
 
     section {
       max-width: 1000px;
@@ -181,21 +215,39 @@
   </div>
 </header>
 
-<section class="hero" id="home">
 
-  <h1>Hightower Bible Ministry</h1>
 
-  <h2>Teaching God's Word So People Can Understand It and Live It</h2>
+ <section class="hero" id="home">
 
-  <p>
-    Helping believers and unbelievers understand the truth of God's Word,
-    grow in spiritual maturity, and discover the transforming power of
-    Jesus Christ.
-  </p>
+  <div class="hero-content">
 
-  <a class="button" href="#about">
-    Learn More About the Ministry
-  </a>
+    <p class="hero-kicker">Welcome to</p>
+
+    <h1>Hightower Bible Ministry</h1>
+
+    <h2>Teaching God's Word So People Can Understand It and Live It</h2>
+
+    <div class="hero-divider"></div>
+
+    <p>
+      Faithfully teaching Scripture verse by verse, proclaiming the Gospel
+      of Jesus Christ, and helping believers grow in spiritual maturity
+      and practical Christian living.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="button" href="#about">
+        Learn More About the Ministry
+      </a>
+
+      <a class="button secondary-button" href="#teaching">
+        Explore Bible Teaching
+      </a>
+    </div>
+
+  </div>
+
+</section>
 
 </section>
 

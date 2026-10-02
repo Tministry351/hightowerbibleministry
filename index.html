@@ -250,12 +250,64 @@
 
       nav {
         margin-top: 12px;
-      }
-
+      } 
       nav a {
         margin: 0 10px 0 0;
       }
-    }
+      
+      .teaching-grid {
+  grid-template-columns: 1fr; 
+      }
+      
+      }
+    
+     .teaching-section {
+  background-color: #f5f7fa;
+}
+
+.teaching-intro {
+  max-width: 800px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.teaching-intro h2 {
+  color: #0b2d4f;
+  font-size: 38px;
+  margin-top: 8px;
+}
+
+.teaching-intro p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4c5968;
+}
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.teaching-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 5px solid #d6a847;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.teaching-card h3 {
+  color: #0b2d4f;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+.teaching-card p {
+  color: #4c5968;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
   </style>
 </head>
 
@@ -396,14 +448,55 @@
 
 </section>
 
-<section id="teaching">
+<section id="teaching" class="teaching-section">
 
-  <h2>Bible Teaching</h2>
+  <div class="teaching-intro">
+    <p class="section-kicker">Bible Teaching</p>
 
-  <p style="text-align:center;">
-    Bible studies, verse-by-verse teaching, sermons, practical Christian
-    living resources, and other teaching materials will be added here.
-  </p>
+    <h2>Teaching Scripture Clearly and Faithfully</h2>
+
+    <p>
+      Hightower Bible Ministry is committed to helping people understand
+      God's Word, grow in spiritual maturity, and apply biblical truth
+      to everyday life.
+    </p>
+  </div>
+
+  <div class="teaching-grid">
+
+    <div class="teaching-card">
+      <h3>Verse-by-Verse Studies</h3>
+      <p>
+        Clear Bible teaching that walks carefully through Scripture
+        so readers can understand the meaning and context of each passage.
+      </p>
+    </div>
+
+    <div class="teaching-card">
+      <h3>Sermons and Messages</h3>
+      <p>
+        Biblical messages focused on truth, spiritual growth,
+        encouragement, and practical Christian living.
+      </p>
+    </div>
+
+    <div class="teaching-card">
+      <h3>Practical Christian Living</h3>
+      <p>
+        Biblical guidance for marriage, family, relationships,
+        discipleship, spiritual maturity, and everyday decisions.
+      </p>
+    </div>
+
+    <div class="teaching-card">
+      <h3>Printable Resources</h3>
+      <p>
+        Bible studies, outlines, teaching notes, and printable materials
+        designed to help individuals and small groups study God's Word.
+      </p>
+    </div>
+
+  </div>
 
 </section>
 

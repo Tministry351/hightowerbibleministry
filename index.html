@@ -134,27 +134,80 @@
       text-align: center;
       font-size: 32px;
     }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 45px;
+}
 
-    .three-columns {
-      display: flex;
-      gap: 25px;
-      flex-wrap: wrap;
-      margin-top: 35px;
-    }
+.about-text h2 {
+  text-align: left;
+  margin-top: 8px;
+}
 
+.section-kicker {
+  color: #b88425;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.purpose-box {
+  background: #0b2d4f;
+  color: white;
+  padding: 32px;
+  border-left: 6px solid #d6a847;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
+
+.purpose-box h3 {
+  color: #e5b75c;
+  font-size: 26px;
+  margin-top: 0;
+}
+
+.purpose-box p {
+  margin-bottom: 0;
+  font-size: 17px;
+  line-height: 1.7;
+} 
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
     .card {
-      flex: 1;
-      min-width: 220px;
-      padding: 25px;
-      background-color: #f6f7f8;
-      border-radius: 8px;
-      text-align: center;
-    }
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-top: 4px solid #d6a847;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .card h3 {
-      color: #a47522;
-    }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+}
 
+.card h3 {
+  color: #0b2d4f;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.card p {
+  color: #4c5968;
+  line-height: 1.7;
+}
+    
     .mission {
       background-color: #0b2d4f;
       color: white;
@@ -253,14 +306,36 @@
 
 <section id="about">
 
-  <h2>Welcome to Hightower Bible Ministry</h2>
+  <div class="about-grid">
 
-  <p>
-    Hightower Bible Ministry exists to glorify God by faithfully teaching
-    His Word verse by verse, equipping believers and non-believers to grow
-    in spiritual maturity, strengthening the local church, and proclaiming
-    the Gospel of Jesus Christ with truth, grace, and conviction.
-  </p>
+    <div class="about-text">
+
+      <p class="section-kicker">About the Ministry</p>
+
+      <h2>Welcome to Hightower Bible Ministry</h2>
+
+      <p>
+        Hightower Bible Ministry exists to glorify God by faithfully teaching
+        His Word verse by verse, equipping believers and non-believers to grow
+        in spiritual maturity, strengthening the local church, and proclaiming
+        the Gospel of Jesus Christ with truth, grace, and conviction.
+      </p>
+
+    </div>
+
+    <div class="purpose-box">
+
+      <h3>Our Purpose</h3>
+
+      <p>
+        Leading souls from the dominion of darkness, helping them live lives
+        that glorify God, and giving them biblical tools that strengthen
+        their Christian walk.
+      </p>
+
+    </div>
+
+  </div>
 
   <div class="three-columns">
 
@@ -290,6 +365,7 @@
 
   </div>
 
+</section>
 </section>
 
 <section class="mission">

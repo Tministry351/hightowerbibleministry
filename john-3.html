@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>John 3 Bible Study | Hightower Bible Ministry</title>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+      background-color: #f8fafc;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #0b2d4f;
+      color: white;
+      padding: 18px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .ministry-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 17px;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #d6a847;
+    }
+
+   .lesson-hero {
+  background:
+    linear-gradient(rgba(7, 28, 50, 0.72), rgba(7, 28, 50, 0.72)),
+    url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+    .hero-kicker {
+      color: #d6a847;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .lesson-hero h1 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+    
+    .hero-scripture {
+  color: #f2c15b;
+  font-size: 20px;
+  font-style: italic;
+  margin: 10px 0 18px;
+}
+
+   .lesson-hero p {
+  max-width: 760px;
+  margin: auto;
+  color: #f3f4f6;
+  font-size: 18px;
+}
+
+    .hero-divider {
+      width: 90px;
+      height: 3px;
+      background-color: #d6a847;
+      margin: 22px auto 26px;
+    }
+
+    .lesson {
+      max-width: 960px;
+      margin: auto;
+      padding: 55px 22px 70px;
+    }
+
+    .intro-panel {
+      background: white;
+      border-left: 6px solid #d6a847;
+      border-radius: 10px;
+      padding: 28px 26px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+
+    .intro-panel h2 {
+      margin-top: 0;
+      color: #0b2d4f;
+      font-size: 30px;
+    }
+
+    .intro-panel p {
+      margin-bottom: 0;
+      font-size: 18px;
+      color: #4c5968;
+    }
+
+    .lesson-section {
+      margin-bottom: 38px;
+    }
+
+    .lesson-section h2 {
+      color: #0b2d4f;
+      font-size: 30px;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 3px solid #d6a847;
+    }
+
+    .study-box {
+      padding: 22px 24px;
+      margin: 18px 0;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+
+    .study-box strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+ .observation-box {
+  background: #eef5fb;
+  border-left: 6px solid #4a7ca8;
+}
+
+.observation-box strong {
+  color: #2f5d85;
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.interpretation-box {
+  background: #fff6e5;
+  border-left: 6px solid #d6a847;
+}
+
+.interpretation-box strong {
+  color: #9c6b18;
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.application-box {
+  background: #edf8f0;
+  border-left: 6px solid #4f8a5b;
+}
+
+.application-box strong {
+  color: #35633f;
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 42px;
+    }
+
+    .summary-card {
+  background: white;
+  padding: 30px 26px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  border-top: 5px solid #d6a847;
+}
+
+.summary-card h3 {
+  color: #0b2d4f;
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+    .summary-card ul,
+    .summary-card ol {
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+
+    .summary-card li {
+      margin-bottom: 10px;
+    }
+
+    .summary-card p {
+      color: #4c5968;
+      margin-bottom: 0;
+    }
+.key-truths-card {
+  background: #eef5fb;
+  border-top-color: #4a7ca8;
+}
+
+.application-card {
+  background: #fff6e5;
+  border-top-color: #d6a847;
+}
+
+.questions-card {
+  background: #edf8f0;
+  border-top-color: #4f8a5b;
+}
+    .back-link {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .back-link a {
+      color: #0b2d4f;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .back-link a:hover {
+      color: #d6a847;
+    }
+
+    footer {
+      background-color: #071e33;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 900px) {
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .lesson-hero h1 {
+        font-size: 38px;
+      }
+
+      .lesson-hero p {
+        font-size: 18px;
+      }
+
+      .hero-kicker {
+        font-size: 16px;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+
+      nav a {
+        margin: 0 10px 0 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+
+    <div class="brand">
+      <img src="hbm-logo.png.png" alt="Hightower Bible Ministry Logo">
+      <div class="ministry-name">Hightower Bible Ministry</div>
+    </div>
+
+    <nav>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#teaching">Bible Teaching</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="lesson-hero">
+  <p class="hero-kicker">Verse-by-Verse Study</p>
+ <h1>John 3</h1>
+<p class="hero-scripture">
+  “You must be born again.” — John 3:7
+</p>
+
+<div class="hero-divider"></div>
+ <p>
+  John 3 explains the necessity of the new birth, reveals God’s love in sending
+  His Son, and shows the difference between coming to the Light and remaining in darkness.
+</p>
+</section>
+
+<main class="lesson">
+
+  <div class="intro-panel">
+    <h2>Chapter Overview</h2>
+    <p>
+  John 3 centers on Jesus’ conversation with Nicodemus and explains what it means
+  to be born again. The chapter also contains one of Scripture’s clearest statements
+  about God’s love and salvation, followed by John the Baptist’s final testimony
+  that Jesus must increase while he must decrease.
+</p>
+  </div>
+
+<section class="lesson-section">
+  <h2>John 3:1–8 — You Must Be Born Again</h2>
+
+  <div class="study-box observation-box">
+    <strong>Observation</strong>
+    Nicodemus, a Pharisee and ruler of the Jews, comes to Jesus at night.
+    Jesus tells him that unless a person is born again, he cannot see the kingdom of God.
+  </div>
+
+  <div class="study-box interpretation-box">
+    <strong>Interpretation</strong>
+    Jesus is speaking about spiritual birth, not physical birth.
+    Entrance into God's kingdom requires a work of the Holy Spirit that gives new life.
+  </div>
+
+  <div class="study-box application-box">
+    <strong>Application</strong>
+    Religion, knowledge, position, and good works cannot replace spiritual rebirth.
+    Every person must personally receive the new life that comes from God.
+  </div>
+</section>
+
+<section class="lesson-section">
+  <h2>John 3:9–21 — God So Loved the World</h2>
+
+  <div class="study-box observation-box">
+    <strong>Observation</strong>
+    Jesus explains heavenly truths to Nicodemus and points to the Son of Man being lifted up.
+    He then declares that God loved the world and gave His only Son so that those who believe
+    in Him would not perish but have eternal life.
+  </div>
+
+  <div class="study-box interpretation-box">
+    <strong>Interpretation</strong>
+    Salvation is God's gracious provision through Jesus Christ.
+    Christ came not merely to condemn the world, but to save.
+    Those who believe come into the light, while unbelief keeps people in darkness.
+  </div>
+
+  <div class="study-box application-box">
+    <strong>Application</strong>
+    God's love calls for a personal response of faith.
+    We are invited to leave spiritual darkness, trust Christ, and live openly in the light of God's truth.
+  </div>
+</section>
+
+<section class="lesson-section">
+  <h2>John 3:22–36 — He Must Increase</h2>
+
+  <div class="study-box observation-box">
+    <strong>Observation</strong>
+    John's disciples become concerned that more people are going to Jesus.
+    John responds by reminding them that he is not the Christ and that his role is to point others to Him.
+  </div>
+
+  <div class="study-box interpretation-box">
+    <strong>Interpretation</strong>
+    John understands that Jesus must become greater while he becomes less.
+    True ministry is not about personal recognition but about directing attention to Christ.
+  </div>
+
+  <div class="study-box application-box">
+    <strong>Application</strong>
+    Christian service should make Jesus more visible, not ourselves.
+    A faithful life says with John, “He must increase, but I must decrease.”
+  </div>
+</section>
+ <a href="#" class="chapter-card">John 3</a>
+
+  <<div class="summary-card key-truths-card">
+  <h3>Key Truths</h3>
+  <ul>
+    <li>Every person must be born again spiritually.</li>
+    <li>The new birth is a work of the Holy Spirit.</li>
+    <li>God loved the world and gave His Son.</li>
+    <li>Salvation is received through faith in Jesus Christ.</li>
+    <li>Unbelief keeps people in spiritual darkness.</li>
+    <li>True ministry points people to Christ, not to ourselves.</li>
+  </ul>
+</div>
+
+<div class="summary-card application-card">
+  <h3>Practical Application</h3>
+  <p>
+    John 3 calls us to examine whether we have truly been born again,
+    whether we are trusting Christ personally, and whether our lives
+    are bringing attention to Him rather than to ourselves.
+  </p>
+</div>
+
+<div class="summary-card questions-card">
+  <h3>Discussion Questions</h3>
+  <ol>
+    <li>What did Jesus mean when He said a person must be born again?</li>
+    <li>Why could Nicodemus not rely on his religious position?</li>
+    <li>What does John 3:16 teach us about God's love?</li>
+    <li>What is the difference between coming to the Light and remaining in darkness?</li>
+    <li>Why did John the Baptist say, “He must increase, but I must decrease”?</li>
+    <li>How can your life point more clearly to Jesus?</li>
+  </ol>
+</div>
+</div>
+    <div class="back-link">
+   <a href="verse-by-verse.html">← Back to The Gospel of John</a>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Hightower Bible Ministry
+  <br>
+  To God Be the Glory
+</footer>
+
+</body>
+</html>

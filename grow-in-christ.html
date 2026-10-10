@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grow in Christ with Hightower Bible Ministry through practical discipleship studies designed to strengthen Christian faith and spiritual maturity.">
+  <title>Grow in Christ | Hightower Bible Ministry</title>
+
+  <style>
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-blue: #edf5fa;
+      --light-gold: #faf4e8;
+      --white: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b76;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    .home-link {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(11,45,79,.90), rgba(11,45,79,.90)),
+                  linear-gradient(135deg, #2f6f93, #0b2d4f);
+      color: var(--white);
+      padding: 70px 24px;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      color: #f0d7a3;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: .85rem;
+    }
+
+    .hero h1 {
+      margin: 10px 0 12px;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #eef5fa;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 44px 22px 64px;
+    }
+
+    .intro {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.04);
+    }
+
+    .intro h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .lesson-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .lesson-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lesson-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.25;
+    }
+
+    .lesson-card p {
+      flex-grow: 1;
+      color: var(--muted);
+    }
+
+    .lesson-card.available {
+      border-top: 6px solid var(--gold);
+    }
+
+    .lesson-card.future {
+      border-top: 6px solid var(--blue);
+    }
+
+    .coming-soon {
+      display: inline-block;
+      background: var(--light-blue);
+      color: var(--navy);
+      font-weight: bold;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .growth-path {
+      margin-top: 32px;
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+
+    .growth-path h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .growth-path ul {
+      margin-bottom: 0;
+    }
+
+    .rhythm {
+      margin-top: 24px;
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+
+    .rhythm h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 800px) {
+      .lesson-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 52px 18px;
+      }
+
+      main {
+        padding: 30px 16px 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="brand">Hightower Bible Ministry</div>
+      <a class="home-link" href="index.html">Back to HBM Home</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Grow in Christ</div>
+    <h1>Develop a Stronger Walk With Jesus Christ</h1>
+    <p>
+      Spiritual growth is a lifelong process of learning God's truth,
+      trusting Him more deeply, and allowing His Word to shape our character,
+      choices, relationships, and daily walk.
+    </p>
+  </section>
+
+  <main>
+
+    <section class="intro">
+      <h2>Practical Discipleship for Everyday Christian Living</h2>
+      <p>
+        These studies are being developed to help believers grow in spiritual maturity.
+        Each lesson will be rooted in Scripture and designed to move from biblical truth
+        to practical application.
+      </p>
+    </section>
+
+    <section class="lesson-grid">
+
+      <article class="lesson-card available">
+        <h2>Living by Faith</h2>
+        <p>
+          Learn how to trust God's Word rather than allowing changing emotions,
+          circumstances, or fears to control your spiritual life.
+        </p>
+        <div class="coming-soon">Lesson Coming Soon</div>
+      </article>
+
+      <article class="lesson-card available">
+        <h2>Freedom from Guilt</h2>
+        <p>
+          Understand the difference between biblical conviction and crippling
+          condemnation, and learn how the Gospel gives believers freedom and hope.
+        </p>
+        <div class="coming-soon">Lesson Coming Soon</div>
+      </article>
+
+      <article class="lesson-card available">
+        <h2>Developing a Prayer Life</h2>
+        <p>
+          Learn how prayer deepens fellowship with God and how Scripture can shape
+          a consistent, honest, and Christ-centered prayer life.
+        </p>
+        <div class="coming-soon">Lesson Coming Soon</div>
+      </article>
+
+      <article class="lesson-card future">
+        <h2>Identity in Christ</h2>
+        <p>
+          Explore what Scripture says about who believers are in Christ and how that
+          identity affects confidence, obedience, and spiritual growth.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+      <article class="lesson-card future">
+        <h2>Overcoming Temptation</h2>
+        <p>
+          Study biblical principles for recognizing temptation, resisting sin,
+          renewing the mind, and walking in obedience.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+      <article class="lesson-card future">
+        <h2>Walking in the Spirit</h2>
+        <p>
+          Learn what it means to depend on the Holy Spirit, grow in spiritual fruit,
+          and live under God's direction each day.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+    </section>
+
+    <section class="growth-path">
+      <h2>A Simple Growth Path</h2>
+      <ul>
+        <li>Know what God's Word says.</li>
+        <li>Understand what it means.</li>
+        <li>Believe what God has revealed.</li>
+        <li>Apply biblical truth to everyday life.</li>
+        <li>Continue growing through prayer, obedience, fellowship, and service.</li>
+      </ul>
+    </section>
+
+    <section class="rhythm">
+      <h2>HBM Teaching Rhythm</h2>
+      <p><strong>Read it &bull; Understand it &bull; Believe it &bull; Live it</strong></p>
+      <p>
+        Growth in Christ is not simply gaining more information. Biblical truth
+        should increasingly shape how we think, respond, serve, and live.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hightower Bible Ministry</p>
+    <p>To God Be the Glory</p>
+  </footer>
+
+</body>
+</html>

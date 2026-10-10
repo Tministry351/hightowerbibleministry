@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn God's Word with Hightower Bible Ministry through verse-by-verse studies, Bible book overviews, and biblical doctrine.">
+  <title>Learn God's Word | Hightower Bible Ministry</title>
+
+  <style>
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-blue: #edf5fa;
+      --light-gold: #faf4e8;
+      --white: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b76;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand { font-size: 1.15rem; font-weight: bold; }
+
+    .home-link {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .home-link:hover { text-decoration: underline; }
+
+    .hero {
+      background: linear-gradient(rgba(11,45,79,.90), rgba(11,45,79,.90)),
+                  linear-gradient(135deg, #2f6f93, #0b2d4f);
+      color: var(--white);
+      padding: 70px 24px;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      color: #f0d7a3;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: .85rem;
+    }
+
+    .hero h1 {
+      margin: 10px 0 12px;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #eef5fa;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 44px 22px 64px;
+    }
+
+    .intro {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.04);
+    }
+
+    .intro h2 { color: var(--navy); margin-top: 0; }
+
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .pathway-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pathway-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.25;
+    }
+
+    .pathway-card p {
+      flex-grow: 1;
+      color: var(--muted);
+    }
+
+    .pathway-card.available { border-top: 6px solid var(--gold); }
+    .pathway-card.future { border-top: 6px solid var(--blue); }
+
+    .button {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 18px;
+      border-radius: 8px;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .button:hover { background: var(--blue); }
+
+    .coming-soon {
+      display: inline-block;
+      background: var(--light-blue);
+      color: var(--navy);
+      font-weight: bold;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .rhythm {
+      margin-top: 32px;
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+
+    .rhythm h2 { color: var(--navy); margin-top: 0; }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+      margin-top: 20px;
+    }
+
+    footer p { margin: 4px 0; }
+
+    @media (max-width: 800px) {
+      .pathway-grid { grid-template-columns: 1fr; }
+      .hero { padding: 52px 18px; }
+      main { padding: 30px 16px 50px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="brand">Hightower Bible Ministry</div>
+      <a class="home-link" href="index.html">Back to HBM Home</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Learn God's Word</div>
+    <h1>Understand What Scripture Says and What It Means</h1>
+    <p>
+      Hightower Bible Ministry is committed to helping people study the Bible carefully,
+      understand biblical truth, and build their lives on the Word of God.
+    </p>
+  </section>
+
+  <main>
+
+    <section class="intro">
+      <h2>Begin Your Study</h2>
+      <p>
+        Choose a study path below. Some resources are available now, while others will
+        be added as Hightower Bible Ministry continues to grow.
+      </p>
+    </section>
+
+    <section class="pathway-grid">
+
+      <article class="pathway-card available">
+        <h2>Verse-by-Verse Bible Studies</h2>
+        <p>
+          Study Scripture one passage at a time with observation, interpretation,
+          biblical truth, practical application, and Christ-centered application.
+        </p>
+        <a class="button" href="verse-by-verse.html">Begin Verse-by-Verse Study</a>
+      </article>
+
+      <article class="pathway-card future">
+        <h2>Bible Book Overviews</h2>
+        <p>
+          Learn the background, purpose, major themes, structure, and message of
+          individual books of the Bible before studying them in greater detail.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+      <article class="pathway-card future">
+        <h2>Biblical Truth &amp; Doctrine</h2>
+        <p>
+          Explore important biblical teachings about God, Jesus Christ, salvation,
+          Scripture, the Holy Spirit, the Church, and Christian living.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+    </section>
+
+    <section class="rhythm">
+      <h2>Our Teaching Rhythm</h2>
+      <p><strong>Read it &bull; Understand it &bull; Believe it &bull; Live it</strong></p>
+      <p>
+        God's Word should not only be read but understood; not only understood but
+        believed; and not only believed but lived.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hightower Bible Ministry</p>
+    <p>To God Be the Glory</p>
+  </footer>
+
+</body>
+</html>

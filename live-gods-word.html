@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Live God's Word with Hightower Bible Ministry through practical biblical guidance for everyday Christian living.">
+  <title>Live God's Word | Hightower Bible Ministry</title>
+
+  <style>
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-blue: #edf5fa;
+      --light-gold: #faf4e8;
+      --white: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b76;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    .home-link {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(11,45,79,.90), rgba(11,45,79,.90)),
+                  linear-gradient(135deg, #2f6f93, #0b2d4f);
+      color: var(--white);
+      padding: 70px 24px;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      color: #f0d7a3;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: .85rem;
+    }
+
+    .hero h1 {
+      margin: 10px 0 12px;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #eef5fa;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 44px 22px 64px;
+    }
+
+    .intro {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.04);
+    }
+
+    .intro h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .resource-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .resource-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.25;
+    }
+
+    .resource-card p {
+      flex-grow: 1;
+      color: var(--muted);
+    }
+
+    .resource-card.primary {
+      border-top: 6px solid var(--gold);
+    }
+
+    .resource-card.future {
+      border-top: 6px solid var(--blue);
+    }
+
+    .coming-soon {
+      display: inline-block;
+      background: var(--light-blue);
+      color: var(--navy);
+      font-weight: bold;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .action-box {
+      margin-top: 32px;
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+
+    .action-box h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .action-box ul {
+      margin-bottom: 0;
+    }
+
+    .rhythm {
+      margin-top: 24px;
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+
+    .rhythm h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 800px) {
+      .resource-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 52px 18px;
+      }
+
+      main {
+        padding: 30px 16px 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="brand">Hightower Bible Ministry</div>
+      <a class="home-link" href="index.html">Back to HBM Home</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Live God's Word</div>
+    <h1>Put Biblical Truth Into Practice Every Day</h1>
+    <p>
+      God's Word is meant to shape the way we think, speak, respond, serve,
+      work, forgive, love, and make decisions. This section focuses on living
+      out biblical truth in everyday life.
+    </p>
+  </section>
+
+  <main>
+
+    <section class="intro">
+      <h2>Faith That Moves Into Everyday Life</h2>
+      <p>
+        These practical resources are designed to help believers apply Scripture
+        to real situations. Each study will connect biblical truth with specific
+        actions that can be practiced in daily life.
+      </p>
+    </section>
+
+    <section class="resource-grid">
+
+      <article class="resource-card primary">
+        <h2>Handling Worry Biblically</h2>
+        <p>
+          Learn how Scripture directs believers to respond to anxiety, fear,
+          uncertainty, and circumstances that feel beyond our control.
+        </p>
+        <div class="coming-soon">Resource Coming Soon</div>
+      </article>
+
+      <article class="resource-card primary">
+        <h2>Forgiveness &amp; Relationships</h2>
+        <p>
+          Study biblical principles for forgiveness, reconciliation, healthy
+          relationships, and responding to hurt in a Christ-honoring way.
+        </p>
+        <div class="coming-soon">Resource Coming Soon</div>
+      </article>
+
+      <article class="resource-card primary">
+        <h2>Representing Christ at Work</h2>
+        <p>
+          Explore how integrity, attitude, responsibility, speech, and service
+          can reflect Christ in the workplace and in everyday responsibilities.
+        </p>
+        <div class="coming-soon">Resource Coming Soon</div>
+      </article>
+
+      <article class="resource-card future">
+        <h2>Marriage &amp; Family</h2>
+        <p>
+          Apply biblical truth to marriage, parenting, family responsibilities,
+          communication, love, and spiritual leadership in the home.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+      <article class="resource-card future">
+        <h2>Making Godly Decisions</h2>
+        <p>
+          Learn how Scripture, prayer, wisdom, motives, and godly counsel can help
+          guide everyday decisions.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+      <article class="resource-card future">
+        <h2>Serving Others</h2>
+        <p>
+          Discover practical ways to use your time, abilities, compassion, and
+          spiritual gifts to serve people and strengthen the local church.
+        </p>
+        <div class="coming-soon">Coming Soon</div>
+      </article>
+
+    </section>
+
+    <section class="action-box">
+      <h2>From Truth to Action</h2>
+      <ul>
+        <li>What biblical truth do I need to understand?</li>
+        <li>What attitude or behavior needs to change?</li>
+        <li>What practical step can I take this week?</li>
+        <li>Who can I encourage, serve, forgive, or help?</li>
+        <li>How can my response bring glory to God?</li>
+      </ul>
+    </section>
+
+    <section class="rhythm">
+      <h2>HBM Teaching Rhythm</h2>
+      <p><strong>Read it &bull; Understand it &bull; Believe it &bull; Live it</strong></p>
+      <p>
+        Biblical knowledge becomes visible when God's truth begins to shape our
+        choices, relationships, priorities, and conduct.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hightower Bible Ministry</p>
+    <p>To God Be the Glory</p>
+  </footer>
+
+</body>
+</html>

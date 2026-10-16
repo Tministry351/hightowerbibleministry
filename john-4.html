@@ -3,98 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breakdown of John Chapter 4</title>
+  <title>John 4 Bible Study | Hightower Bible Ministry</title>
+  
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.65;
-      max-width: 780px;
-      margin: 2.5rem auto;
-      padding: 0 1.25rem 3rem;
-      color: #222;
-      background: #fafafa;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+      background-color: #f8fafc;
+      line-height: 1.7;
     }
-    h1 {
-      color: #1F4E79;
-      font-size: 2rem;
-      border-bottom: 3px solid #2E75B6;
-      padding-bottom: 0.4rem;
-      margin-bottom: 0.5rem;
+    header {
+      background-color: #0b2d4f;
+      color: white;
+      padding: 18px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.10);
     }
-    .subtitle {
+    .header-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+    .ministry-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 17px;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #d6a847;
+    }
+    .lesson-hero {
+      background:
+        linear-gradient(rgba(7, 28, 50, 0.72), rgba(7, 28, 50, 0.72)),
+        url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+    .hero-kicker {
+      color: #d6a847;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .lesson-hero h1 {
+      color: white;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+    .hero-scripture {
+      color: #f2c15b;
+      font-size: 20px;
       font-style: italic;
-      color: #555;
+      margin: 10px 0 18px;
+    }
+    .lesson-hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #f3f4f6;
+      font-size: 18px;
+    }
+    .hero-divider {
+      width: 90px;
+      height: 3px;
+      background-color: #d6a847;
+      margin: 22px auto 26px;
+    }
+    .lesson {
+      max-width: 960px;
+      margin: auto;
+      padding: 55px 22px 70px;
+    }
+    .intro-panel {
+      background: white;
+      border-left: 6px solid #d6a847;
+      border-radius: 10px;
+      padding: 28px 26px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+    .intro-panel h2 {
       margin-top: 0;
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
+      color: #0b2d4f;
+      font-size: 30px;
     }
-    h2 {
-      color: #2E75B6;
-      margin-top: 2rem;
-      font-size: 1.45rem;
+    .intro-panel p {
+      margin-bottom: 0;
+      font-size: 18px;
+      color: #4c5968;
     }
-    p { margin: 0.8rem 0; }
-    strong { color: #1F4E79; }
-    ul { padding-left: 1.4rem; }
-    li { margin: 0.4rem 0; }
-    footer {
-      margin-top: 3rem;
-      padding-top: 1rem;
-      border-top: 1px solid #ddd;
-      color: #666;
-      font-size: 0.9rem;
+    .lesson-section {
+      margin-bottom: 38px;
+    }
+    .lesson-section h2 {
+      color: #0b2d4f;
+      font-size: 30px;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 3px solid #d6a847;
+    }
+    .study-box {
+      padding: 22px 24px;
+      margin: 18px 0;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+    .study-box strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+    .observation-box {
+      background: #eef5fb;
+      border-left: 6px solid #4a7ca8;
+    }
+    .observation-box strong {
+      color: #2f5d85;
+      font-size: 19px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .interpretation-box {
+      background: #fff6e5;
+      border-left: 6px solid #d6a847;
+    }
+    .interpretation-box strong {
+      color: #9c6b18;
+      font-size: 19px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .application-box {
+      background: #edf8f0;
+      border-left: 6px solid #4f8a5b;
+    }
+    .application-box strong {
+      color: #35633f;
+      font-size: 19px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 42px;
+    }
+    .summary-card {
+      background: white;
+      padding: 30px 26px;
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      border-top: 5px solid #d6a847;
+    }
+    .summary-card h3 {
+      color: #0b2d4f;
+      margin-top: 0;
+      font-size: 24px;
       text-align: center;
     }
-  </style>
-</head>
-<body>
-  <h1>Breakdown of John Chapter 4</h1>
-  <p class="subtitle">Jesus, the Samaritan Woman, Living Water, and the Savior of the World</p>
-
-  <p>John 4 is one of the most memorable chapters in the Gospel of John. It features Jesus’ longest recorded one-on-one conversation (with the Samaritan woman at the well), shows Him deliberately crossing ethnic and social barriers, introduces the idea of “living water,” redefines true worship, and ends with the second of John’s seven signs (the healing of the official’s son).</p>
-
-  <p>The chapter naturally divides into several sections. Here’s a clear breakdown:</p>
-
-  <h2>1. Jesus Leaves Judea for Galilee (vv. 1–3)</h2>
-  <p>Jesus learns that the Pharisees have heard He is baptizing more disciples than John (though Jesus Himself wasn’t baptizing—His disciples were). He leaves Judea and heads back to Galilee. This is a strategic move to avoid unnecessary confrontation at this stage of His ministry.</p>
-
-  <h2>2. The Necessary Journey Through Samaria (vv. 4–6)</h2>
-  <p>John notes that Jesus “had to go through Samaria.” Most Jews avoided Samaria because of deep historical and religious hostility between Jews and Samaritans. Jesus stops at Jacob’s well near the town of Sychar around noon. He is tired from the journey and sits by the well while the disciples go into town for food.</p>
-
-  <h2>3. Conversation with the Samaritan Woman: Living Water (vv. 7–15)</h2>
-  <p>A Samaritan woman comes to draw water (unusual at noon—possibly to avoid other women due to her reputation). Jesus asks her for a drink, which surprises her: “You are a Jew and I am a Samaritan woman. How can you ask me for a drink?” (Jews and Samaritans did not associate.)</p>
-  <p>Jesus shifts the conversation from physical water to “living water”—a gift of God that permanently satisfies spiritual thirst and becomes “a spring of water welling up to eternal life.” The woman initially thinks He means literal water that would free her from daily trips to the well.</p>
-  <p>This is classic Johannine misunderstanding: Jesus speaks spiritually; the woman hears literally.</p>
-
-  <h2>4. Revelation of Her Life and True Worship (vv. 16–26)</h2>
-  <p>Jesus tells her, “Go, call your husband.” She replies that she has no husband. He reveals He knows her story: she has had five husbands, and the man she is with now is not her husband. She recognizes Him as a prophet and raises the longstanding dispute about the proper place of worship (Mount Gerizim vs. Jerusalem).</p>
-  <p>Jesus answers that a time is coming (and is already here) when true worshipers will worship the Father “in the Spirit and in truth,” not tied to a specific mountain or temple. “God is spirit, and his worshipers must worship in the Spirit and in truth.”</p>
-  <p>When she mentions the coming Messiah, Jesus declares: “I, the one speaking to you—I am he.”</p>
-
-  <h2>5. The Disciples Return and the Spiritual Harvest (vv. 27–38)</h2>
-  <p>The disciples return and are surprised Jesus is talking with a woman, but they don’t question Him. The woman leaves her water jar and goes into town, telling people, “Come, see a man who told me everything I ever did. Could this be the Messiah?”</p>
-  <p>Meanwhile, the disciples urge Jesus to eat. He replies that His food is “to do the will of him who sent me and to finish his work.” He then teaches them about the spiritual harvest: the fields are ripe, and they are reaping where others have sown. The Samaritans coming out to meet Him illustrate this.</p>
-
-  <h2>6. Many Samaritans Believe (vv. 39–42)</h2>
-  <p>Many Samaritans believe because of the woman’s testimony. Jesus stays two days. Many more believe because of His own words. They declare, “We no longer believe just because of what you said; now we have heard for ourselves, and we know that this man really is the Savior of the world.”</p>
-
-  <h2>7. Return to Galilee and the Healing of the Official’s Son (vv. 43–54)</h2>
-  <p>Jesus continues to Galilee, where He is welcomed. In Cana (site of the water-to-wine miracle), a royal official from Capernaum begs Him to come heal his dying son. Jesus tells him, “Go; your son will live.” The man believes the word and leaves. Servants meet him on the way with news that the boy recovered at the exact hour Jesus spoke. The official and his household believe.</p>
-  <p>John notes this is the second sign Jesus performed after coming from Judea to Galilee. Faith here rests on Jesus’ word alone, without seeing the miracle firsthand.</p>
-
-  <h2>Major Themes in John 4</h2>
-  <ul>
-    <li><strong>Barrier-breaking mission:</strong> Jesus engages a Samaritan woman (ethnic, gender, and moral outsider) and offers salvation to Samaritans, pointing to His role as “Savior of the world.”</li>
-    <li><strong>Living water:</strong> Symbolic of the Holy Spirit and eternal life that satisfies deepest thirst (echoed later in John 7:37–39).</li>
-    <li><strong>True worship:</strong> Not location-based, but “in spirit and truth.”</li>
-    <li><strong>Progressive revelation and faith:</strong> The woman moves from curiosity → recognition of a prophet → belief in the Messiah. The Samaritans move from her testimony to personal conviction. The official believes Jesus’ word.</li>
-    <li><strong>Signs and the Word:</strong> The healing confirms Jesus’ authority and the sufficiency of His spoken word.</li>
-  </ul>
-
-  <p>This chapter pairs interestingly with the nighttime conversation with Nicodemus in John 3—different person, setting, and starting point, yet both point to new life through Jesus.</p>
-
-  <footer>
-    John Chapter 4 Study Breakdown
-  </footer>
-</body>
-</html>
+    .summary-card ul,
+    .summary-card ol {
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+    .summary-card li {
+      margin-bottom: 10px;
+    }
+    .summary-card p {
+      color: #4c5968;
+      margin-bottom: 0;
+    }
+    .key-truths-card {
+      background: #eef5fb;
+      border-top-color: #4a7ca8;
+    }
+    .application-card {
+      background: #fff6e5;
+      border-top-color: #d6a847;
+    }
+    .questions-card {
+      background: #edf8f0;
+      border-top-color: #4f8a5b;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .back-link a {
+      color: #0b2d4f;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+    .back-link a:hover {
+      color: #d6a847;
+    }
+    footer {
+      background-color: #071e33;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+    @media (max-width: 900px) {
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 700px) {
+      .lesson-hero h1 {
+        font-size: 38px;
+      }
+      .lesson-hero p {

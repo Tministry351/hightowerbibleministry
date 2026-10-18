@@ -56,10 +56,13 @@
       flex-wrap: wrap;
     }
 
-    .brand {
-      font-size: 1.15rem;
-      font-weight: bold;
-    }
+.brand {
+  font-size: 1.15rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+    
 
     .back-link {
       color: var(--white);
@@ -218,12 +221,22 @@
 
 <body id="top">
 
-  <header>
-    <div class="header-container">
-      <div class="brand">Hightower Bible Ministry</div>
-      <a class="back-link" href="index.html#about">Back to About</a>
+<header>
+  <div class="header-container">
+
+    <div class="brand">
+      <img src="hbm-logo.png.png"
+           alt="Hightower Bible Ministry Logo"
+           style="width:70px; height:70px; object-fit:contain; vertical-align:middle; margin-right:12px;">
+
+      <span>Hightower Bible Ministry</span>
     </div>
-  </header>
+
+    <a class="back-link" href="index.html#about">Back to About</a>
+
+  </div>
+</header>
+  
 
   <section class="hero">
     <div class="eyebrow">What We Believe</div>

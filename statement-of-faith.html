@@ -74,15 +74,22 @@
       text-decoration: underline;
     }
 
-    .hero {
-      background:
-        linear-gradient(rgba(11,45,79,.92), rgba(11,45,79,.92)),
-        linear-gradient(135deg, #2f6f93, #0b2d4f);
-      color: var(--white);
-      text-align: center;
-      padding: 70px 24px;
-    }
-
+.hero {
+  background:
+    radial-gradient(circle at top center,
+      rgba(47,111,147,.48) 0%,
+      rgba(11,45,79,0) 55%),
+    linear-gradient(135deg,
+      #0b2d4f 0%,
+      #123f68 55%,
+      #0b2d4f 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 64px 24px 70px;
+  border-bottom: 4px solid var(--gold);
+}
+    
+      
     .hero .eyebrow {
       color: #f0d7a3;
       font-weight: bold;

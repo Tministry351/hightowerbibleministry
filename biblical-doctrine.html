@@ -16,41 +16,80 @@ body {
   line-height: 1.7;
 }
 
+
 header {
   background: #0b2d4f;
   color: white;
-  padding: 22px;
-  text-align: center;
+  padding: 18px 24px;
 }
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 
 header a {
   color: #e8bb65;
   text-decoration: none;
 }
 
+
 .hero {
-  background: linear-gradient(120deg, #0b2d4f, #245a80);
+  background:
+    linear-gradient(rgba(11,45,79,.90), rgba(11,45,79,.90)),
+    linear-gradient(135deg, #2f6f93, #0b2d4f);
   color: white;
-  padding: 55px 20px;
+  padding: 68px 24px;
   text-align: center;
-  border-bottom: 5px solid #c59a4a;
 }
 
-.hero h1 { font-size: 36px; }
+.hero .eyebrow {
+  color: #f0d7a3;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: .85rem;
+}
+
+
+
+.hero h1 {
+  margin: 10px 0 12px;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+}
+
+
 
 main {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 42px 22px 62px;
 }
 
+
 .intro {
-  background: #fff8e8;
-  border-left: 5px solid #c59a4a;
-  padding: 24px;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 36px;
 }
+
+.intro h2 {
+  color: #0b2d4f;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  max-width: 850px;
+  margin: 0 auto 16px;
+}
+
+
 
 .lesson-grid {
   display: grid;
@@ -60,11 +99,13 @@ main {
 
 .lesson {
   background: white;
-  padding: 25px;
-  border-radius: 10px;
+  padding: 25px 28px;
+  border: 1px solid #d3dce4;
   border-top: 5px solid #c59a4a;
-  box-shadow: 0 2px 9px #00000012;
+  border-radius: 10px;
+  box-shadow: 0 2px 9px rgba(0,0,0,0.07);
 }
+
 
 .lesson h2 {
   color: #0b2d4f;
@@ -98,15 +139,24 @@ footer {
 
 <body id="top">
 
+
 <header>
-  <strong>Hightower Bible Ministry</strong>
-  <p><a href="learn-gods-word.html">← Back to Learn God's Word</a></p>
+  <div class="header-container">
+    <div class="brand">Hightower Bible Ministry</div>
+    <a href="learn-gods-word.html">
+      Back to Learn God's Word
+    </a>
+  </div>
 </header>
 
+
+
 <section class="hero">
+  <div class="eyebrow">LEARN GOD'S WORD</div>
   <h1>Biblical Truths &amp; Sound Doctrine</h1>
   <p>Building a Strong Foundation in God's Word</p>
 </section>
+
 
 <main>
 

@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Genesis 2 In-Depth Bible Study from Hightower Bible Ministry.">
+
+  <title>
+    Genesis 2 In-Depth Study | Hightower Bible Ministry
+  </title>
+
+  <style>
+
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-blue: #edf5fa;
+      --light-gold: #faf4e8;
+      --white: #ffffff;
+      --text: #1f2937;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 70px 22px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .eyebrow {
+      color: #f0d7a3;
+      font-size: .86rem;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 10px auto 10px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      max-width: 950px;
+    }
+
+    .hero h2 {
+      color: #f0d7a3;
+      margin: 8px auto 18px;
+      font-size: 1.45rem;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      color: #eef5fa;
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 42px 22px 65px;
+    }
+
+    .study-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+    }
+
+    .study-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.3;
+    }
+
+    .study-card h3 {
+      color: var(--blue);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .scripture-box {
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .key-point {
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .truth-line {
+      color: var(--navy);
+      font-weight: bold;
+    }
+
+    .study-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 18px 0;
+    }
+
+    .study-box {
+      background: #f2f6f9;
+      border-top: 4px solid var(--gold);
+      border-radius: 9px;
+      padding: 17px;
+    }
+
+    .study-box strong {
+      color: var(--navy);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--light-blue);
+      color: var(--navy);
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 19px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-button.gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 700px) {
+
+      .study-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 50px 18px;
+      }
+
+      main {
+        padding: 30px 16px 50px;
+      }
+
+      .study-card {
+        padding: 21px;
+      }
+
+      .navigation {
+        flex-direction: column;
+      }
+
+      .nav-button {
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="brand">
+      Hightower Bible Ministry
+    </div>
+
+    <a href="genesis-in-depth.html">
+      Back to Genesis In-Depth Studies
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Genesis In-Depth Study • Chapter 2
+  </div>
+
+  <h1>
+    Genesis 2 — Humanity, the Garden, Work, and Marriage
+  </h1>
+
+  <h2>
+    Created for Relationship, Responsibility, and Fellowship With God
+  </h2>
+
+  <p>
+    Genesis 2 narrows the focus of the creation account
+    and gives special attention to humanity.
+    God forms the man, prepares the garden,
+    gives meaningful responsibility,
+    establishes a moral command,
+    creates the woman,
+    and establishes the covenant relationship of marriage.
+  </p>
+
+</section>
+
+
+<main>
+
+
+<section class="study-card">
+
+  <h2>Study Overview</h2>
+
+  <div class="scripture-box">
+
+    <strong>Primary Passage:</strong>
+    Genesis 2:1–25
+
+    <br><br>
+
+    <strong>Supporting Scriptures:</strong>
+    Matthew 19:4–6;
+    Mark 2:27;
+    Ephesians 5:31–32;
+    1 Corinthians 11:8–12.
+
+  </div>
+
+  <div class="key-point">
+
+    <strong>Big Idea:</strong>
+
+    God created human beings to live in relationship with Him,
+    carry out meaningful responsibility in His creation,
+    live within His wise boundaries,
+    and experience covenant relationship with one another.
+
+  </div>
+
+  <p>
+    Genesis 1 gives us the broad picture of God's creation.
+    Genesis 2 brings the reader closer
+    and gives special attention to the creation of humanity
+    and God's purpose for human life.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>HBM In-Depth Study Rhythm</h2>
+
+  <div class="key-point">
+
+    <strong>
+      Read it • Examine it • Understand it • Believe it • Live it
+    </strong>
+
+  </div>
+
+  <p>
+    Our goal is not merely to collect information about Genesis.
+    We want to carefully observe what the passage says,
+    understand what it means in context,
+    discover what it teaches us about God,
+    and allow God's truth to shape the way we live.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:1–3 — God Completes His Work and Rests</h2>
+
+  <h3>Observation — What Does the Text Say?</h3>
+
+  <p>
+    Genesis 2 begins by declaring that
+    the heavens and the earth were finished.
+    God's creative work was complete.
+  </p>
+
+  <p>
+    On the seventh day,
+    God rested from the work He had done.
+    He blessed the seventh day
+    and made it holy.
+  </p>
+
+  <h3>Interpretation — What Does It Mean?</h3>
+
+  <p>
+    God's rest does not mean that He became tired
+    or needed to recover His strength.
+    The emphasis is that His work of creation was complete.
+  </p>
+
+  <p>
+    The seventh day marks completion,
+    order,
+    blessing,
+    and a pattern of rest.
+  </p>
+
+  <p>
+    Later Scripture develops the importance of Sabbath rest
+    for Israel,
+    but here the pattern begins with God Himself.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    God completes what He purposes to do.
+    His creation reflects order,
+    purpose,
+    and intentional design.
+
+  </div>
+
+  <h3>Application</h3>
+
+  <p>
+    Human life should not be defined only by activity,
+    production,
+    and accomplishment.
+  </p>
+
+  <p>
+    God designed life with a rhythm
+    that recognizes both meaningful work and appropriate rest.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:4–7 — God Forms the Man</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The passage shifts from the broad creation account
+    to a closer look at the creation of humanity.
+  </p>
+
+  <p>
+    God forms the man from the dust of the ground
+    and breathes into him the breath of life.
+    The man becomes a living creature.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Humanity is both humble and extraordinary.
+  </p>
+
+  <p>
+    The man is formed from the ground,
+    reminding us of human dependence and physical frailty.
+    Yet his life comes directly from God.
+  </p>
+
+  <p>
+    Human beings are not self-created,
+    self-sustaining,
+    or independent of their Creator.
+  </p>
+
+  <div class="study-grid">
+
+    <div class="study-box">
+
+      <strong>From the Dust</strong>
+
+      <p>
+        Humanity is created,
+        dependent,
+        and physically connected to the earth.
+      </p>
+
+    </div>
+
+    <div class="study-box">
+
+      <strong>Breath From God</strong>
+
+      <p>
+        Human life is a gift from God
+        and must be understood in relationship to Him.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Life belongs to God.
+    Human dignity does not come from possessions,
+    status,
+    intelligence,
+    strength,
+    or achievement.
+    Human life exists because God gives it.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:8–14 — God Prepares the Garden</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God plants a garden in Eden
+    and places the man there.
+  </p>
+
+  <p>
+    The garden contains trees that are
+    pleasant to look at and good for food.
+  </p>
+
+  <p>
+    Two trees receive special attention:
+    the tree of life
+    and the tree of the knowledge of good and evil.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The garden demonstrates God's generous provision.
+  </p>
+
+  <p>
+    God does not place the man in an empty environment
+    and demand that he survive on his own.
+    He prepares a place suitable for human life.
+  </p>
+
+  <p>
+    God's provision reveals generosity,
+    while the presence of the special trees
+    prepares us for the moral command that follows.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    God's authority and God's generosity
+    belong together.
+    The God who gives commands
+    is also the God who generously provides.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:15 — Work Before the Fall</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God places the man in the garden
+    to work it and keep it.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    This is important because work appears
+    before sin enters the world in Genesis 3.
+  </p>
+
+  <p>
+    Therefore,
+    work itself is not part of the curse.
+    Work belongs to God's original design for humanity.
+  </p>
+
+  <p>
+    The effects of sin will later make work painful,
+    frustrating,
+    and difficult,
+    but meaningful responsibility existed before the Fall.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Teaching Truth:</strong>
+
+    Work is part of God's good design.
+    Human responsibility gives us an opportunity
+    to serve,
+    cultivate,
+    protect,
+    create,
+    and faithfully manage what God entrusts to us.
+
+  </div>
+
+  <h3>Application</h3>
+
+  <p>
+    Whether our responsibilities are at home,
+    in employment,
+    in ministry,
+    in relationships,
+    or in service to others,
+    we should view faithful responsibility
+    as part of honoring God.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:16–17 — Freedom, Authority, and the Command</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God tells the man that he may freely eat
+    from every tree of the garden
+    except the tree of the knowledge of good and evil.
+  </p>
+
+  <p>
+    God also gives a warning:
+    eating from the forbidden tree
+    will bring death.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Notice that the command begins with generosity.
+  </p>
+
+  <p>
+    The man is given broad freedom:
+    he may freely eat from the trees of the garden.
+    Only one tree is forbidden.
+  </p>
+
+  <p>
+    This command establishes an important truth:
+    human beings are creatures under God's authority.
+  </p>
+
+  <p>
+    Humanity was not created to determine independently
+    what is right and wrong.
+    God remains the rightful authority
+    who defines the boundaries of obedience.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    True freedom is not independence from God.
+    Human freedom is healthiest
+    when it is lived within the wise boundaries
+    established by the Creator.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:18 — “It Is Not Good”</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    For the first time in the creation account,
+    God declares that something is not good:
+    the man is alone.
+  </p>
+
+  <p>
+    God announces that He will make
+    a helper suitable for him.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The statement does not mean
+    that God made a mistake in creation.
+  </p>
+
+  <p>
+    Instead,
+    the incomplete situation prepares the reader
+    to understand God's design for human relationship
+    and the creation of the woman.
+  </p>
+
+  <p>
+    The expression translated
+    “helper suitable for him”
+    describes one who corresponds to him —
+    a fitting partner.
+  </p>
+
+  <p>
+    The word “helper” does not imply inferiority.
+    Scripture elsewhere uses the language of help
+    for God Himself when He comes to the aid of His people.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Men and women share equal dignity before God
+    while being created to relate to one another
+    according to God's wise design.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:19–20 — Naming the Animals</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The animals are brought before the man,
+    and he gives them names.
+  </p>
+
+  <p>
+    Yet among the animals,
+    no suitable helper is found for him.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Naming the animals demonstrates
+    the responsibility God has given humanity
+    within creation.
+  </p>
+
+  <p>
+    It also emphasizes the uniqueness of human relationship.
+    None of the animals corresponds to the man
+    in the way the woman will.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Teaching Truth:</strong>
+
+    Humanity has a unique place within creation,
+    and human companionship cannot be replaced
+    by the rest of the created order.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:21–23 — God Creates the Woman</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God causes the man to fall into a deep sleep.
+    God takes from the man's side
+    and forms the woman.
+  </p>
+
+  <p>
+    When God brings the woman to the man,
+    the man's response recognizes
+    both their unity and their distinction.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The woman is not another kind of creature.
+    She shares the same humanity as the man.
+  </p>
+
+  <p>
+    “Bone of my bones and flesh of my flesh”
+    emphasizes their shared human nature
+    and close relationship.
+  </p>
+
+  <p>
+    Genesis presents man and woman
+    as distinct,
+    yet corresponding to one another
+    within God's creation.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Woman is God's creation,
+    sharing fully in human dignity
+    and given as the fitting partner
+    God declared the man needed.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:24 — God's Design for Marriage</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    Genesis gives three important movements:
+  </p>
+
+  <div class="study-grid">
+
+    <div class="study-box">
+
+      <strong>Leave</strong>
+
+      <p>
+        A new family relationship is established.
+      </p>
+
+    </div>
+
+    <div class="study-box">
+
+      <strong>Hold Fast</strong>
+
+      <p>
+        Husband and wife are joined
+        in committed covenant relationship.
+      </p>
+
+    </div>
+
+    <div class="study-box">
+
+      <strong>One Flesh</strong>
+
+      <p>
+        Marriage creates a profound union
+        involving the whole life of husband and wife.
+      </p>
+
+    </div>
+
+    <div class="study-box">
+
+      <strong>God's Design</strong>
+
+      <p>
+        Marriage is not merely a human invention.
+        Its foundation appears in God's creation order.
+      </p>
+
+    </div>
+
+  </div>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Jesus later appeals directly to Genesis 1 and Genesis 2
+    when teaching about marriage
+    in Matthew 19:4–6.
+  </p>
+
+  <p>
+    He treats the creation account
+    as foundational for understanding
+    God's intention for marriage.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Marriage is God's design
+    for the covenant union of a man and a woman
+    who establish a new family relationship
+    and become one flesh.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2:25 — Naked and Unashamed</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The man and woman are naked
+    and experience no shame.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The verse describes innocence,
+    openness,
+    trust,
+    and the absence of sinful corruption
+    in their relationship.
+  </p>
+
+  <p>
+    There is no fear,
+    hiding,
+    exploitation,
+    manipulation,
+    or shame.
+  </p>
+
+  <p>
+    This peaceful condition
+    will change dramatically in Genesis 3
+    after sin enters human experience.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Important Transition:</strong>
+
+    Genesis 2 ends with harmony:
+    harmony with God,
+    harmony within human identity,
+    harmony between man and woman,
+    and harmony within creation.
+
+    <br><br>
+
+    Genesis 3 will show how sin damages
+    each of these relationships.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>What Genesis 2 Teaches Us About God</h2>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>What We Observe</th>
+        <th>What It Reveals About God</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>God forms humanity and gives life.</td>
+        <td>God is Creator and the source of life.</td>
+      </tr>
+
+      <tr>
+        <td>God prepares the garden.</td>
+        <td>God generously provides.</td>
+      </tr>
+
+      <tr>
+        <td>God gives work and responsibility.</td>
+        <td>God gives human life purpose.</td>
+      </tr>
+
+      <tr>
+        <td>God gives a moral command.</td>
+        <td>God is the rightful authority over humanity.</td>
+      </tr>
+
+      <tr>
+        <td>God recognizes that the man is alone.</td>
+        <td>God understands human needs perfectly.</td>
+      </tr>
+
+      <tr>
+        <td>God creates the woman.</td>
+        <td>God designs human relationship.</td>
+      </tr>
+
+      <tr>
+        <td>God establishes marriage.</td>
+        <td>God defines the foundation of covenant marriage.</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Christ-Centered Connection</h2>
+
+  <p>
+    We should not force Jesus artificially
+    into every individual detail of Genesis 2.
+    But the New Testament itself
+    shows us important connections.
+  </p>
+
+  <h3>Jesus Affirms the Creation Design</h3>
+
+  <p>
+    In Matthew 19:4–6,
+    Jesus brings Genesis 1 and Genesis 2 together
+    when explaining God's design for marriage.
+  </p>
+
+  <p>
+    Jesus treats God's creation order
+    as authoritative for understanding marriage.
+  </p>
+
+  <h3>Marriage Points Beyond Itself</h3>
+
+  <p>
+    In Ephesians 5:31–32,
+    Paul quotes Genesis 2:24
+    and connects the one-flesh marriage relationship
+    with Christ and the Church.
+  </p>
+
+  <p>
+    Christian marriage therefore has significance
+    beyond companionship alone.
+    It can reflect covenant faithfulness,
+    sacrificial love,
+    commitment,
+    and the relationship between Christ
+    and His people.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Christ-Centered Truth:</strong>
+
+    Jesus Christ affirms God's creation design,
+    and the New Testament uses the marriage relationship
+    established in Genesis 2
+    to help us understand the faithful love
+    between Christ and His Church.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Personal Application — How Should This Change My Life?</h2>
+
+  <ol>
+
+    <li>
+      Do I recognize that my life belongs to God
+      because He is my Creator?
+    </li>
+
+    <li>
+      Do I view my responsibilities as opportunities
+      to serve God faithfully?
+    </li>
+
+    <li>
+      Am I tempted to view God's boundaries
+      as restrictions rather than expressions
+      of His wisdom and authority?
+    </li>
+
+    <li>
+      How do I treat people who,
+      like me,
+      have been created with God-given dignity?
+    </li>
+
+    <li>
+      Does my view of marriage come primarily
+      from Scripture or from the culture around me?
+    </li>
+
+    <li>
+      Where do I need to practice greater faithfulness,
+      responsibility,
+      trust,
+      or obedience to God?
+    </li>
+
+  </ol>
+
+  <div class="key-point">
+
+    <strong>Personal Application Truth:</strong>
+
+    Because God created me,
+    gives life,
+    establishes moral boundaries,
+    and gives human relationships purpose,
+    I am called to live under His authority
+    with gratitude,
+    responsibility,
+    obedience,
+    and faithfulness.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Study and Reflection Questions</h2>
+
+  <ol>
+
+    <li>
+      What does God's rest in Genesis 2:1–3
+      teach us about the completion of creation?
+    </li>
+
+    <li>
+      What does Genesis 2:7 reveal
+      about humanity's dependence upon God?
+    </li>
+
+    <li>
+      Why is Genesis 2:15 important
+      for understanding the biblical view of work?
+    </li>
+
+    <li>
+      What does God's command in verses 16–17
+      teach us about human freedom and God's authority?
+    </li>
+
+    <li>
+      Why does God say that it is not good
+      for the man to be alone?
+    </li>
+
+    <li>
+      What does the creation of the woman
+      reveal about human dignity and relationship?
+    </li>
+
+    <li>
+      What are the three movements
+      in Genesis 2:24 concerning marriage?
+    </li>
+
+    <li>
+      What is significant about the statement
+      that the man and woman were naked and unashamed?
+    </li>
+
+    <li>
+      How does Jesus use Genesis 2
+      in Matthew 19?
+    </li>
+
+    <li>
+      How does Ephesians 5 connect Genesis 2:24
+      with Christ and the Church?
+    </li>
+
+  </ol>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Key Truths to Remember</h2>
+
+  <div class="scripture-box">
+
+    <p>
+      <strong>Genesis 2:7</strong> —
+      Human life comes from God.
+    </p>
+
+    <p>
+      <strong>Genesis 2:15</strong> —
+      Work and responsibility existed before the Fall.
+    </p>
+
+    <p>
+      <strong>Genesis 2:16–17</strong> —
+      Humanity lives under God's moral authority.
+    </p>
+
+    <p>
+      <strong>Genesis 2:18</strong> —
+      God declares that the man's aloneness is not good.
+    </p>
+
+    <p>
+      <strong>Genesis 2:23</strong> —
+      Man and woman share the same humanity.
+    </p>
+
+    <p>
+      <strong>Genesis 2:24</strong> —
+      God establishes the one-flesh marriage relationship.
+    </p>
+
+    <p>
+      <strong>Genesis 2:25</strong> —
+      Humanity originally experiences innocence without shame.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Preparing for Genesis 3</h2>
+
+  <p>
+    Genesis 2 ends with God's created order functioning in harmony.
+  </p>
+
+  <p>
+    Humanity has life,
+    provision,
+    meaningful work,
+    God's Word,
+    relationship,
+    and fellowship without shame.
+  </p>
+
+  <p>
+    Genesis 3 will introduce a devastating question:
+    What happens when human beings reject God's Word
+    and attempt to live independently of His authority?
+  </p>
+
+  <div class="key-point">
+
+    <strong>Watch for this contrast:</strong>
+
+    Genesis 2 ends with trust,
+    openness,
+    provision,
+    relationship,
+    and life.
+
+    <br><br>
+
+    Genesis 3 introduces doubt,
+    disobedience,
+    shame,
+    hiding,
+    broken relationships,
+    judgment,
+    and death —
+    yet even there,
+    God's grace and promise will begin to appear.
+
+  </div>
+
+</section>
+
+
+<div class="navigation">
+
+  <a class="nav-button"
+     href="genesis-1-in-depth.html">
+    ← Review Genesis 1
+  </a>
+
+  <a class="nav-button gold"
+     href="genesis-in-depth.html">
+    Genesis In-Depth Studies
+  </a>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+  <p>&copy; 2026 Hightower Bible Ministry</p>
+
+  <p>To God Be the Glory</p>
+
+</footer>
+
+
+</body>
+</html>

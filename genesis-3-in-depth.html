@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Genesis 3 In-Depth Bible Study from Hightower Bible Ministry.">
+
+  <title>
+    Genesis 3 In-Depth Study | Hightower Bible Ministry
+  </title>
+
+  <style>
+
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-blue: #edf5fa;
+      --light-gold: #faf4e8;
+      --white: #ffffff;
+      --text: #1f2937;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 70px 22px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .eyebrow {
+      color: #f0d7a3;
+      font-size: .86rem;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 10px auto 10px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      max-width: 950px;
+    }
+
+    .hero h2 {
+      color: #f0d7a3;
+      margin: 8px auto 18px;
+      font-size: 1.45rem;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      color: #eef5fa;
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 42px 22px 65px;
+    }
+
+    .study-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+    }
+
+    .study-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.3;
+    }
+
+    .study-card h3 {
+      color: var(--blue);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .scripture-box {
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .key-point {
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .study-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 18px 0;
+    }
+
+    .study-box {
+      background: #f2f6f9;
+      border-top: 4px solid var(--gold);
+      border-radius: 9px;
+      padding: 17px;
+    }
+
+    .study-box strong {
+      color: var(--navy);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--light-blue);
+      color: var(--navy);
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 19px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-button.gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 700px) {
+
+      .study-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 50px 18px;
+      }
+
+      main {
+        padding: 30px 16px 50px;
+      }
+
+      .study-card {
+        padding: 21px;
+      }
+
+      .navigation {
+        flex-direction: column;
+      }
+
+      .nav-button {
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="brand">
+      Hightower Bible Ministry
+    </div>
+
+    <a href="genesis-in-depth.html">
+      Back to Genesis In-Depth Studies
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Genesis In-Depth Study • Chapter 3
+  </div>
+
+  <h1>
+    Genesis 3 — The Fall, Sin, Judgment, Grace, and the Promise of Redemption
+  </h1>
+
+  <h2>
+    What Happens When Humanity Rejects God's Word?
+  </h2>
+
+  <p>
+    Genesis 3 records humanity's rebellion against God
+    and reveals the devastating consequences of sin.
+    Yet even in judgment,
+    God seeks the guilty,
+    exposes sin,
+    provides covering,
+    and announces a promise that points toward
+    the ultimate defeat of the serpent.
+  </p>
+
+</section>
+
+
+<main>
+
+
+<section class="study-card">
+
+  <h2>Study Overview</h2>
+
+  <div class="scripture-box">
+
+    <strong>Primary Passage:</strong>
+    Genesis 3:1–24
+
+    <br><br>
+
+    <strong>Supporting Scriptures:</strong>
+    Romans 5:12–19;
+    1 Corinthians 15:21–22;
+    1 Corinthians 15:45–49;
+    2 Corinthians 11:3;
+    Revelation 12:9;
+    Revelation 20:2.
+
+  </div>
+
+  <div class="key-point">
+
+    <strong>Big Idea:</strong>
+
+    Sin begins with rejecting God's truth and authority.
+    It brings guilt,
+    shame,
+    broken relationships,
+    suffering,
+    separation,
+    and death.
+
+    Yet Genesis 3 also reveals that God does not abandon
+    His redemptive purpose.
+    Even while judging sin,
+    He begins revealing His promise of victory.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>HBM In-Depth Study Rhythm</h2>
+
+  <div class="key-point">
+
+    <strong>
+      Read it • Examine it • Understand it • Believe it • Live it
+    </strong>
+
+  </div>
+
+  <p>
+    Genesis 3 is familiar to many people,
+    but familiarity can cause us to move through it too quickly.
+    We want to observe carefully how temptation develops,
+    how humanity responds,
+    how God confronts sin,
+    and how grace appears even within judgment.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:1 — The Serpent Questions God's Word</h2>
+
+  <h3>Observation — What Does the Text Say?</h3>
+
+  <p>
+    The serpent is introduced as crafty
+    and begins the conversation by questioning
+    what God had commanded.
+  </p>
+
+  <p>
+    The attack begins not with an immediate command to rebel,
+    but with a question concerning God's Word.
+  </p>
+
+  <h3>Interpretation — What Does It Mean?</h3>
+
+  <p>
+    The serpent's strategy introduces doubt.
+    God's clear command from Genesis 2
+    is brought into question.
+  </p>
+
+  <p>
+    Temptation often begins when God's Word
+    is treated as uncertain,
+    unreasonable,
+    or open to human revision.
+  </p>
+
+  <p>
+    The New Testament identifies the ancient serpent
+    with Satan and the devil
+    in passages such as Revelation 12:9.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    One of the enemy's oldest strategies
+    is to create doubt about what God has said.
+
+  </div>
+
+  <h3>Application</h3>
+
+  <p>
+    When God's Word is questioned,
+    distorted,
+    or minimized,
+    believers must return to what Scripture actually says
+    rather than allowing feelings,
+    culture,
+    or temptation to redefine God's truth.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:2–3 — The Woman Responds</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The woman correctly recognizes
+    that God permitted them to eat
+    from the trees of the garden,
+    while one tree was forbidden.
+  </p>
+
+  <p>
+    Her response,
+    however,
+    does not repeat God's command exactly as it appears
+    in Genesis 2:16–17.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The conversation has now shifted attention
+    from God's generous provision
+    to the one prohibition.
+  </p>
+
+  <p>
+    Temptation can cause us to focus so strongly
+    on what God has forbidden
+    that we overlook everything He has graciously provided.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Teaching Truth:</strong>
+
+    God's commands should always be understood
+    in the context of His character,
+    goodness,
+    authority,
+    and generous provision.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:4–5 — The Serpent Contradicts God</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The serpent moves from questioning God's Word
+    to directly contradicting God's warning.
+  </p>
+
+  <p>
+    He also suggests that God is withholding
+    something desirable from humanity.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The temptation now attacks both God's truthfulness
+    and God's goodness.
+  </p>
+
+  <p>
+    The serpent presents disobedience
+    as a path to greater freedom,
+    knowledge,
+    and independence.
+  </p>
+
+  <p>
+    The underlying temptation is to distrust God
+    and decide that human beings can determine for themselves
+    what is good and evil.
+  </p>
+
+  <div class="study-grid">
+
+    <div class="study-box">
+
+      <strong>Question God's Word</strong>
+
+      <p>
+        “Did God really say?”
+      </p>
+
+    </div>
+
+    <div class="study-box">
+
+      <strong>Deny the Consequence</strong>
+
+      <p>
+        The serpent contradicts God's warning concerning death.
+      </p>
+
+    </div>
+
+    <div class="study-box">
+
+      <strong>Question God's Goodness</strong>
+
+      <p>
+        God is portrayed as withholding something desirable.
+      </p>
+
+    </div>
+
+    <div class="study-box">
+
+      <strong>Offer Independence</strong>
+
+      <p>
+        Humanity is tempted to define good and evil
+        apart from God's authority.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:6 — Desire Becomes Disobedience</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The woman sees that the tree appears good for food,
+    attractive to the eyes,
+    and desirable for gaining wisdom.
+  </p>
+
+  <p>
+    She takes the fruit and eats.
+    She also gives some to her husband,
+    who is with her,
+    and he eats.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Sin moves from thought and desire
+    into deliberate action.
+  </p>
+
+  <p>
+    Adam and Eve choose the serpent's word
+    over God's Word.
+  </p>
+
+  <p>
+    The central issue is not simply eating fruit.
+    The deeper issue is rebellion against God's authority
+    and distrust of His command.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Sin is more than breaking a rule.
+    Sin is rebellion against God,
+    rejecting His authority,
+    and choosing our will over His will.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:7 — Shame Enters Human Experience</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    After eating,
+    the man and woman immediately become aware
+    of their nakedness.
+  </p>
+
+  <p>
+    They attempt to cover themselves.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Genesis 2 ended with the man and woman
+    naked and unashamed.
+  </p>
+
+  <p>
+    Genesis 3:7 presents the immediate contrast:
+    innocence has been replaced by shame.
+  </p>
+
+  <p>
+    Their first response is not confession.
+    Their first response is self-covering.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Teaching Truth:</strong>
+
+    Sin creates guilt and shame,
+    and human beings naturally attempt
+    to cover the problem themselves.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:8–10 — Hiding From God</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The man and woman hear the presence of the LORD God
+    in the garden and hide among the trees.
+  </p>
+
+  <p>
+    God calls to the man,
+    asking where he is.
+  </p>
+
+  <p>
+    Adam explains that he was afraid
+    and hid because he was naked.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Sin has damaged humanity's relationship with God.
+  </p>
+
+  <p>
+    The people who previously lived openly before God
+    now respond with fear and hiding.
+  </p>
+
+  <p>
+    God's question does not indicate
+    that He lacks knowledge of Adam's location.
+    The question draws Adam out
+    and begins the confrontation with sin.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Sin causes people to hide from God,
+    but God confronts sinners
+    and calls them to account.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:11–13 — Excuses and Blame</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God questions Adam concerning his disobedience.
+  </p>
+
+  <p>
+    Adam points to the woman
+    and even refers to God as the One who gave her to him.
+  </p>
+
+  <p>
+    The woman then points to the serpent,
+    saying that she was deceived.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Neither Adam nor Eve initially responds
+    with a simple confession of personal responsibility.
+  </p>
+
+  <p>
+    Sin has now damaged not only the relationship with God,
+    but also human relationships.
+  </p>
+
+  <p>
+    Blame becomes part of fallen human behavior.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Application Truth:</strong>
+
+    Genuine repentance requires us
+    to stop shifting responsibility
+    and honestly acknowledge our own sin before God.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:14 — Judgment Upon the Serpent</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God begins His judgments with the serpent.
+  </p>
+
+  <p>
+    The serpent is cursed
+    and humiliated among the creatures.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The serpent appeared to offer advancement,
+    wisdom,
+    and freedom.
+  </p>
+
+  <p>
+    Instead,
+    rebellion against God results in judgment.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Evil does not escape God's judgment.
+    God remains sovereign
+    even when rebellion enters His creation.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:15 — The Promise of Victory</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God announces continuing hostility
+    between the serpent and the woman,
+    and between their offspring.
+  </p>
+
+  <p>
+    The passage describes a future conflict
+    in which the serpent will strike the offspring,
+    yet the serpent will ultimately be crushed.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    This verse introduces a promise of future victory
+    in the very chapter where humanity falls into sin.
+  </p>
+
+  <p>
+    Christians have historically recognized Genesis 3:15
+    as an early biblical promise
+    that anticipates the ultimate defeat of Satan.
+  </p>
+
+  <p>
+    The full meaning of that victory
+    becomes clearer as God's redemptive plan unfolds
+    throughout Scripture and reaches fulfillment
+    in Jesus Christ.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Christ-Centered Truth:</strong>
+
+    Human rebellion does not defeat God's purposes.
+    Even in the midst of judgment,
+    Scripture begins pointing toward One
+    who will ultimately defeat the serpent
+    and the power of evil.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:16 — Sin Affects Human Relationships</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    The consequences of the Fall
+    now affect childbirth
+    and the relationship between husband and wife.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Genesis 2 presented marriage
+    as a relationship of unity,
+    companionship,
+    and one flesh.
+  </p>
+
+  <p>
+    Genesis 3 shows that sin introduces pain,
+    struggle,
+    and disorder into human relationships.
+  </p>
+
+  <p>
+    The verse describes the effects of the Fall;
+    it should not be read as though sinful domination
+    is God's ideal for marriage.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Sin damages relationships
+    that God originally created for unity,
+    love,
+    faithfulness,
+    and mutual good.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:17–19 — The Ground Is Cursed</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    Because Adam listened to another voice
+    instead of obeying God's command,
+    the ground is cursed.
+  </p>
+
+  <p>
+    Work becomes painful and frustrating.
+    The earth produces thorns and thistles.
+  </p>
+
+  <p>
+    Human life will now end in physical death:
+    humanity returns to the dust
+    from which it was formed.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Work itself was not the curse.
+    Genesis 2:15 already showed Adam working
+    before sin entered the world.
+  </p>
+
+  <p>
+    The Fall changes the experience of work.
+    Productivity is now accompanied by frustration,
+    difficulty,
+    decay,
+    and eventual death.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Sin affects not only the human heart
+    but the entire human experience,
+    including work,
+    suffering,
+    creation,
+    and death.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:20 — Adam Names His Wife Eve</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    Adam names his wife Eve
+    because she would become
+    the mother of all living.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    The verse comes after the announcement of death,
+    yet it speaks about continuing life.
+  </p>
+
+  <p>
+    God's judgment is real,
+    but humanity is not immediately destroyed.
+    Human history will continue,
+    and so will God's purposes.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:21 — God Provides a Covering</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    God makes garments for Adam and Eve
+    and clothes them.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Earlier,
+    Adam and Eve attempted to cover themselves.
+  </p>
+
+  <p>
+    Now God Himself provides a more adequate covering.
+  </p>
+
+  <p>
+    The verse should not be forced
+    to say more than the text states,
+    but it clearly demonstrates God's care
+    for guilty human beings
+    even while they experience the consequences of sin.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Grace in the Midst of Judgment:</strong>
+
+    God judges sin,
+    yet He does not cease showing mercy,
+    provision,
+    and care toward fallen humanity.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 3:22–24 — Expelled From the Garden</h2>
+
+  <h3>Observation</h3>
+
+  <p>
+    Adam and Eve are expelled from Eden.
+  </p>
+
+  <p>
+    Access to the tree of life is guarded.
+  </p>
+
+  <p>
+    Humanity can no longer remain
+    in the garden as before.
+  </p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+    Sin brings separation.
+  </p>
+
+  <p>
+    Humanity loses the privileged garden environment
+    and direct access to the tree of life.
+  </p>
+
+  <p>
+    The chapter that began with temptation
+    ends with humanity outside Eden.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Biblical Truth:</strong>
+
+    Sin promises freedom,
+    but ultimately brings bondage,
+    loss,
+    separation,
+    and death.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>The Progression of Temptation and Sin</h2>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>Stage</th>
+        <th>What Happens in Genesis 3</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Question</td>
+        <td>God's Word is brought into doubt.</td>
+      </tr>
+
+      <tr>
+        <td>Distortion</td>
+        <td>Attention shifts from God's generosity to His prohibition.</td>
+      </tr>
+
+      <tr>
+        <td>Contradiction</td>
+        <td>The serpent denies God's warning.</td>
+      </tr>
+
+      <tr>
+        <td>Distrust</td>
+        <td>God's goodness is questioned.</td>
+      </tr>
+
+      <tr>
+        <td>Desire</td>
+        <td>The forbidden fruit becomes attractive.</td>
+      </tr>
+
+      <tr>
+        <td>Disobedience</td>
+        <td>Adam and Eve eat what God prohibited.</td>
+      </tr>
+
+      <tr>
+        <td>Shame</td>
+        <td>They recognize their nakedness and attempt to cover themselves.</td>
+      </tr>
+
+      <tr>
+        <td>Hiding</td>
+        <td>They withdraw from God's presence.</td>
+      </tr>
+
+      <tr>
+        <td>Blame</td>
+        <td>Responsibility is shifted to others.</td>
+      </tr>
+
+      <tr>
+        <td>Judgment</td>
+        <td>Sin brings painful consequences and death.</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 2 and Genesis 3 — The Great Contrast</h2>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>Genesis 2</th>
+        <th>Genesis 3</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Trust in God's provision</td>
+        <td>Doubt concerning God's goodness</td>
+      </tr>
+
+      <tr>
+        <td>Obedience under God's authority</td>
+        <td>Rebellion against God's authority</td>
+      </tr>
+
+      <tr>
+        <td>Naked and unashamed</td>
+        <td>Shame and self-covering</td>
+      </tr>
+
+      <tr>
+        <td>Open fellowship with God</td>
+        <td>Fear and hiding from God</td>
+      </tr>
+
+      <tr>
+        <td>Unity between man and woman</td>
+        <td>Blame and relational conflict</td>
+      </tr>
+
+      <tr>
+        <td>Meaningful work</td>
+        <td>Work marked by frustration and toil</td>
+      </tr>
+
+      <tr>
+        <td>Life</td>
+        <td>Death enters the human experience</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>What Genesis 3 Teaches Us About God</h2>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>What God Does</th>
+        <th>What It Reveals</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>God confronts Adam and Eve.</td>
+        <td>God is holy and holds humanity accountable.</td>
+      </tr>
+
+      <tr>
+        <td>God judges the serpent.</td>
+        <td>God opposes evil.</td>
+      </tr>
+
+      <tr>
+        <td>God announces consequences for sin.</td>
+        <td>God is just and His warnings are true.</td>
+      </tr>
+
+      <tr>
+        <td>God announces future victory over the serpent.</td>
+        <td>God's redemptive purpose continues.</td>
+      </tr>
+
+      <tr>
+        <td>God clothes Adam and Eve.</td>
+        <td>God shows mercy and provision even toward the guilty.</td>
+      </tr>
+
+      <tr>
+        <td>God guards the tree of life.</td>
+        <td>God remains sovereign over life and His creation.</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Christ-Centered Connection</h2>
+
+  <h3>Jesus Christ and the Defeat of the Serpent</h3>
+
+  <p>
+    Genesis 3:15 begins a biblical expectation
+    that evil will not have the final victory.
+  </p>
+
+  <p>
+    The rest of Scripture progressively reveals
+    how God's redemptive plan will unfold.
+  </p>
+
+  <p>
+    Jesus Christ ultimately defeats
+    the power of Satan,
+    sin,
+    and death through His saving work.
+  </p>
+
+
+  <h3>Adam and Christ</h3>
+
+  <p>
+    Romans 5:12–19 contrasts Adam
+    with Jesus Christ.
+  </p>
+
+  <p>
+    Through Adam's disobedience,
+    sin and death entered human history.
+    Through the obedience of Jesus Christ,
+    God provides righteousness and life
+    for those who belong to Him.
+  </p>
+
+  <p>
+    First Corinthians 15 also contrasts
+    Adam and Christ,
+    especially in relation to death and resurrection.
+  </p>
+
+
+  <div class="key-point">
+
+    <strong>Christ-Centered Truth:</strong>
+
+    Genesis 3 explains why humanity needs a Savior.
+
+    <br><br>
+
+    Adam's rebellion brings sin,
+    condemnation,
+    and death into the human story.
+
+    <br><br>
+
+    The New Testament reveals Jesus Christ
+    as the One who obeys where humanity failed,
+    bears the consequence of sin,
+    defeats death through His resurrection,
+    and brings eternal life to those who trust in Him.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Personal Application — How Should This Change My Life?</h2>
+
+  <ol>
+
+    <li>
+      Do I trust what God has said,
+      or do I allow culture,
+      feelings,
+      or personal desires to redefine His Word?
+    </li>
+
+    <li>
+      Where am I tempted to believe
+      that God's boundaries are keeping something good from me?
+    </li>
+
+    <li>
+      When I sin,
+      do I confess honestly,
+      or do I hide,
+      excuse,
+      minimize,
+      or blame others?
+    </li>
+
+    <li>
+      Do I understand that sin affects
+      my relationship with God,
+      other people,
+      and the way I experience life?
+    </li>
+
+    <li>
+      Am I trying to cover my guilt
+      through my own effort
+      rather than coming honestly before God?
+    </li>
+
+    <li>
+      How does God's promise of redemption
+      strengthen my faith in Jesus Christ?
+    </li>
+
+  </ol>
+
+  <div class="key-point">
+
+    <strong>Personal Application Truth:</strong>
+
+    Sin should never be treated lightly.
+    It separates,
+    deceives,
+    damages,
+    and destroys.
+
+    <br><br>
+
+    Yet God calls us to stop hiding,
+    face the truth about our sin,
+    and look to the redemption He provides
+    through Jesus Christ.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Study and Reflection Questions</h2>
+
+  <ol>
+
+    <li>
+      What was the serpent's first approach
+      toward God's command?
+    </li>
+
+    <li>
+      How does temptation move
+      from questioning God's Word
+      to directly contradicting it?
+    </li>
+
+    <li>
+      What does Genesis 3:6 reveal
+      about desire and disobedience?
+    </li>
+
+    <li>
+      What changed immediately
+      after Adam and Eve sinned?
+    </li>
+
+    <li>
+      Why did Adam and Eve hide from God?
+    </li>
+
+    <li>
+      How did Adam and Eve respond
+      when God confronted them?
+    </li>
+
+    <li>
+      What hope appears in Genesis 3:15?
+    </li>
+
+    <li>
+      How did sin affect marriage,
+      work,
+      creation,
+      and human life?
+    </li>
+
+    <li>
+      What does God's provision of clothing
+      reveal about His character?
+    </li>
+
+    <li>
+      How does Romans 5 contrast Adam
+      with Jesus Christ?
+    </li>
+
+  </ol>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Key Truths to Remember</h2>
+
+  <div class="scripture-box">
+
+    <p>
+      <strong>Genesis 3:1</strong> —
+      Temptation begins by questioning God's Word.
+    </p>
+
+    <p>
+      <strong>Genesis 3:4–5</strong> —
+      The serpent attacks God's truthfulness and goodness.
+    </p>
+
+    <p>
+      <strong>Genesis 3:6</strong> —
+      Desire becomes deliberate disobedience.
+    </p>
+
+    <p>
+      <strong>Genesis 3:7</strong> —
+      Sin immediately produces shame.
+    </p>
+
+    <p>
+      <strong>Genesis 3:8–10</strong> —
+      Sin causes humanity to hide from God.
+    </p>
+
+    <p>
+      <strong>Genesis 3:12–13</strong> —
+      Fallen humanity shifts blame.
+    </p>
+
+    <p>
+      <strong>Genesis 3:15</strong> —
+      God announces a future victory over the serpent.
+    </p>
+
+    <p>
+      <strong>Genesis 3:19</strong> —
+      Physical death becomes part of the human condition.
+    </p>
+
+    <p>
+      <strong>Genesis 3:21</strong> —
+      God provides covering for Adam and Eve.
+    </p>
+
+    <p>
+      <strong>Genesis 3:23–24</strong> —
+      Humanity is expelled from Eden.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Preparing for the Rest of Genesis</h2>
+
+  <p>
+    Genesis 3 explains the central problem
+    that shapes the rest of the biblical story:
+    humanity is now fallen,
+    sinful,
+    separated from God,
+    and subject to death.
+  </p>
+
+  <p>
+    Yet God's promise has also begun.
+  </p>
+
+  <p>
+    As Genesis continues,
+    we will see sin spreading through humanity,
+    but we will also see God preserving His purposes,
+    extending grace,
+    making covenant promises,
+    and moving history toward redemption.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Watch the story from this point forward:</strong>
+
+    Sin will spread.
+
+    <br><br>
+
+    Judgment will come.
+
+    <br><br>
+
+    Grace will continue.
+
+    <br><br>
+
+    God's promise of redemption will move forward.
+
+  </div>
+
+</section>
+
+
+<div class="navigation">
+
+  <a class="nav-button"
+     href="genesis-2-in-depth.html">
+    ← Review Genesis 2
+  </a>
+
+  <a class="nav-button gold"
+     href="genesis-in-depth.html">
+    Genesis In-Depth Studies
+  </a>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+  <p>&copy; 2026 Hightower Bible Ministry</p>
+
+  <p>To God Be the Glory</p>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Living by Faith - Grow in Christ study from Hightower Bible Ministry.">
+
+  <title>Living by Faith | Hightower Bible Ministry</title>
+
+  <style>
+
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-gold: #faf4e8;
+      --light-blue: #edf5fa;
+      --white: #ffffff;
+      --text: #1f2937;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 65px 22px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .eyebrow {
+      color: #f0d7a3;
+      font-size: .88rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+    }
+
+    .hero h1 {
+      margin: 10px auto 6px;
+      font-size: clamp(2.3rem, 5vw, 3.5rem);
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      color: #f0d7a3;
+      font-size: 1.35rem;
+      font-weight: bold;
+      margin: 8px 0 18px;
+    }
+
+    .hero p {
+      max-width: 820px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .hero-buttons {
+      margin-top: 26px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .button.secondary {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 42px 22px 65px;
+    }
+
+    .study-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+    }
+
+    .study-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.3;
+    }
+
+    .study-card h3 {
+      color: var(--blue);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .truth-box {
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .truth-box strong {
+      color: var(--navy);
+    }
+
+    .scripture-box {
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .question {
+      margin: 24px 0;
+    }
+
+    .question label {
+      display: block;
+      font-weight: bold;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 90px;
+      padding: 12px;
+      border: 1px solid #bac7d1;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    .faith-diagram {
+      background: var(--light-gold);
+      border: 1px solid #ead8b6;
+      border-radius: 12px;
+      padding: 28px 18px;
+      text-align: center;
+      margin: 24px 0;
+    }
+
+    .diagram-box {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--white);
+      border: 2px solid var(--gold);
+      border-radius: 9px;
+      padding: 16px;
+    }
+
+    .diagram-box strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.15rem;
+      margin-bottom: 5px;
+    }
+
+    .arrow {
+      font-size: 2rem;
+      color: var(--gold);
+      font-weight: bold;
+      margin: 7px 0;
+    }
+
+    .practice-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .practice-table th,
+    .practice-table td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      vertical-align: top;
+    }
+
+    .practice-table th {
+      background: var(--navy);
+      color: var(--white);
+      text-align: left;
+    }
+
+    .practice-table textarea {
+      min-height: 65px;
+      border: 0;
+      padding: 5px;
+    }
+
+    .reflection {
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 24px;
+    }
+
+    .memory {
+      background: var(--light-gold);
+      border: 2px solid var(--gold);
+      border-radius: 10px;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .memory h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .prayer {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 24px;
+    }
+
+    .prayer h2 {
+      color: #f0d7a3;
+    }
+
+    .bottom-nav {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .nav-button.gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 700px) {
+
+      .hero {
+        padding: 45px 18px;
+      }
+
+      main {
+        padding: 30px 15px 50px;
+      }
+
+      .study-card {
+        padding: 20px;
+      }
+
+      .practice-table {
+        font-size: .9rem;
+      }
+
+      .practice-table th,
+      .practice-table td {
+        padding: 8px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="brand">
+      Hightower Bible Ministry
+    </div>
+
+    <a href="grow-in-christ.html">
+      Back to Grow in Christ
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Grow in Christ • In-Depth Study 1
+  </div>
+
+  <h1>Living by Faith</h1>
+
+  <div class="subtitle">
+    Trusting God Beyond What We See
+  </div>
+
+  <p>
+    Biblical faith is trusting God because of who He is
+    and what He has revealed in Scripture,
+    even when circumstances are uncertain
+    and feelings change.
+  </p>
+
+  <div class="hero-buttons">
+
+    <a class="button"
+       href="downloads/HBM_Grow_in_Christ_Living_by_Faith.pdf"
+       target="_blank"
+       rel="noopener">
+      Download / Print PDF
+    </a>
+
+  </div>
+
+</section>
+
+
+<main>
+
+
+<section class="study-card">
+
+  <h2>Primary Scriptures</h2>
+
+  <div class="scripture-box">
+
+    <strong>Primary Scripture:</strong>
+    2 Corinthians 5:7
+
+    <br><br>
+
+    <strong>Supporting Scriptures:</strong>
+    Hebrews 11:1–6 • Romans 10:17 •
+    Proverbs 3:5–6 • Mark 9:23–24
+
+  </div>
+
+  <div class="truth-box">
+
+    <strong>Central Teaching Truth</strong>
+
+    <p>
+      Biblical faith is trusting God because of who He is
+      and what He has revealed in Scripture,
+      even when circumstances are uncertain
+      and feelings change.
+    </p>
+
+  </div>
+
+  <h3>Lesson Objective</h3>
+
+  <p>
+    Understand biblical faith,
+    distinguish faith from feelings,
+    and practice trusting God's Word
+    through everyday obedience.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Introduction — When the Outcome Is Unclear</h2>
+
+  <p>
+    A believer may pray about a family problem,
+    a financial concern,
+    or a difficult decision
+    without seeing an immediate answer.
+  </p>
+
+  <p>
+    Uncertainty can bring the question,
+    “Does God hear me?”
+  </p>
+
+  <p>
+    Biblical faith is not confidence
+    that every outcome will match our wishes.
+    It is confidence in God's character and wisdom,
+    even while we wait.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>1. Observation — What Does Scripture Say?</h2>
+
+  <p>
+    Read Hebrews 11:1–6 and 2 Corinthians 5:7.
+    Answer from the passages before discussing
+    their application.
+  </p>
+
+
+  <div class="question">
+
+    <label for="q1">
+      1. How does Hebrews 11:1 describe faith?
+    </label>
+
+    <textarea id="q1"
+              placeholder="Write your observation here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q2">
+      2. What does Hebrews 11:6 say about coming to God?
+    </label>
+
+    <textarea id="q2"
+              placeholder="Write your observation here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q3">
+      3. What examples of faith do you see
+      in Hebrews 11:4–5?
+    </label>
+
+    <textarea id="q3"
+              placeholder="Write your observation here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q4">
+      4. What contrast does Paul make
+      in 2 Corinthians 5:7?
+    </label>
+
+    <textarea id="q4"
+              placeholder="Write your observation here..."></textarea>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>2. Interpretation — What Does Scripture Mean?</h2>
+
+  <p>
+    Faith has an object:
+    the living God revealed in Jesus Christ.
+    It is not merely optimism
+    or confidence in our own ability.
+  </p>
+
+  <p>
+    Romans 10:17 connects faith
+    with hearing the message concerning Christ.
+    Biblical trust grows as we attend
+    to what God has spoken.
+  </p>
+
+  <p>
+    Hebrews 11 describes people
+    who obeyed God without knowing every detail
+    of what would happen.
+  </p>
+
+  <p>
+    Faith does not eliminate questions or grief.
+    It leads us to trust God's character
+    and follow His Word
+    while circumstances remain uncertain.
+  </p>
+
+  <p>
+    Feelings are real,
+    but they are changeable.
+    Feelings cannot serve as our final authority.
+  </p>
+
+  <p>
+    Scripture teaches us to weigh our responses
+    against God's truth
+    rather than treating emotional certainty
+    as proof of His favor.
+  </p>
+
+
+  <h3>Teaching Diagram — The Foundation of Faith</h3>
+
+  <div class="faith-diagram">
+
+    <div class="diagram-box">
+
+      <strong>GOD'S WORD</strong>
+
+      What God reveals about Himself
+      and His promises
+
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="diagram-box">
+
+      <strong>TRUSTING FAITH</strong>
+
+      Believing His truth
+      and relying on His character
+
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <div class="diagram-box">
+
+      <strong>DAILY OBEDIENCE</strong>
+
+      Following Christ
+      even when feelings and outcomes change
+
+    </div>
+
+  </div>
+
+
+  <div class="truth-box">
+
+    <strong>Key Truth:</strong>
+
+    God's Word is the foundation;
+    faith is our response;
+    obedience is one visible expression
+    of that trust.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>3. Application — How Do We Live God's Word?</h2>
+
+
+  <div class="question">
+
+    <label for="a1">
+      1. What situation is currently testing
+      my trust in God?
+    </label>
+
+    <textarea id="a1"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="a2">
+      2. Am I relying more on my feelings
+      or assumptions than on what Scripture teaches?
+    </label>
+
+    <textarea id="a2"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="a3">
+      3. What specific truth about God
+      speaks to my situation?
+    </label>
+
+    <textarea id="a3"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="a4">
+      4. What is one wise,
+      biblical step of obedience I can take
+      without knowing the outcome?
+    </label>
+
+    <textarea id="a4"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="reflection">
+
+    <h3>Reflection — Faith Is Not Denial</h3>
+
+    <p>
+      Trusting God does not mean pretending
+      that pain,
+      fear,
+      or unanswered questions do not exist.
+    </p>
+
+    <p>
+      In Mark 9:24,
+      a father brought both belief
+      and weakness to Jesus.
+    </p>
+
+    <p>
+      Honest prayer and faithful obedience
+      can coexist with uncertainty.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>4. Seven-Day Faith Practice</h2>
+
+  <p>
+    Read Proverbs 3:5–6 each morning.
+    Write one concern
+    and one appropriate step of obedience.
+  </p>
+
+  <p>
+    Review how the passage challenges you
+    to acknowledge God in that situation.
+  </p>
+
+
+  <table class="practice-table">
+
+    <thead>
+
+      <tr>
+        <th>Day</th>
+        <th>My Concern or Question</th>
+        <th>My Step of Trust and Obedience</th>
+      </tr>
+
+    </thead>
+
+
+    <tbody>
+
+      <tr>
+        <td>1</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>5. Group Discussion</h2>
+
+  <p>
+    How can we encourage someone
+    whose prayers seem unanswered
+    without suggesting that the person
+    simply lacks enough faith?
+  </p>
+
+  <div class="question">
+
+    <label for="discussion">
+      Notes from our discussion:
+    </label>
+
+    <textarea id="discussion"
+              placeholder="Write discussion notes here..."></textarea>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>6. Memory Verse</h2>
+
+  <div class="memory">
+
+    <h3>2 Corinthians 5:7</h3>
+
+    <p>
+      Read the verse in your Bible,
+      explain it in your own words,
+      and practice memorizing it.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="prayer">
+
+  <h2>Closing Prayer</h2>
+
+  <p>
+    Heavenly Father,
+    teach us to trust You because You are faithful.
+    Strengthen our faith through Your Word,
+    especially when life is uncertain.
+    Help us respond with wisdom and obedience,
+    and rest in Your care.
+    In Jesus' name, Amen.
+  </p>
+
+</section>
+
+
+<div class="bottom-nav">
+
+  <a class="nav-button"
+     href="grow-in-christ.html">
+    ← Back to Grow in Christ
+  </a>
+
+  <a class="nav-button gold"
+     href="downloads/HBM_Grow_in_Christ_Living_by_Faith.pdf"
+     target="_blank"
+     rel="noopener">
+    Download / Print PDF
+  </a>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+  <p>&copy; 2026 Hightower Bible Ministry</p>
+
+  <p>We Teach So People Can Understand and Live God's Word</p>
+
+  <p>To God Be the Glory</p>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="A whole-book overview of Psalms from Hightower Bible Ministry.">
+
+  <title>Psalms Overview | Hightower Bible Ministry</title>
+
+  <style>
+
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-blue: #edf5fa;
+      --light-gold: #faf4e8;
+      --white: #ffffff;
+      --text: #1f2937;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 68px 22px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .eyebrow {
+      color: #f0d7a3;
+      font-size: .86rem;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 10px auto 12px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      max-width: 950px;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      color: #eef5fa;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 42px 22px 65px;
+    }
+
+    .study-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+    }
+
+    .study-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.3;
+    }
+
+    .study-card h3 {
+      color: var(--blue);
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
+
+    .key-point {
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .info-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--gold);
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.04);
+    }
+
+    .info-box h3 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .book-box {
+      background: #f5f8fa;
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      padding: 17px;
+    }
+
+    .book-box strong {
+      color: var(--navy);
+    }
+
+    .study-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .study-box {
+      background: #f5f8fa;
+      border-left: 4px solid var(--gold);
+      border-radius: 9px;
+      padding: 20px;
+    }
+
+    .study-box h3 {
+      color: var(--blue);
+      margin-top: 0;
+    }
+
+    .study-button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .back-area {
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .back-button {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      padding: 11px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 800px) {
+
+      .info-grid,
+      .book-grid,
+      .study-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 48px 18px;
+      }
+
+      main {
+        padding: 30px 16px 50px;
+      }
+
+      .study-card {
+        padding: 21px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="brand">
+      Hightower Bible Ministry
+    </div>
+
+    <a href="bible-book-overviews.html">
+      Back to Bible Book Overviews
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Poetry • Bible Book Overview
+  </div>
+
+  <h1>
+    Psalms Overview — Worship, Prayer, Wisdom, and Trust in God
+  </h1>
+
+  <p>
+    The book of Psalms gives God's people words for worship,
+    prayer, praise, sorrow, repentance, thanksgiving,
+    confidence, and hope.
+    Through many different circumstances,
+    the Psalms continually direct the heart toward God.
+  </p>
+
+</section>
+
+
+<main>
+
+
+<section class="study-card">
+
+  <h2>Psalms at a Glance</h2>
+
+  <p>
+    Psalms is a collection of 150 inspired songs,
+    prayers, poems, and expressions of worship.
+  </p>
+
+  <p>
+    The Psalms reflect nearly every condition
+    of the human heart:
+    joy and grief,
+    confidence and fear,
+    victory and suffering,
+    repentance and thanksgiving,
+    confusion and hope.
+  </p>
+
+  <p>
+    Yet the central focus is not human emotion alone.
+    The Psalms continually turn our attention toward
+    the character, works, promises, justice,
+    mercy, faithfulness, and kingship of God.
+  </p>
+
+  <div class="key-point">
+
+    <strong>Central Truth:</strong>
+
+    The Psalms teach God's people
+    to bring every part of life before Him
+    while continuing to trust,
+    worship,
+    obey,
+    and hope in Him.
+
+  </div>
+
+</section>
+
+
+<div class="info-grid">
+
+
+  <div class="info-box">
+
+    <h3>Book</h3>
+
+    <p>
+      <strong>Psalms</strong>
+    </p>
+
+    <p>
+      A collection of 150 inspired psalms
+      arranged in five major books.
+    </p>
+
+  </div>
+
+
+  <div class="info-box">
+
+    <h3>Authors</h3>
+
+    <p>
+      Several writers contributed to Psalms,
+      including David,
+      Asaph,
+      the sons of Korah,
+      Solomon,
+      Moses,
+      Heman,
+      Ethan,
+      and anonymous writers.
+    </p>
+
+  </div>
+
+
+  <div class="info-box">
+
+    <h3>Main Emphasis</h3>
+
+    <p>
+      Worshiping and trusting God
+      in every circumstance of life.
+    </p>
+
+  </div>
+
+
+</div>
+
+
+<section class="study-card">
+
+  <h2>The Five Books of Psalms</h2>
+
+  <p>
+    The 150 Psalms are arranged into five major divisions.
+    Each division ends with an expression of praise
+    or blessing to God.
+  </p>
+
+  <div class="book-grid">
+
+
+    <div class="book-box">
+
+      <strong>Book One — Psalms 1–41</strong>
+
+      <p>
+        Many of these Psalms are associated with David.
+        Themes include trust,
+        conflict,
+        righteousness,
+        suffering,
+        prayer,
+        and dependence upon God.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Book Two — Psalms 42–72</strong>
+
+      <p>
+        These Psalms frequently express longing for God,
+        deliverance,
+        worship,
+        kingship,
+        and hope in God's righteous rule.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Book Three — Psalms 73–89</strong>
+
+      <p>
+        This section wrestles with difficult questions
+        involving suffering,
+        injustice,
+        national crisis,
+        God's covenant,
+        and His faithfulness.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Book Four — Psalms 90–106</strong>
+
+      <p>
+        This section strongly emphasizes
+        God's eternal kingship,
+        His sovereignty,
+        His faithfulness,
+        and His rule over all creation.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Book Five — Psalms 107–150</strong>
+
+      <p>
+        The final section contains strong themes
+        of thanksgiving,
+        God's Word,
+        pilgrimage,
+        deliverance,
+        worship,
+        and growing praise.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Major Types of Psalms</h2>
+
+
+  <h3>Psalms of Praise</h3>
+
+  <p>
+    These Psalms celebrate who God is
+    and what He has done.
+  </p>
+
+
+  <h3>Psalms of Lament</h3>
+
+  <p>
+    These prayers bring suffering,
+    confusion,
+    injustice,
+    grief,
+    and fear honestly before God.
+  </p>
+
+  <p>
+    Biblical lament does not mean abandoning faith.
+    It often expresses pain while continuing
+    to look toward God in trust.
+  </p>
+
+
+  <h3>Psalms of Thanksgiving</h3>
+
+  <p>
+    These Psalms thank God
+    for His deliverance,
+    protection,
+    provision,
+    mercy,
+    and answered prayer.
+  </p>
+
+
+  <h3>Wisdom Psalms</h3>
+
+  <p>
+    Wisdom Psalms contrast the way of righteousness
+    with the way of wickedness
+    and teach God's people how to live wisely.
+  </p>
+
+
+  <h3>Royal Psalms</h3>
+
+  <p>
+    These Psalms focus on Israel's king,
+    God's rule,
+    and the promises associated with His anointed king.
+  </p>
+
+
+  <h3>Penitential Psalms</h3>
+
+  <p>
+    These Psalms express confession,
+    repentance,
+    sorrow over sin,
+    and dependence upon God's mercy.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Major Themes in Psalms</h2>
+
+
+  <h3>God Is King</h3>
+
+  <p>
+    The Psalms repeatedly proclaim
+    God's sovereignty over creation,
+    nations,
+    history,
+    and His people.
+  </p>
+
+
+  <h3>God Is Worthy of Worship</h3>
+
+  <p>
+    Praise is rooted in God's character
+    and mighty works.
+  </p>
+
+
+  <h3>God Is Our Refuge</h3>
+
+  <p>
+    Many Psalms present God
+    as refuge,
+    fortress,
+    shield,
+    shepherd,
+    and deliverer.
+  </p>
+
+
+  <h3>God Is Holy and Righteous</h3>
+
+  <p>
+    God judges wickedness
+    and loves righteousness and justice.
+  </p>
+
+
+  <h3>God Is Merciful and Faithful</h3>
+
+  <p>
+    God's steadfast love,
+    compassion,
+    mercy,
+    covenant faithfulness,
+    and forgiveness appear throughout the Psalms.
+  </p>
+
+
+  <h3>God's Word Gives Wisdom</h3>
+
+  <p>
+    Psalms such as Psalm 1 and Psalm 119
+    emphasize delight in,
+    meditation upon,
+    and obedience to God's Word.
+  </p>
+
+
+  <h3>God Hears Prayer</h3>
+
+  <p>
+    The psalmists bring praise,
+    confession,
+    fear,
+    sorrow,
+    questions,
+    thanksgiving,
+    and requests directly to God.
+  </p>
+
+
+  <h3>Hope Must Rest in God</h3>
+
+  <p>
+    Circumstances change,
+    enemies arise,
+    strength fails,
+    and suffering comes,
+    yet the Psalms repeatedly call God's people
+    back to confidence in Him.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Important Psalms to Know</h2>
+
+  <div class="book-grid">
+
+
+    <div class="book-box">
+
+      <strong>Psalm 1 — Two Ways to Live</strong>
+
+      <p>
+        The righteous delight in God's instruction,
+        while the way of the wicked ultimately perishes.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 2 — God's Anointed King</strong>
+
+      <p>
+        The nations rebel,
+        but God establishes His King
+        and calls people to take refuge in Him.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 23 — The LORD Is My Shepherd</strong>
+
+      <p>
+        God provides,
+        guides,
+        protects,
+        and remains with His people.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 32 — Forgiveness and Confession</strong>
+
+      <p>
+        The Psalm celebrates
+        the blessing of forgiveness
+        and the importance of confessing sin.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 51 — Repentance</strong>
+
+      <p>
+        David seeks God's mercy,
+        cleansing,
+        renewal,
+        and restoration after sin.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 91 — Trust in God's Protection</strong>
+
+      <p>
+        The Psalm expresses confidence
+        in God as refuge and shelter.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 103 — Bless the LORD</strong>
+
+      <p>
+        God is praised for forgiveness,
+        compassion,
+        mercy,
+        healing,
+        and steadfast love.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 119 — God's Word</strong>
+
+      <p>
+        The longest Psalm celebrates
+        the truth,
+        wisdom,
+        guidance,
+        and value of God's Word.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 139 — God Knows Us Completely</strong>
+
+      <p>
+        God knows,
+        sees,
+        surrounds,
+        and understands us completely.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalms 146–150 — A Final Call to Praise</strong>
+
+      <p>
+        The Psalter concludes
+        with repeated calls
+        for everything to praise the LORD.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Psalms and Jesus Christ</h2>
+
+  <p>
+    The New Testament repeatedly uses Psalms
+    when explaining the identity,
+    suffering,
+    resurrection,
+    kingship,
+    and exaltation of Jesus Christ.
+  </p>
+
+  <p>
+    Certain Psalms receive especially important
+    Christ-centered application in the New Testament.
+  </p>
+
+  <div class="book-grid">
+
+
+    <div class="book-box">
+
+      <strong>Psalm 2</strong>
+
+      <p>
+        God's Anointed King
+        and Son is opposed by the nations.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 22</strong>
+
+      <p>
+        Its language of suffering
+        is connected in the New Testament
+        with the crucifixion of Jesus.
+      </p>
+
+    </div>
+
+
+    <div class="book-box">
+
+      <strong>Psalm 110</strong>
+
+      <p>
+        Jesus and the New Testament writers
+        repeatedly use this Psalm
+        in relation to the Messiah's lordship,
+        kingship,
+        and priesthood.
+      </p>
+
+    </div>
+
+
+  </div>
+
+  <div class="key-point">
+
+    <strong>Christ-Centered Truth:</strong>
+
+    We should first understand each Psalm
+    in its own biblical setting.
+
+    <br><br>
+
+    We should also recognize how the New Testament
+    uses the Psalms to help reveal
+    the person and work of Jesus Christ.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>How to Read the Psalms</h2>
+
+  <p>
+    Psalms should not be read merely as isolated quotations.
+    Each Psalm has its own message,
+    structure,
+    setting,
+    movement,
+    and purpose.
+  </p>
+
+  <ol>
+
+    <li>
+      Read the entire Psalm before focusing on one verse.
+    </li>
+
+    <li>
+      Notice who is speaking and what situation is described.
+    </li>
+
+    <li>
+      Look for what the Psalm reveals about God.
+    </li>
+
+    <li>
+      Observe movement in the Psalm —
+      for example,
+      from fear to trust,
+      lament to praise,
+      or confession to forgiveness.
+    </li>
+
+    <li>
+      Consider the type of Psalm you are reading.
+    </li>
+
+    <li>
+      Ask how the truth should shape
+      your worship,
+      prayer,
+      faith,
+      obedience,
+      and daily life.
+    </li>
+
+    <li>
+      Where Scripture itself makes the connection,
+      consider how the Psalm helps us understand Christ
+      and God's redemptive plan.
+    </li>
+
+  </ol>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>HBM Teaching Rhythm for Psalms</h2>
+
+  <div class="key-point">
+
+    <strong>
+      Read it • Understand it • Believe it • Live it
+    </strong>
+
+  </div>
+
+  <p>
+    <strong>Read it:</strong>
+    Read the entire Psalm carefully.
+  </p>
+
+  <p>
+    <strong>Understand it:</strong>
+    Examine what the Psalm says,
+    its setting,
+    its movement,
+    and what it reveals about God.
+  </p>
+
+  <p>
+    <strong>Believe it:</strong>
+    Trust what Scripture reveals
+    about God's character,
+    promises,
+    justice,
+    mercy,
+    and faithfulness.
+  </p>
+
+  <p>
+    <strong>Live it:</strong>
+    Allow the truth of the Psalm
+    to shape your worship,
+    prayer,
+    decisions,
+    attitudes,
+    and obedience.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Psalms In-Depth Studies</h2>
+
+  <p>
+    After seeing the whole book of Psalms,
+    continue into individual Psalm studies.
+    Each study examines the biblical text more closely
+    using the HBM approach of observation,
+    interpretation,
+    biblical truth,
+    application,
+    and Christ-centered application.
+  </p>
+
+
+  <div class="study-grid">
+
+
+    <div class="study-box">
+
+      <h3>
+        Psalm 1 — The Way of the Righteous and the Wicked
+      </h3>
+
+      <p>
+        Study the contrast between the person
+        who delights in God's Word
+        and the way of the wicked.
+        Psalm 1 introduces two paths,
+        two ways of living,
+        and two very different outcomes.
+      </p>
+
+      <a class="study-button"
+         href="psalm-1.html">
+        Open Psalm 1 Study
+      </a>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="key-point">
+
+    <strong>The study continues:</strong>
+
+    <br><br>
+
+    Additional Psalms will be added here
+    as Hightower Bible Ministry develops
+    its Psalms study library.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Key Truths to Remember</h2>
+
+  <p>
+    <strong>Psalm 1:</strong>
+    God's Word shapes the life
+    of the person who delights in it.
+  </p>
+
+  <p>
+    <strong>Psalm 23:</strong>
+    The LORD shepherds,
+    guides,
+    and cares for His people.
+  </p>
+
+  <p>
+    <strong>Psalm 46:</strong>
+    God is our refuge and strength.
+  </p>
+
+  <p>
+    <strong>Psalm 51:</strong>
+    Sinners need God's mercy,
+    cleansing,
+    and renewal.
+  </p>
+
+  <p>
+    <strong>Psalm 90:</strong>
+    God is eternal,
+    while human life is brief.
+  </p>
+
+  <p>
+    <strong>Psalm 103:</strong>
+    God is compassionate,
+    gracious,
+    forgiving,
+    and rich in steadfast love.
+  </p>
+
+  <p>
+    <strong>Psalm 119:</strong>
+    God's Word gives truth,
+    wisdom,
+    guidance,
+    and direction.
+  </p>
+
+  <p>
+    <strong>Psalm 150:</strong>
+    The Psalter ends
+    with a universal call to praise the LORD.
+  </p>
+
+</section>
+
+
+<div class="back-area">
+
+  <a class="back-button"
+     href="bible-book-overviews.html">
+    ← Back to Bible Book Overviews
+  </a>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+  <p>&copy; 2026 Hightower Bible Ministry</p>
+
+  <p>To God Be the Glory</p>
+
+</footer>
+
+
+</body>
+</html>

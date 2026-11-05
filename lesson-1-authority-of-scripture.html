@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Biblical Truths and Sound Doctrine Lesson 1 - The Authority of Scripture.">
+
+  <title>The Authority of Scripture | Hightower Bible Ministry</title>
+
+  <style>
+
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-gold: #faf4e8;
+      --light-blue: #edf5fa;
+      --white: #ffffff;
+      --text: #1f2937;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 65px 22px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .eyebrow {
+      color: #f0d7a3;
+      font-size: .88rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+    }
+
+    .hero h1 {
+      margin: 10px auto 8px;
+      font-size: clamp(2.3rem, 5vw, 3.6rem);
+      line-height: 1.15;
+    }
+
+    .hero h2 {
+      color: #f0d7a3;
+      font-size: 1.4rem;
+      margin: 8px 0 18px;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .hero-buttons {
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 0;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 42px 22px 65px;
+    }
+
+    .study-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+    }
+
+    .study-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.3;
+    }
+
+    .study-card h3 {
+      color: var(--blue);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .scripture-box {
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .truth-box {
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .question {
+      margin: 24px 0;
+    }
+
+    .question label {
+      display: block;
+      color: var(--navy);
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 90px;
+      padding: 12px;
+      border: 1px solid #bac7d1;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    .application-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 22px 0;
+    }
+
+    .application-table th,
+    .application-table td {
+      border: 1px solid var(--border);
+      padding: 13px;
+      vertical-align: top;
+    }
+
+    .application-table th {
+      background: var(--navy);
+      color: var(--white);
+      text-align: left;
+    }
+
+    .method-step {
+      background: #f5f8fa;
+      border-left: 4px solid var(--gold);
+      border-radius: 8px;
+      padding: 15px 18px;
+      margin: 12px 0;
+    }
+
+    .method-step strong {
+      color: var(--navy);
+    }
+
+    .prayer {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .prayer h2 {
+      color: #f0d7a3;
+      margin-top: 0;
+    }
+
+    .bottom-nav {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .nav-button.gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 700px) {
+
+      .hero {
+        padding: 45px 18px;
+      }
+
+      main {
+        padding: 30px 15px 50px;
+      }
+
+      .study-card {
+        padding: 20px;
+      }
+
+      .application-table {
+        font-size: .9rem;
+      }
+
+      .application-table th,
+      .application-table td {
+        padding: 8px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="brand">
+      Hightower Bible Ministry
+    </div>
+
+    <a href="biblical-doctrine.html">
+      Back to Biblical Doctrine
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Biblical Truths &amp; Sound Doctrine • Lesson 1
+  </div>
+
+  <h1>
+    The Authority of Scripture
+  </h1>
+
+  <h2>
+    Why Is the Bible Our Final Authority?
+  </h2>
+
+  <p>
+    The Bible is God's inspired Word,
+    given to reveal His truth,
+    guide our beliefs,
+    correct our conduct,
+    and equip us to live lives that glorify Him.
+  </p>
+
+  <div class="hero-buttons">
+
+    <a class="button"
+       href="lesson-1-authority-of-scripture.pdf"
+       target="_blank"
+       rel="noopener">
+      Download / Print PDF
+    </a>
+
+  </div>
+
+</section>
+
+
+<main>
+
+
+<section class="study-card">
+
+  <h2>Lesson Foundation</h2>
+
+  <div class="scripture-box">
+
+    <strong>Primary Passage:</strong>
+    2 Timothy 3:14–17
+
+    <br><br>
+
+    <strong>Supporting Passages:</strong>
+    2 Peter 1:20–21 • Psalm 19:7–11 •
+    John 17:17 • Matthew 4:1–11 •
+    Acts 17:10–12 • James 1:22–25
+
+  </div>
+
+  <div class="truth-box">
+
+    <strong>Central Truth</strong>
+
+    <p>
+      The Bible is God's inspired Word,
+      given to reveal His truth,
+      guide our beliefs,
+      correct our conduct,
+      and equip us to live lives that glorify Him.
+    </p>
+
+  </div>
+
+  <h3>Lesson Objective</h3>
+
+  <p>
+    Explain the divine origin of Scripture,
+    identify its purposes,
+    and describe how it should govern
+    Christian belief and daily living.
+  </p>
+
+</section>
+
+
+<div class="truth-box">
+
+  <strong>Your Study Notes</strong>
+
+  <p>
+    Your responses on this page remain private
+    and are not submitted to Hightower Bible Ministry.
+    If you want to keep your answers,
+    use the Print / Save option before leaving the page.
+  </p>
+
+  <button type="button"
+          class="button"
+          onclick="window.print()">
+    Print / Save My Study
+  </button>
+
+</div>
+
+
+<section class="study-card">
+
+  <h2>
+    Part 1 — Introduction: Who Has the Final Word?
+  </h2>
+
+  <p>
+    Every day we encounter competing claims
+    about what is true and how we should live.
+    Religious traditions,
+    personal experiences,
+    cultural opinions,
+    and respected teachers may all influence us.
+  </p>
+
+  <p>
+    Yet the Christian must ask:
+    Who or what has the final authority
+    to determine what I believe
+    and how I live?
+  </p>
+
+  <div class="scripture-box">
+
+    Jesus prayed,
+
+    <br><br>
+
+    <strong>
+      “Sanctify them in the truth;
+      your word is truth.”
+    </strong>
+
+    <br>
+
+    — John 17:17
+
+  </div>
+
+  <p>
+    God's Word must be our standard
+    for examining our beliefs,
+    teachings,
+    and conduct.
+  </p>
+
+
+  <div class="question">
+
+    <label for="opening">
+      Opening Discussion:
+      Describe one situation in which
+      a widely accepted opinion might conflict
+      with biblical teaching.
+      How could a believer evaluate it?
+    </label>
+
+    <textarea id="opening"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>
+    Part 2 — Observation: What Does the Passage Say?
+  </h2>
+
+  <p>
+    Read 2 Timothy 3:14–17.
+    Paul urges Timothy to continue
+    in what he learned
+    and reminds him of the value
+    and source of the sacred writings.
+  </p>
+
+  <ul>
+
+    <li>
+      <strong>Verse 14:</strong>
+      Timothy is instructed to continue
+      in the truths he has learned.
+    </li>
+
+    <li>
+      <strong>Verse 15:</strong>
+      The sacred writings make a person wise
+      for salvation through faith in Christ Jesus.
+    </li>
+
+    <li>
+      <strong>Verse 16:</strong>
+      All Scripture is God-breathed
+      and profitable for teaching,
+      reproof,
+      correction,
+      and training in righteousness.
+    </li>
+
+    <li>
+      <strong>Verse 17:</strong>
+      The result is that the servant of God
+      is equipped for every good work.
+    </li>
+
+  </ul>
+
+
+  <div class="truth-box">
+
+    <strong>Observation to Remember:</strong>
+
+    <p>
+      Paul identifies Scripture's divine source,
+      its saving purpose,
+      and its practical value
+      for Christian service.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>
+    Part 3 — Interpretation: What Does It Mean?
+  </h2>
+
+
+  <h3>
+    1. Scripture Originates from God
+  </h3>
+
+  <p>
+    <strong>
+      2 Timothy 3:16 • 2 Peter 1:20–21
+    </strong>
+  </p>
+
+  <p>
+    The term <em>theopneustos</em>
+    means “God-breathed.”
+    God used human authors,
+    with distinct vocabulary
+    and writing styles,
+    as the Holy Spirit worked through them
+    to communicate His intended message.
+  </p>
+
+  <p>
+    Inspiration does not mean
+    every writer expressed himself
+    in exactly the same way.
+  </p>
+
+
+  <h3>
+    2. Scripture Carries Divine Authority
+  </h3>
+
+  <p>
+    <strong>
+      John 17:17 • Matthew 4:1–11
+    </strong>
+  </p>
+
+  <p>
+    Because Scripture ultimately comes from God,
+    it is the final authority
+    for Christian doctrine and conduct.
+  </p>
+
+  <p>
+    Jesus responded to temptation
+    by appealing to what was written in Scripture.
+    Divine revelation stands above human opinion.
+  </p>
+
+
+  <h3>
+    3. Scripture Is Sufficient for Its God-Given Purpose
+  </h3>
+
+  <p>
+    <strong>
+      2 Timothy 3:15–17 • Psalm 19:7–11
+    </strong>
+  </p>
+
+  <p>
+    The Scriptures teach the way of salvation
+    through faith in Christ
+    and equip believers for faithful service.
+  </p>
+
+  <p>
+    Sufficiency does not mean
+    the Bible is a manual
+    for every scientific or technical question.
+  </p>
+
+  <p>
+    It means God has provided
+    the saving truth
+    and spiritual instruction
+    He intends His people to have.
+  </p>
+
+
+  <h3>
+    4. Scripture Must Be Interpreted Carefully
+  </h3>
+
+  <p>
+    <strong>
+      2 Timothy 2:15 • Acts 17:10–12
+    </strong>
+  </p>
+
+  <p>
+    The authority belongs to Scripture,
+    not to a teacher's personal interpretation.
+  </p>
+
+  <p>
+    Read a passage in context.
+    Ask what the biblical author meant,
+    consider its genre and audience,
+    and compare it with other relevant passages.
+  </p>
+
+  <p>
+    The Bereans examined the Scriptures
+    to evaluate the teaching they heard.
+    HBM teachings should be examined
+    in the same way.
+  </p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>
+    Part 4 — Application: How Should We Respond?
+  </h2>
+
+
+  <table class="application-table">
+
+    <thead>
+
+      <tr>
+        <th>Biblical Truth</th>
+        <th>Response in Daily Life</th>
+      </tr>
+
+    </thead>
+
+
+    <tbody>
+
+      <tr>
+        <td>God is the source of Scripture.</td>
+        <td>Read with reverence and humility.</td>
+      </tr>
+
+      <tr>
+        <td>Scripture teaches truth.</td>
+        <td>Test personal beliefs and teachings against it.</td>
+      </tr>
+
+      <tr>
+        <td>Scripture corrects errors.</td>
+        <td>Accept correction and change course.</td>
+      </tr>
+
+      <tr>
+        <td>Scripture trains in righteousness.</td>
+        <td>Practice obedience and godly habits.</td>
+      </tr>
+
+      <tr>
+        <td>Scripture equips God's people.</td>
+        <td>Serve faithfully and help others learn.</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+  <div class="truth-box">
+
+    <strong>James 1:22–25</strong>
+
+    <p>
+      Hearing biblical instruction
+      is not the same as obeying it.
+      Spiritual growth requires us
+      to put the Word into practice.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>
+    Part 5 — Guided Bible Study Questions
+  </h2>
+
+
+  <div class="question">
+
+    <label for="q1">
+      1. What does “God-breathed”
+      tell us about the origin of Scripture?
+    </label>
+
+    <textarea id="q1"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q2">
+      2. According to 2 Timothy 3:15,
+      how do the sacred writings relate to salvation?
+    </label>
+
+    <textarea id="q2"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q3">
+      3. Which of the four purposes in verse 16
+      do you most need right now:
+      teaching, reproof, correction, or training?
+      Why?
+    </label>
+
+    <textarea id="q3"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q4">
+      4. What is the difference between
+      the authority of Scripture
+      and the authority of someone's interpretation
+      of Scripture?
+    </label>
+
+    <textarea id="q4"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q5">
+      5. How does Acts 17:11 provide
+      an example of responsible listening and study?
+    </label>
+
+    <textarea id="q5"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+
+  <div class="question">
+
+    <label for="q6">
+      6. What one action will you take this week
+      to become a doer of God's Word?
+    </label>
+
+    <textarea id="q6"
+              placeholder="Write your response here..."></textarea>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>
+    Part 6 — A Simple Method for Examining Biblical Teaching
+  </h2>
+
+
+  <div class="method-step">
+
+    <strong>Read</strong>
+
+    <br>
+
+    Read the whole passage
+    and surrounding context.
+
+  </div>
+
+
+  <div class="method-step">
+
+    <strong>Observe</strong>
+
+    <br>
+
+    Identify repeated words,
+    commands,
+    comparisons,
+    and the original audience.
+
+  </div>
+
+
+  <div class="method-step">
+
+    <strong>Interpret</strong>
+
+    <br>
+
+    Ask what the author intended
+    to communicate.
+
+  </div>
+
+
+  <div class="method-step">
+
+    <strong>Confirm</strong>
+
+    <br>
+
+    Examine other relevant Scriptures
+    without lifting them out of context.
+
+  </div>
+
+
+  <div class="method-step">
+
+    <strong>Apply</strong>
+
+    <br>
+
+    Identify an action
+    that follows from the passage's meaning.
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>
+    Memory Verse and Weekly Assignment
+  </h2>
+
+  <div class="scripture-box">
+
+    <strong>Memory Verse:</strong>
+    2 Timothy 3:16–17
+
+    <br><br>
+
+    Read it in your preferred Bible translation,
+    then explain its meaning in your own words.
+
+  </div>
+
+
+  <h3>Weekly Assignment</h3>
+
+  <p>
+    Read Psalm 19:7–11
+    and write down each description
+    of God's Word
+    and the benefit associated with it.
+  </p>
+
+  <p>
+    During the week,
+    examine one belief or habit
+    in light of a passage
+    studied in its context.
+  </p>
+
+
+  <div class="question">
+
+    <label for="assignment">
+      My notes from Psalm 19:7–11:
+    </label>
+
+    <textarea id="assignment"
+              placeholder="Write your study notes here..."></textarea>
+
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>
+    Closing Reflection
+  </h2>
+
+  <div class="question">
+
+    <label for="reflection">
+      When a belief I hold conflicts
+      with Scripture rightly interpreted,
+      am I prepared to allow God's Word
+      to correct me?
+    </label>
+
+    <textarea id="reflection"
+              placeholder="Write your reflection here..."></textarea>
+
+  </div>
+
+
+  <div class="truth-box">
+
+    <strong>Teaching Note</strong>
+
+    <p>
+      In 2 Timothy 3:15,
+      the “sacred writings” Timothy knew
+      from childhood refer especially
+      to the Old Testament Scriptures.
+    </p>
+
+    <p>
+      Christians read this passage
+      alongside the New Testament witness
+      to Christ and the apostles.
+    </p>
+
+    <p>
+      The doctrine of the biblical canon
+      deserves its own later lesson.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="prayer">
+
+  <h2>Closing Prayer</h2>
+
+  <p>
+    Father,
+    give us humble hearts
+    to receive Your Word,
+    wisdom to understand it rightly,
+    courage to obey it,
+    and love to share its truth with others.
+  </p>
+
+  <p>
+    Help us glorify You
+    in both what we teach
+    and how we live.
+    In Jesus' name, amen.
+  </p>
+
+</section>
+
+
+<div class="bottom-nav">
+
+  <a class="nav-button"
+     href="biblical-doctrine.html">
+    ← Back to Biblical Doctrine
+  </a>
+
+  <a class="nav-button gold"
+     href="lesson-1-authority-of-scripture.pdf"
+     target="_blank"
+     rel="noopener">
+    Download / Print PDF
+  </a>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+  <p>&copy; 2026 Hightower Bible Ministry</p>
+
+  <p>We Teach So People Can Understand and Live God's Word</p>
+
+  <p>To God Be the Glory</p>
+
+</footer>
+
+
+</body>
+</html>

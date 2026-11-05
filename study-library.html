@@ -373,7 +373,6 @@
     type="text"
     id="studySearch"
     placeholder="Search the Study Library..."
-    oninput="filterStudies()"
     aria-label="Search Study Library">
 
   <div class="quick-links">
@@ -403,9 +402,10 @@
     Try another word or browse one of the sections below.
     More subjects will continue to be added to the library.
   </p>
-
+  
 </div>
-  <section id="start-here">
+  
+<section id="start-here">
 
   <h2 class="section-title">
     New to Christianity? Start Here
@@ -448,6 +448,54 @@
 
 </section>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const searchBox = document.getElementById("studySearch");
+  const cards = document.querySelectorAll(".searchable");
+  const noResults = document.getElementById("noResults");
+
+  searchBox.addEventListener("input", function () {
+
+    const searchText = searchBox.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach(function (card) {
+
+      const cardText = card.textContent.toLowerCase();
+
+      const searchTerms =
+        (card.getAttribute("data-search") || "").toLowerCase();
+
+      if (
+        searchText === "" ||
+        cardText.includes(searchText) ||
+        searchTerms.includes(searchText)
+      ) {
+
+        card.style.display = "";
+        visibleCount++;
+
+      } else {
+
+        card.style.display = "none";
+
+      }
+
+    });
+
+    if (searchText !== "" && visibleCount === 0) {
+      noResults.style.display = "block";
+    } else {
+      noResults.style.display = "none";
+    }
+
+  });
+
+});
+
+</script>
 
 <section id="bible-books">
 

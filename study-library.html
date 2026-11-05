@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Study Library for Hightower Bible Ministry. Find Bible studies, doctrine lessons, Christian living studies, and sermons by subject.">
+
+  <title>Study Library | Hightower Bible Ministry</title>
+
+
+  <style>
+
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-gold: #faf4e8;
+      --light-blue: #edf5fa;
+      --white: #ffffff;
+      --text: #1f2937;
+      --border: #d7dee5;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 22px;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 65px 22px;
+      border-bottom: 5px solid var(--gold);
+    }
+
+    .hero .eyebrow {
+      color: #f2d99f;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+    }
+
+    .hero h1 {
+      margin: 10px 0;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+    }
+
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 42px 20px 70px;
+    }
+
+
+    .search-panel {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 36px;
+      box-shadow: 0 5px 16px rgba(0,0,0,.06);
+      text-align: center;
+    }
+
+    .search-panel h2 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .search-panel input {
+      width: 100%;
+      max-width: 700px;
+      padding: 15px 18px;
+      font-size: 1.05rem;
+      border: 2px solid #b9c8d5;
+      border-radius: 9px;
+    }
+
+    .search-help {
+      color: #53606b;
+      margin-bottom: 18px;
+    }
+
+
+    .quick-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .quick-links a {
+      background: var(--light-blue);
+      color: var(--navy);
+      border: 1px solid #c8d8e3;
+      border-radius: 20px;
+      padding: 8px 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    .section-title {
+      color: var(--navy);
+      border-bottom: 3px solid var(--gold);
+      padding-bottom: 8px;
+      margin-top: 42px;
+    }
+
+
+    .library-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+
+    .study-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 13px rgba(0,0,0,.05);
+    }
+
+    .study-card h3 {
+      color: var(--navy);
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .study-card p {
+      margin-top: 8px;
+    }
+
+    .category {
+      display: inline-block;
+      color: var(--blue);
+      font-size: .82rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      margin-bottom: 8px;
+    }
+
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 16px;
+      border-radius: 7px;
+      margin-top: 8px;
+    }
+
+    .button.blue {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+
+    .category-box {
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 10px;
+      padding: 24px;
+      margin: 28px 0;
+    }
+
+    .category-box h3 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+
+    .subject-index {
+      background: var(--light-gold);
+      border: 1px solid #e5d3aa;
+      border-radius: 12px;
+      padding: 26px;
+      margin-top: 25px;
+    }
+
+    .subject-index h3 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .subject-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .subject-links a {
+      background: var(--white);
+      color: var(--navy);
+      border: 1px solid #d4c299;
+      border-radius: 7px;
+      padding: 9px 13px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    .no-results {
+      display: none;
+      text-align: center;
+      background: #fff4e5;
+      border: 1px solid #e1c79a;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 28px 18px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+
+    @media (max-width: 650px) {
+
+      .hero {
+        padding: 45px 18px;
+      }
+
+      main {
+        padding: 30px 15px 55px;
+      }
+
+      .search-panel {
+        padding: 20px;
+      }
+
+      .study-card {
+        padding: 20px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="brand">
+      Hightower Bible Ministry
+    </div>
+
+    <a href="index.html">
+      Home
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Hightower Bible Ministry
+  </div>
+
+  <h1>
+    Study Library
+  </h1>
+
+  <p>
+    Find Bible studies, Christian growth lessons,
+    biblical doctrine, and sermons without having
+    to know where they are located on the website.
+  </p>
+
+</section>
+
+
+<main>
+
+
+<section class="search-panel">
+
+  <h2>
+    What Would You Like to Study?
+  </h2>
+
+  <p class="search-help">
+    Type a subject such as
+    <strong>faith</strong>,
+    <strong>Jesus</strong>,
+    <strong>Scripture</strong>,
+    <strong>God</strong>,
+    <strong>Genesis</strong>,
+    or <strong>Psalms</strong>.
+  </p>
+
+  <input
+    type="text"
+    id="studySearch"
+    placeholder="Search the Study Library..."
+    oninput="filterStudies()"
+    aria-label="Search Study Library">
+
+  <div class="quick-links">
+
+    <a href="#bible-books">Bible Books</a>
+
+    <a href="#doctrine">Biblical Doctrine</a>
+
+    <a href="#growth">Grow in Christ</a>
+
+    <a href="#christian-living">Christian Living</a>
+
+    <a href="#sermons">Sermons</a>
+
+    <a href="#subjects">Browse Subjects</a>
+
+  </div>
+
+</section>
+
+
+<div id="noResults" class="no-results">
+
+  <strong>No study was found for that search yet.</strong>
+
+  <p>
+    Try another word or browse one of the sections below.
+    More subjects will continue to be added to the library.
+  </p>
+
+</div>
+
+
+<section id="bible-books">
+
+  <h2 class="section-title">
+    Bible Book Studies
+  </h2>
+
+  <p>
+    Study entire books of the Bible and then continue
+    into deeper chapter-by-chapter studies.
+  </p>
+
+
+  <div class="library-grid">
+
+
+    <article class="study-card searchable"
+      data-search="genesis creation beginning old testament bible book study">
+
+      <span class="category">
+        Bible Book
+      </span>
+
+      <h3>
+        Genesis
+      </h3>
+
+      <p>
+        Explore the book of beginnings,
+        creation, humanity, sin, God's promises,
+        and the foundations of His redemptive plan.
+      </p>
+
+      <a class="button"
+         href="genesis-overview.html">
+        Study Genesis
+      </a>
+
+    </article>
+
+
+    <article class="study-card searchable"
+      data-search="psalms prayer worship praise trust suffering wisdom old testament">
+
+      <span class="category">
+        Bible Book
+      </span>
+
+      <h3>
+        Psalms
+      </h3>
+
+      <p>
+        Explore worship, prayer, praise,
+        suffering, wisdom, and trust in God
+        through the Psalms.
+      </p>
+
+      <a class="button"
+         href="psalms-overview.html">
+        Study Psalms
+      </a>
+
+    </article>
+
+
+    <article class="study-card searchable"
+      data-search="john gospel jesus christ salvation word became flesh new birth">
+
+      <span class="category">
+        Bible Book
+      </span>
+
+      <h3>
+        Gospel of John
+      </h3>
+
+      <p>
+        Discover who Jesus is,
+        why He came,
+        and what it means to believe in Him
+        and receive eternal life.
+      </p>
+
+      <a class="button"
+         href="gospel-of-john-overview.html">
+        Study John
+      </a>
+
+    </article>
+
+
+  </div>
+
+
+  <div class="category-box">
+
+    <h3>
+      Browse All Bible Book Overviews
+    </h3>
+
+    <p>
+      Visit the complete Bible Book Overviews page
+      to see Old Testament and New Testament books
+      as studies are added.
+    </p>
+
+    <a class="button blue"
+       href="bible-book-overviews.html">
+      View Bible Book Overviews
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<section id="doctrine">
+
+  <h2 class="section-title">
+    Biblical Truths &amp; Sound Doctrine
+  </h2>
+
+  <p>
+    Learn foundational Christian truths
+    and examine them carefully from Scripture.
+  </p>
+
+
+  <div class="library-grid">
+
+
+    <article class="study-card searchable"
+      data-search="authority scripture bible word of god inspiration truth final authority doctrine">
+
+      <span class="category">
+        Biblical Doctrine
+      </span>
+
+      <h3>
+        The Authority of Scripture
+      </h3>
+
+      <p>
+        Why is the Bible our final authority
+        for Christian belief and daily living?
+      </p>
+
+      <a class="button"
+         href="lesson-1-authority-of-scripture.html">
+        Study the Authority of Scripture
+      </a>
+
+    </article>
+
+
+    <article class="study-card searchable"
+      data-search="god nature attributes holiness knowing god doctrine character">
+
+      <span class="category">
+        Biblical Doctrine
+      </span>
+
+      <h3>
+        The Nature and Attributes of God
+      </h3>
+
+      <p>
+        Grow in your understanding of who God is
+        through what He has revealed
+        about His nature and character.
+      </p>
+
+      <a class="button"
+         href="lesson-2-why-knowing-god-matters.html">
+        Study the Attributes of God
+      </a>
+
+    </article>
+
+
+    <article class="study-card searchable"
+      data-search="jesus christ son of god messiah deity humanity savior lord doctrine">
+
+      <span class="category">
+        Biblical Doctrine
+      </span>
+
+      <h3>
+        Jesus Christ
+      </h3>
+
+      <p>
+        Examine the biblical answer
+        to the question:
+        Who is Jesus Christ?
+      </p>
+
+      <a class="button"
+         href="lesson-3-who-is-jesus-christ.html">
+        Study Jesus Christ
+      </a>
+
+    </article>
+
+
+  </div>
+
+
+  <div class="category-box">
+
+    <h3>
+      Biblical Truths &amp; Sound Doctrine Library
+    </h3>
+
+    <p>
+      Visit the complete doctrine section
+      for current lessons and upcoming studies.
+    </p>
+
+    <a class="button blue"
+       href="biblical-doctrine.html">
+      View Biblical Doctrine
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<section id="growth">
+
+  <h2 class="section-title">
+    Grow in Christ
+  </h2>
+
+  <p>
+    Practical studies designed to help believers
+    mature in faith and live God's Word.
+  </p>
+
+
+  <div class="library-grid">
+
+
+    <article class="study-card searchable"
+      data-search="faith living by faith trust god obedience christian growth believing">
+
+      <span class="category">
+        Grow in Christ
+      </span>
+
+      <h3>
+        Living by Faith
+      </h3>
+
+      <p>
+        Learn what it means to trust God
+        beyond what we can see
+        and respond with daily obedience.
+      </p>
+
+      <a class="button"
+         href="living-by-faith.html">
+        Study Living by Faith
+      </a>
+
+    </article>
+
+
+    <article class="study-card searchable"
+      data-search="grow in christ discipleship spiritual growth christian maturity faith">
+
+      <span class="category">
+        Christian Growth
+      </span>
+
+      <h3>
+        Grow in Christ Studies
+      </h3>
+
+      <p>
+        Browse studies created to strengthen
+        Christian faith, spiritual maturity,
+        and daily discipleship.
+      </p>
+
+      <a class="button"
+         href="grow-in-christ.html">
+        View Grow in Christ
+      </a>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<section id="christian-living">
+
+  <h2 class="section-title">
+    Practical Christian Living
+  </h2>
+
+  <p>
+    Biblical guidance for applying God's Word
+    to everyday Christian life.
+  </p>
+
+
+  <div class="library-grid">
+
+
+    <article class="study-card searchable"
+      data-search="practical christian living discipleship daily life obedience growth lessons">
+
+      <span class="category">
+        Christian Living
+      </span>
+
+      <h3>
+        Practical Christian Living Lessons
+      </h3>
+
+      <p>
+        Study practical biblical principles
+        for walking with Christ,
+        growing spiritually,
+        and putting faith into action.
+      </p>
+
+      <a class="button"
+         href="christian-living.html">
+        View Christian Living
+      </a>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<section id="sermons">
+
+  <h2 class="section-title">
+    Sermons &amp; Messages
+  </h2>
+
+
+  <div class="library-grid">
+
+
+    <article class="study-card searchable"
+      data-search="sermons messages preaching teaching psalms video bible message">
+
+      <span class="category">
+        Sermons
+      </span>
+
+      <h3>
+        Sermons &amp; Messages
+      </h3>
+
+      <p>
+        Watch Bible teaching,
+        sermons,
+        and ministry messages
+        gathered in one place.
+      </p>
+
+      <a class="button"
+         href="sermons.html">
+        Watch Sermons &amp; Messages
+      </a>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<section id="subjects">
+
+  <h2 class="section-title">
+    Browse by Subject
+  </h2>
+
+  <p>
+    Sometimes you know the subject you want to study
+    even when you do not know which ministry section
+    contains it. Use these direct links.
+  </p>
+
+
+  <div class="subject-index">
+
+    <h3>
+      Subjects A–Z
+    </h3>
+
+    <div class="subject-links">
+
+      <a href="lesson-1-authority-of-scripture.html">
+        Authority of Scripture
+      </a>
+
+      <a href="bible-book-overviews.html">
+        Bible Books
+      </a>
+
+      <a href="christian-living.html">
+        Christian Living
+      </a>
+
+      <a href="genesis-overview.html">
+        Creation &amp; Genesis
+      </a>
+
+      <a href="living-by-faith.html">
+        Faith
+      </a>
+
+      <a href="lesson-2-why-knowing-god-matters.html">
+        God
+      </a>
+
+      <a href="gospel-of-john-overview.html">
+        Gospel of John
+      </a>
+
+      <a href="grow-in-christ.html">
+        Growing in Christ
+      </a>
+
+      <a href="lesson-3-who-is-jesus-christ.html">
+        Jesus Christ
+      </a>
+
+      <a href="psalms-overview.html">
+        Prayer &amp; Psalms
+      </a>
+
+      <a href="lesson-1-authority-of-scripture.html">
+        Scripture
+      </a>
+
+      <a href="sermons.html">
+        Sermons
+      </a>
+
+      <a href="psalms-overview.html">
+        Worship
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<div class="category-box">
+
+  <h3>
+    Hightower Bible Ministry Teaching Approach
+  </h3>
+
+  <p>
+    God's Word should not only be read
+    but understood;
+    not only understood but believed;
+    and not only believed but lived.
+  </p>
+
+  <p>
+    <strong>
+      Read it • Understand it • Believe it • Live it
+    </strong>
+  </p>
+
+</div>
+
+
+</main>
+
+
+
+<footer>
+
+  <p>
+    &copy; 2026 Hightower Bible Ministry
+  </p>
+
+  <p>
+    Grounded in Truth, Growing in Christ
+  </p>
+
+  <p>
+    To God Be the Glory
+  </p>
+
+</footer>
+
+
+
+<script>
+
+function filterStudies() {
+
+  const searchBox =
+    document.getElementById("studySearch");
+
+  const searchText =
+    searchBox.value.toLowerCase().trim();
+
+  const cards =
+    document.querySelectorAll(".searchable");
+
+  let visibleCount = 0;
+
+
+  cards.forEach(function(card) {
+
+    const cardText =
+      card.textContent.toLowerCase();
+
+    const searchTerms =
+      card.getAttribute("data-search").toLowerCase();
+
+    if (
+      cardText.includes(searchText) ||
+      searchTerms.includes(searchText)
+    ) {
+
+      card.style.display = "";
+      visibleCount++;
+
+    } else {
+
+      card.style.display = "none";
+
+    }
+
+  });
+
+
+  const noResults =
+    document.getElementById("noResults");
+
+
+  if (
+    searchText !== "" &&
+    visibleCount === 0
+  ) {
+
+    noResults.style.display = "block";
+
+  } else {
+
+    noResults.style.display = "none";
+
+  }
+
+}
+
+</script>
+
+
+</body>
+</html>

@@ -369,12 +369,22 @@
     or <strong>Psalms</strong>.
   </p>
 
+<form onsubmit="searchStudies(); return false;"
+      style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+
   <input
     type="text"
     id="studySearch"
-    placeholder="Search the Study Library..."
+    placeholder="Enter a subject..."
     aria-label="Search Study Library">
 
+  <button type="submit"
+          class="button">
+    🔍 Search
+  </button>
+
+</form>
+  
   <div class="quick-links">
 
     <a href="#bible-books">Bible Books</a>
@@ -1015,35 +1025,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 
-function filterStudies() {
+ 
+function searchStudies() {
 
-  const searchBox =
-    document.getElementById("studySearch");
+  const searchBox = document.getElementById("studySearch");
+  const searchText = searchBox.value.toLowerCase().trim();
 
-  const searchText =
-    searchBox.value.toLowerCase().trim();
+  const cards = document.querySelectorAll(".searchable");
+  const noResults = document.getElementById("noResults");
 
-  const cards =
-    document.querySelectorAll(".searchable");
+  const sectionIds = [
+    "start-here",
+    "bible-books",
+    "doctrine",
+    "growth",
+    "christian-living",
+    "sermons"
+  ];
 
   let visibleCount = 0;
+  let firstMatch = null;
 
 
   cards.forEach(function(card) {
 
-    const cardText =
-      card.textContent.toLowerCase();
+    const cardText = card.textContent.toLowerCase();
 
     const searchTerms =
-      card.getAttribute("data-search").toLowerCase();
+      (card.getAttribute("data-search") || "").toLowerCase();
 
-    if (
+    const matches =
+      searchText === "" ||
       cardText.includes(searchText) ||
-      searchTerms.includes(searchText)
-    ) {
+      searchTerms.includes(searchText);
+
+
+    if (matches) {
 
       card.style.display = "";
       visibleCount++;
+
+      if (!firstMatch && searchText !== "") {
+        firstMatch = card;
+      }
 
     } else {
 
@@ -1054,20 +1078,60 @@ function filterStudies() {
   });
 
 
-  const noResults =
-    document.getElementById("noResults");
+  sectionIds.forEach(function(id) {
+
+    const section = document.getElementById(id);
+
+    if (!section) return;
+
+    if (searchText === "") {
+
+      section.style.display = "";
+
+    } else {
+
+      const visibleCards =
+        Array.from(section.querySelectorAll(".searchable"))
+        .some(function(card) {
+          return card.style.display !== "none";
+        });
+
+      section.style.display =
+        visibleCards ? "" : "none";
+
+    }
+
+  });
 
 
-  if (
-    searchText !== "" &&
-    visibleCount === 0
-  ) {
+  const subjects =
+    document.getElementById("subjects");
+
+  if (subjects) {
+
+    subjects.style.display =
+      searchText === "" ? "" : "none";
+
+  }
+
+
+  if (searchText !== "" && visibleCount === 0) {
 
     noResults.style.display = "block";
 
   } else {
 
     noResults.style.display = "none";
+
+  }
+
+
+  if (firstMatch) {
+
+    firstMatch.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
 
   }
 

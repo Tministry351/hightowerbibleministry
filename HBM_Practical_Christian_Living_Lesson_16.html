@@ -1,29 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Hightower Bible Ministry Practical Christian Living Lesson 16: Growing into Spiritual Maturity">
-<title>Lesson 16 — Growing into Spiritual Maturity | Hightower Bible Ministry</title>
-<style>
-:root{--navy:#24344a;--gold:#a7803e;--paper:#fff;--ink:#273447;--soft:#f5f1e8}
-*{box-sizing:border-box}body{margin:0;background:#f5f6f8;color:var(--ink);font:17px/1.72 Georgia,'Times New Roman',serif}header{background:var(--navy);color:white;text-align:center;padding:2rem 1rem 2.25rem}header .eyebrow{color:#e7cb94;font:700 .8rem/1.5 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}h1{font-size:clamp(2rem,4vw,2.85rem);margin:.55rem 0 .3rem;line-height:1.2}header p{margin:.3rem}main{max-width:850px;margin:2rem auto;background:var(--paper);padding:2rem 3.1rem;box-shadow:0 3px 20px #1c2b3a13;border-radius:12px}h2{color:var(--navy);font:700 1.25rem/1.4 Arial,sans-serif;margin:1.8rem 0 .6rem}blockquote{border-left:4px solid var(--gold);background:var(--soft);padding:1rem 1.3rem;margin:1.1rem 0;font-style:italic}p{margin:.7rem 0}ul,ol{padding-left:1.5rem}li{margin:.4rem 0}.actions{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin:1.6rem 0 2rem}.button{display:inline-block;text-decoration:none;background:var(--gold);color:#fff;padding:.7rem 1.15rem;border-radius:6px;font:700 .95rem/1.4 Arial,sans-serif}.button:hover,.button:focus{background:#87652d}.takeaway{background:var(--soft);border-radius:8px;padding:1rem 1.25rem;margin-top:1.2rem;font-weight:bold}.small{font-size:.9rem;color:#566271}footer{text-align:center;font:14px Arial,sans-serif;color:#5a6673;padding:0 1rem 2rem}@media(max-width:680px){main{margin:.7rem;padding:1.2rem 1.1rem}body{font-size:16px}}@media print{header{color:#000;background:#fff}main{box-shadow:none;margin:0;padding:.5rem}.actions{display:none}}
-</style>
-</head><body>
-<header><div class="eyebrow">Hightower Bible Ministry · Practical Christian Living · Lesson 16 of 16</div><h1>Growing into Spiritual Maturity</h1><p>Primary Scripture: 2 Peter 3:18 (KJV)</p></header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Hightower Bible Ministry Practical Christian Living Lesson 16: Growing into Spiritual Maturity.">
+
+  <title>
+    Lesson 16 — Growing into Spiritual Maturity | Hightower Bible Ministry
+  </title>
+
+  <style>
+    :root {
+      --navy: #102e50;
+      --gold: #bb8b34;
+      --ink: #243349;
+      --cream: #faf5ea;
+      --box: #f5f3f3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--box);
+      color: var(--ink);
+      font: 17px/1.7 Georgia, serif;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 34px 20px;
+    }
+
+    header .brand {
+      color: #e0ad47;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      margin: 12px 0 8px;
+      font-size: 38px;
+    }
+
+    header p {
+      margin: 4px 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .lesson {
+      background: white;
+      border-top: 6px solid var(--gold);
+      border-radius: 12px;
+      padding: 34px 38px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 30px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      background: #eaf0f6;
+      border-radius: 7px;
+      padding: 16px 18px;
+      margin: 20px 0;
+    }
+
+    .meta p {
+      margin: 4px 0;
+    }
+
+    .callout {
+      background: var(--cream);
+      border-left: 4px solid var(--gold);
+      padding: 15px 18px;
+      margin: 20px 0;
+    }
+
+    blockquote {
+      background: var(--cream);
+      border-left: 4px solid var(--gold);
+      padding: 15px 18px;
+      margin: 18px 0;
+    }
+
+    ul,
+    ol {
+      padding-left: 28px;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      border-radius: 6px;
+      padding: 11px 18px;
+    }
+
+    .button.secondary {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 26px 20px;
+      margin-top: 45px;
+    }
+
+    footer a {
+      color: #f1c66f;
+    }
+
+    @media (max-width: 650px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .lesson {
+        padding: 25px 20px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Hightower Bible Ministry</div>
+
+  <h1>Practical Christian Living</h1>
+
+  <p>Lesson 16 of 16 • Growing into Spiritual Maturity</p>
+
+  <p>We Teach So People Can Understand and Live God's Word</p>
+</header>
+
 <main>
-<div class="actions"><a class="button" href="HBM_Practical_Christian_Living_Lesson_16.pdf" target="_blank" rel="noopener">View / Download PDF</a><a class="button" href="christian-living.html">Back to Practical Christian Living</a></div>
-<blockquote>“But grow in grace, and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and for ever. Amen.” — <strong>2 Peter 3:18 (KJV)</strong></blockquote>
-<h2>1. Observation: What does the Scripture say?</h2><p>Peter commands believers to <strong>grow</strong> in two connected areas: grace and the knowledge of Jesus Christ. Christian life involves continued development, not merely an initial profession of faith. In context (2 Peter 3:17–18), growth helps believers resist being led astray.</p>
-<h2>2. Interpretation: What is spiritual maturity?</h2><p>Spiritual maturity is an ongoing process of becoming more like Christ in character, discernment, love, and obedience through God’s grace and the Holy Spirit. It is not measured simply by years in church, knowledge of religious language, or sinless perfection. <strong>Ephesians 4:13–15</strong> connects maturity with stability in truth and growth in love; <strong>Hebrews 5:12–14</strong> connects it with practiced discernment.</p>
-<h2>3. Knowing Christ, not merely following religious routines</h2><p>Jesus describes eternal life in terms of knowing the Father and the Son (<strong>John 17:3</strong>). Reading Scripture, praying, worshiping, and gathering with believers are precious means of growing in relationship with Him—not actions by which we purchase salvation (<strong>Ephesians 2:8–10</strong>). Christ says, “If ye love me, keep my commandments” (<strong>John 14:15</strong>): obedience flows from love and genuine faith, not from a desire to earn His acceptance.</p>
-<h2>4. Abiding in Christ produces fruit</h2><blockquote>“I am the vine, ye are the branches ... for without me ye can do nothing.” — <strong>John 15:5 (KJV)</strong></blockquote><p>Branches bear fruit only through their connection to the vine. In the same way, believers depend upon Christ. The Holy Spirit produces character such as love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, and temperance (<strong>Galatians 5:22–23</strong>). James calls us to be doers of the Word, not hearers only (<strong>James 1:22</strong>).</p>
-<h2>5. How can spiritual growth become visible?</h2><ul><li><strong>Character:</strong> increasing humility, patience, forgiveness, and love toward others.</li><li><strong>Discernment:</strong> examining teaching against Scripture and accepting biblical correction.</li><li><strong>Obedience:</strong> confessing sin, choosing what honors Christ, and following His Word.</li><li><strong>Service:</strong> encouraging, mentoring, and helping other believers grow in truth.</li></ul><p>Jesus teaches that fruit matters (<strong>Matthew 7:16</strong>, in His warning about false prophets), but one failure or difficult season does not reveal a person’s entire spiritual condition. Look for a continuing pattern of growth rather than outward appearances alone.</p>
-<h2>6. Growing believers encourage and disciple others</h2><p>Paul told Timothy to entrust sound teaching to faithful people who would be able to teach others also (<strong>2 Timothy 2:2</strong>). Not every Christian is called to the formal role of teacher (<strong>James 3:1</strong>), but every believer can serve, encourage, share truth wisely, and model Christlike living. Maturity increasingly turns our attention from only what we receive to how we can help others grow.</p>
-<h2>7. When growth stalls: repentance, fellowship, and restoration</h2><p>A Christian who has drifted should not hide in shame or isolate from all support. <strong>Galatians 6:1–2</strong> calls mature believers to restore one overtaken in a fault with gentleness, bearing one another’s burdens. <strong>1 John 1:9</strong> encourages honest confession; <strong>Hebrews 10:24–25</strong> encourages continued fellowship. Restoration does not earn grace—it is a return to honest, trusting fellowship with the gracious God who receives repentant believers.</p>
-<ul><li><strong>Recognize:</strong> ask God to search the heart and reveal wrong directions (Psalm 139:23–24).</li><li><strong>Repent:</strong> confess sin, turn from it, and trust God’s forgiveness (1 John 1:9).</li><li><strong>Reconnect:</strong> seek a trustworthy mature believer or pastor for prayer and counsel (James 5:16).</li><li><strong>Resume:</strong> renew prayer, Scripture, fellowship, and daily obedience by the Spirit (Galatians 5:16).</li></ul><p>Isolation may also arise from illness, grief, or mistreatment rather than sin. Respond with compassion; seek safe, trustworthy Christian community rather than shaming someone who is hurting.</p>
-<h2>8. Practical application: a next step this week</h2><p>Choose <strong>one</strong> area where you need to grow. Read a related passage each day, pray honestly about it, take one concrete step of obedience, and speak with a trustworthy believer who can encourage you. Growth happens as we keep depending on Christ, not by creating a new checklist to earn His favor.</p>
-<h2>9. Reflection and discussion</h2><ol><li>What is the difference between knowing about Christ and knowing Him personally?</li><li>What evidence of the Spirit’s fruit do you see developing in your life?</li><li>How does John 15:5 shape the way you approach spiritual growth?</li><li>Whom could you encourage or mentor in their walk with Christ?</li><li>If you have drifted spiritually, what honest step toward restoration can you take?</li><li>What one habit of prayer, Scripture, fellowship, or service will you pursue this week?</li></ol>
-<h2>10. Closing prayer</h2><p>Heavenly Father, thank You for calling us to know You through Your Son, Jesus Christ. Help us grow in grace and truth. Forgive us when we drift, restore our fellowship with You, and lead us to trustworthy brothers and sisters who can encourage us. Through Your Holy Spirit, shape our character, strengthen our obedience, and equip us to help others grow. In Jesus’ name, amen.</p>
-<div class="takeaway">Our ministry commitment: Grounded in Truth, Growing in Christ.</div>
-<div class="actions"><a class="button" href="HBM_Practical_Christian_Living_Lesson_16.pdf" target="_blank" rel="noopener">View / Download PDF</a><a class="button" href="christian-living.html">Back to Practical Christian Living</a></div>
-</main><footer>Hightower Bible Ministry · Grounded in Truth, Growing in Christ</footer></body></html>
+
+  <article class="lesson" id="lesson-16">
+
+    <div class="eyebrow">Lesson 16</div>
+
+    <h2>Growing into Spiritual Maturity</h2>
+
+    <div class="meta">
+      <p>
+        <strong>Primary Scripture:</strong>
+        2 Peter 3:18
+      </p>
+
+      <p>
+        <strong>Supporting Scriptures:</strong>
+        John 17:3; John 15:5; Galatians 5:22–23;
+        2 Timothy 2:2; Galatians 6:1–2; Psalm 139:23–24;
+        1 John 1:9
+      </p>
+
+      <p>
+        <strong>Memory Verse:</strong>
+        2 Peter 3:18
+      </p>
+    </div>
+
+    <div class="callout">
+      <strong>Central Teaching Truth</strong>
+
+      <p>
+        Spiritual maturity is a lifelong process of growing in the
+        grace and knowledge of Jesus Christ, becoming more like Him
+        in character, truth, love, discernment, and obedience.
+      </p>
+    </div>
+
+    <h3>Lesson Purpose</h3>
+
+    <p>
+      This final lesson helps believers understand that Christian
+      maturity is not simply knowing more information. It is an
+      ongoing life of knowing Christ, abiding in Him, producing
+      spiritual fruit, restoring fellowship when we fail, and
+      helping others grow.
+    </p>
+
+    <h3>1 | Observation — What Does the Scripture Say?</h3>
+
+    <p>
+      Read 2 Peter 3:18.
+    </p>
+
+    <blockquote>
+      “But grow in grace, and in the knowledge of our Lord and
+      Saviour Jesus Christ. To him be glory both now and for ever.
+      Amen.” — 2 Peter 3:18
+    </blockquote>
+
+    <p>
+      Peter commands believers to <strong>grow</strong> in two
+      connected areas: grace and the knowledge of Jesus Christ.
+      Christian life involves continued development rather than
+      remaining spiritually unchanged.
+    </p>
+
+    <h3>2 | Interpretation — What Is Spiritual Maturity?</h3>
+
+    <p>
+      Spiritual maturity is the ongoing process of becoming more
+      like Christ in character, discernment, love, and obedience
+      through God's grace and the work of the Holy Spirit.
+    </p>
+
+    <p>
+      Maturity does not mean sinless perfection. It means that the
+      direction of our lives increasingly reflects Christ.
+    </p>
+
+    <h3>3 | Knowing Christ, Not Merely Following Religious Routines</h3>
+
+    <p>
+      Jesus describes eternal life in terms of knowing the Father
+      and the Son in John 17:3.
+    </p>
+
+    <p>
+      Reading Scripture, praying, worshiping, and serving are
+      important spiritual practices, but their purpose is to deepen
+      our relationship with God, not merely to complete religious
+      activities.
+    </p>
+
+    <p>
+      Christian maturity grows from relationship with Jesus Christ.
+    </p>
+
+    <h3>4 | Abiding in Christ Produces Fruit</h3>
+
+    <blockquote>
+      “I am the vine, ye are the branches ... for without me ye can
+      do nothing.” — John 15:5
+    </blockquote>
+
+    <p>
+      Branches bear fruit only through their connection to the vine.
+      In the same way, believers grow spiritually as they remain
+      dependent upon Christ.
+    </p>
+
+    <p>
+      Galatians 5:22–23 describes the fruit produced by the Spirit:
+      love, joy, peace, patience, kindness, goodness, faithfulness,
+      gentleness, and self-control.
+    </p>
+
+    <h3>5 | How Can Spiritual Growth Become Visible?</h3>
+
+    <ul>
+      <li>
+        <strong>Character:</strong>
+        increasing humility, patience, forgiveness, and love toward
+        others.
+      </li>
+
+      <li>
+        <strong>Discernment:</strong>
+        examining teaching carefully by the Word of God.
+      </li>
+
+      <li>
+        <strong>Obedience:</strong>
+        applying Scripture rather than merely hearing it.
+      </li>
+
+      <li>
+        <strong>Prayer:</strong>
+        growing in dependence upon God instead of self-sufficiency.
+      </li>
+
+      <li>
+        <strong>Service:</strong>
+        using our gifts to strengthen others rather than simply
+        seeking personal benefit.
+      </li>
+
+      <li>
+        <strong>Love:</strong>
+        increasingly reflecting the character of Jesus Christ in
+        relationships.
+      </li>
+    </ul>
+
+    <h3>6 | Growing Believers Encourage and Disciple Others</h3>
+
+    <p>
+      Paul instructed Timothy to entrust sound teaching to faithful
+      people who would be able to teach others also
+      in 2 Timothy 2:2.
+    </p>
+
+    <p>
+      Spiritual maturity is not only personal growth. Mature
+      believers help others understand Scripture, develop healthy
+      Christian habits, and grow in faith.
+    </p>
+
+    <p>
+      Discipleship includes teaching, encouragement, correction,
+      prayer, example, and patient relationship.
+    </p>
+
+    <h3>7 | When Growth Stalls — Repentance, Fellowship, and Restoration</h3>
+
+    <p>
+      A Christian who has drifted should not hide in shame or
+      isolate from all support.
+    </p>
+
+    <p>
+      Galatians 6:1–2 calls mature believers to restore others with
+      gentleness while also guarding themselves from temptation.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Recognize:</strong>
+        ask God to search the heart and reveal wrong directions
+        (Psalm 139:23–24).
+      </li>
+
+      <li>
+        <strong>Repent:</strong>
+        confess sin, turn from it, and trust God's forgiveness
+        (1 John 1:9).
+      </li>
+
+      <li>
+        <strong>Reconnect:</strong>
+        return to prayer, Scripture, worship, and fellowship with
+        other believers.
+      </li>
+
+      <li>
+        <strong>Receive help:</strong>
+        allow spiritually mature believers to encourage, correct,
+        and walk with you.
+      </li>
+    </ul>
+
+    <h3>8 | Practical Application — A Next Step This Week</h3>
+
+    <p>
+      Choose <strong>one</strong> area where you need to grow.
+      Read a related passage each day, pray honestly about it,
+      take one concrete step of obedience, and speak with a mature
+      believer who can encourage you.
+    </p>
+
+    <p>
+      Spiritual growth usually happens through faithful,
+      repeated obedience rather than sudden dramatic change.
+    </p>
+
+    <h3>9 | Reflection and Discussion</h3>
+
+    <ol>
+      <li>
+        What is the difference between knowing about Christ and
+        knowing Him personally?
+      </li>
+
+      <li>
+        What evidence of the Spirit's fruit do you see developing
+        in your life?
+      </li>
+
+      <li>
+        In what area of character do you most need to grow?
+      </li>
+
+      <li>
+        How does abiding in Christ affect spiritual maturity?
+      </li>
+
+      <li>
+        Who has helped disciple or encourage you spiritually?
+      </li>
+
+      <li>
+        Is there someone you could begin encouraging or discipling?
+      </li>
+
+      <li>
+        What should a believer do when spiritual growth has stalled?
+      </li>
+    </ol>
+
+    <h3>10 | Closing Prayer</h3>
+
+    <p>
+      Heavenly Father, thank You for calling us to know You through
+      Your Son, Jesus Christ.
+    </p>
+
+    <p>
+      Help us grow in grace and truth. Forgive us when we drift,
+      restore our fellowship with You, and lead us by Your Holy
+      Spirit.
+    </p>
+
+    <p>
+      Produce the character of Christ in us. Give us wisdom to
+      understand Your Word, courage to obey it, and love for others
+      that leads us to encourage and disciple them faithfully.
+      In Jesus' name, amen.
+    </p>
+
+    <div class="callout">
+      <strong>HBM Ministry Commitment</strong>
+
+      <p>
+        Grounded in Truth, Growing in Christ.
+      </p>
+    </div>
+
+    <div class="button-row">
+
+      <a class="button"
+         href="HBM_Practical_Christian_Living_Lesson_16.pdf"
+         target="_blank"
+         rel="noopener">
+        View / Print PDF
+      </a>
+
+      <a class="button secondary"
+         href="christian-living.html">
+        Back to Practical Christian Living
+      </a>
+
+    </div>
+
+  </article>
+
+</main>
+
+<footer>
+  Hightower Bible Ministry • Grounded in Truth, Growing in Christ
+  <br>
+  <a href="index.html">Home</a>
+</footer>
+
+</body>
+</html>

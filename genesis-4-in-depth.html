@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+  content="Genesis 4 In-Depth Bible Study from Hightower Bible Ministry.">
+
+ <title>
+  Genesis 4 In-Depth Study | Hightower Bible Ministry
+</title>
+
+  <style>
+
+    :root {
+      --navy: #0b2d4f;
+      --blue: #2f6f93;
+      --gold: #c59a4a;
+      --light-blue: #edf5fa;
+      --light-gold: #faf4e8;
+      --white: #ffffff;
+      --text: #1f2937;
+      --border: #d3dce4;
+      --page: #f7f9fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+    }
+
+    .header-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    header a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 70px 22px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .eyebrow {
+      color: #f0d7a3;
+      font-size: .86rem;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 10px auto 10px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      max-width: 950px;
+    }
+
+    .hero h2 {
+      color: #f0d7a3;
+      margin: 8px auto 18px;
+      font-size: 1.45rem;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      color: #eef5fa;
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 42px 22px 65px;
+    }
+
+    .study-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
+    }
+
+    .study-card h2 {
+      color: var(--navy);
+      margin-top: 0;
+      line-height: 1.3;
+    }
+
+    .study-card h3 {
+      color: var(--blue);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .scripture-box {
+      background: var(--light-blue);
+      border-left: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .key-point {
+      background: var(--light-gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .study-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 18px 0;
+    }
+
+    .study-box {
+      background: #f2f6f9;
+      border-top: 4px solid var(--gold);
+      border-radius: 9px;
+      padding: 17px;
+    }
+
+    .study-box strong {
+      color: var(--navy);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--light-blue);
+      color: var(--navy);
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 19px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-button.gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 26px 18px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 700px) {
+
+      .study-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 50px 18px;
+      }
+
+      main {
+        padding: 30px 16px 50px;
+      }
+
+      .study-card {
+        padding: 21px;
+      }
+
+      .navigation {
+        flex-direction: column;
+      }
+
+      .nav-button {
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <div class="brand">
+      Hightower Bible Ministry
+    </div>
+
+    <a href="genesis-in-depth.html">
+      Back to Genesis In-Depth Studies
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+<div class="eyebrow">
+  Genesis In-Depth Study • Chapter 4
+</div>
+  
+<h1>
+  Genesis 4 — Cain and Abel: Worship, Sin, Judgment, and Mercy
+</h1>
+
+<h2>
+  What Happens When Sin Is Allowed to Rule the Heart?
+</h2>
+  
+<p>
+  Genesis 4 shows how quickly sin spreads from the heart into human relationships.
+  Cain and Abel both bring offerings to God, but Cain responds to God's correction
+  with anger, jealousy, and eventually murder. Yet even in judgment,
+  God confronts Cain, warns him about sin, and shows mercy.
+  This chapter teaches us about worship, personal responsibility,
+  the danger of unchecked sin, and the seriousness of how we respond to God.
+</p>
+</section>
+
+
+<main>
+
+
+<section class="study-card">
+
+  <h2>Study Overview</h2>
+
+ <div class="scripture-box">
+
+  <strong>Primary Passage:</strong>
+  Genesis 4:1-26
+
+  <br><br>
+
+  <strong>Supporting Scriptures:</strong>
+  Hebrews 11:4;
+  1 John 3:12;
+  Jude 11;
+  Matthew 23:35;
+  Hebrews 12:24.
+
+</div>
+
+  <div class="key-point">
+
+    <strong>Big Idea:</strong>
+
+    Sin that is not mastered in the heart can grow into destructive actions, but God still calls people to repentance and accountability.
+   
+  </div>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>HBM In-Depth Study Rhythm</h2>
+
+  <div class="key-point">
+
+    <strong>
+      Read it • Examine it • Understand it • Believe it • Live it
+    </strong>
+
+  </div>
+
+ <p>
+  Genesis 4 is familiar to many people,
+  but familiarity can cause us to move through it too quickly.
+  We want to observe carefully how worship is offered,
+  how jealousy develops,
+  how God warns Cain,
+  how sin grows when it is not mastered,
+  and how judgment and mercy appear together.
+</p>
+
+</section>
+
+
+<section class="study-card">
+
+<h2>Genesis 4:1-5 — Cain and Abel Bring Offerings to God</h2>
+
+  <h3>Observation — What Does the Text Say?</h3>
+
+  <p>
+  Eve gives birth to Cain and later to Abel.
+  Cain becomes a worker of the ground,
+  while Abel becomes a keeper of sheep.
+</p>
+
+<p>
+  Both brothers bring offerings to the Lord.
+  Cain brings an offering from the fruit of the ground,
+  while Abel brings from the firstborn of his flock and their fat portions.
+</p>
+
+<p>
+  The Lord regards Abel and his offering,
+  but He does not regard Cain and his offering.
+  Cain becomes very angry, and his countenance falls.
+</p>
+
+<h3>Interpretation — What Does the Text Mean?</h3>
+
+  <p>
+  Hebrews 11:4 tells us that Abel offered his sacrifice by faith.
+  The issue was not simply that Abel brought an animal and Cain brought produce.
+  Scripture points us toward the heart and faith behind the offering.
+</p>
+
+<p>
+  Abel brought from the firstborn of his flock and from their fat portions,
+  showing priority and honor toward God.
+  Cain brought an offering, but the text does not describe the same quality or faith.
+</p>
+
+<p>
+  Cain's anger reveals that his deeper problem was not merely his offering.
+  Rather than responding humbly to God's evaluation,
+  he allowed resentment and jealousy to grow within him.
+</p>
+
+  
+  <h3>Application</h3>
+
+<p>
+  God is concerned not only with what we bring to Him,
+  but also with the heart from which we bring it.
+  Worship should come from faith, humility, and a sincere desire to honor God.
+  When correction exposes something wrong in us,
+  we should respond with repentance rather than anger or resentment.
+</p>
+
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 4:6-7 — God Warns Cain About Sin</h2>
+
+  <h3>Observation</h3>
+
+ <p>
+  The Lord asks Cain why he is angry
+  and why his countenance has fallen.
+</p>
+
+<p>
+  God tells Cain that if he does well,
+  he will be accepted.
+  But if he does not do well,
+  sin is crouching at the door.
+</p>
+
+<p>
+  God warns Cain that sin desires to control him,
+  but Cain is responsible to rule over it.
+</p>
+
+  <h3>Interpretation</h3>
+
+ <p>
+  God's warning shows that Cain was not powerless before sin.
+  Cain was angry, but God confronted him before the murder
+  and gave him an opportunity to choose a different path.
+</p>
+
+<p>
+  The picture of sin crouching at the door shows that sin seeks control.
+  Cain was responsible for how he responded to his anger and jealousy.
+  The warning teaches us that unchecked attitudes can develop into destructive actions.
+</p>
+
+  <div class="key-point">
+
+    <strong>Teaching Truth:</strong>
+
+God often warns us before sinful attitudes become sinful actions.
+We must take His warnings seriously and deal with sin at the heart level.
+
+  </div>
+<h3>Application</h3>
+
+<p>
+  We should not ignore anger, jealousy, resentment, or other sinful attitudes
+  when God brings them to our attention.
+  Sin becomes more dangerous when we excuse it instead of confronting it.
+  God's warning to Cain reminds us to respond to correction early,
+  before sinful attitudes become destructive actions.
+</p>
+  
+</section>
+
+
+<section class="study-card">
+
+ <h2>Genesis 4:8-10 — Cain Murders Abel and God Confronts Him</h2>
+  <h3>Observation</h3>
+
+  <p>
+  Cain speaks with Abel his brother,
+  and while they are in the field,
+  Cain rises up against Abel and kills him.
+</p>
+
+<p>
+  The Lord then asks Cain,
+  "Where is Abel your brother?"
+  Cain answers that he does not know
+  and asks, "Am I my brother's keeper?"
+</p>
+
+<p>
+  God declares that Abel's blood cries out to Him from the ground.
+  Cain's crime may have been hidden from other people,
+  but it was fully known by God.
+</p>
+    
+</section>
+
+
+<section class="study-card">
+
+  <h2>Genesis 4:11-16 — God's Judgment and Mercy Toward Cain</h2>
+
+  <h3>Observation</h3>
+
+<p>
+  God tells Cain that he is cursed from the ground,
+  which had received Abel's blood from his hand.
+  The ground will no longer yield its strength to Cain,
+  and Cain will become a fugitive and wanderer on the earth.
+</p>
+
+<p>
+  Cain responds that his punishment is greater than he can bear.
+  He fears that whoever finds him will kill him.
+</p>
+
+<p>
+  The Lord places a mark on Cain to protect him from being killed
+  and declares that anyone who kills Cain will face vengeance.
+  Cain then leaves the presence of the Lord
+  and settles in the land of Nod, east of Eden.
+</p>
+
+  <h3>Interpretation</h3>
+
+  <p>
+  God's judgment on Cain is serious because Cain deliberately took his brother's life.
+  The consequences affect Cain's work, his stability, and his relationship with the land.
+</p>
+
+<p>
+  Yet God's response also reveals mercy.
+  Cain fears that others will kill him,
+  but God places a mark on him and protects his life.
+</p>
+
+<p>
+  Genesis 4 shows that God's mercy does not remove the consequences of sin.
+  Cain still experiences judgment,
+  but God remains sovereign over Cain's life and does not permit others to take vengeance into their own hands.
+</p>
+
+  <div class="key-point">
+
+  <strong>Biblical Truth:</strong>
+
+God's judgment is just,
+but His mercy can still be seen even while consequences remain.
+We are never free to treat sin lightly,
+and we are never free to take God's authority into our own hands.
+  </div>
+
+<h3>Application</h3>
+
+<p>
+  Sin can bring lasting consequences,
+  even when God shows mercy.
+  We should never mistake God's mercy for approval of sin.
+  Instead, His mercy should lead us toward humility,
+  repentance, and a greater respect for His authority.
+</p>
+  
+</section>
+
+
+<section class="study-card">
+
+ <h2>Genesis 4:17-24 — Cain's Descendants and the Growth of Human Society</h2>
+
+  <h3>Observation</h3>
+
+ <p>
+  Cain has a son named Enoch
+  and builds a city that he names after his son.
+  The genealogy that follows traces several generations
+  of Cain's descendants.
+</p>
+
+<p>
+  Cain's descendants develop important parts of human culture,
+  including livestock raising,
+  musical instruments,
+  and tools made from bronze and iron.
+</p>
+
+<p>
+  The passage also introduces Lamech,
+  who takes two wives and later boasts
+  about killing a man who wounded him.
+</p>
+
+  <div class="key-point">
+
+    <strong>Teaching Truth:</strong>
+
+Human achievement and cultural progress do not remove the problem of sin.
+People can advance in knowledge, skill, music, technology, and civilization
+while the human heart still grows in pride, violence, and rebellion.
+
+  </div>
+
+</section>
+  <h3>Application</h3>
+
+<p>
+  We should never measure spiritual health by human progress alone.
+  Success, creativity, technology, and achievement can all be good gifts,
+  but they cannot replace a right relationship with God.
+  We must continue examining the condition of the heart,
+  not merely the accomplishments of life.
+</p>
+
+
+<section class="study-card">
+
+  <h2>Genesis 4:25-26 — Seth and Calling on the Name of the Lord</h2>
+
+  <h3>Observation</h3>
+<p>
+  Adam and Eve have another son,
+  and Eve names him Seth.
+  She recognizes that God has appointed another offspring
+  in place of Abel, whom Cain killed.
+</p>
+
+<p>
+  Seth later has a son named Enosh.
+</p>
+
+<p>
+  At that time,
+  people begin to call upon the name of the Lord.
+</p>
+
+  <h3>Interpretation</h3>
+<p>
+  The birth of Seth shows that God continues His purpose
+  even after the tragedy of Abel's death.
+  Cain's sin does not stop God's plan.
+</p>
+
+<p>
+  The reference to people calling upon the name of the Lord
+  points to worship, dependence, and public recognition of God.
+</p>
+
+<p>
+  Genesis 4 ends with a contrast.
+  Cain's line shows increasing human achievement mixed with growing violence,
+  while Seth's line points toward people turning to the Lord.
+</p>
+
+<div class="key-point">
+
+  <strong>Teaching Truth:</strong>
+
+  Human sin cannot stop God's redemptive purpose.
+  Even in a broken world,
+  God preserves a people who call upon His name.
+
+</div>
+  
+<h3>Application</h3>
+
+<p>
+  We may live in a world marked by sin, violence, pride, and loss,
+  but we are still called to seek the Lord and depend upon Him.
+  Our hope is not in human progress alone,
+  but in God's faithfulness and His continuing purpose.
+</p>
+  
+</section>
+
+  <section class="study-card">
+
+  <h2>What Genesis 4 Teaches Us About God</h2>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>What God Does</th>
+        <th>What It Reveals</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>God evaluates Cain and Abel's worship.</td>
+        <td>God sees the heart behind our worship.</td>
+      </tr>
+
+      <tr>
+        <td>God warns Cain before he sins further.</td>
+        <td>God graciously confronts us before sin grows.</td>
+      </tr>
+
+      <tr>
+        <td>God holds Cain accountable for Abel's murder.</td>
+        <td>God is just and human life matters to Him.</td>
+      </tr>
+
+      <tr>
+        <td>God protects Cain even while judging him.</td>
+        <td>God's mercy can remain present within judgment.</td>
+      </tr>
+
+      <tr>
+        <td>God provides Seth after Abel's death.</td>
+        <td>Human sin cannot stop God's purposes.</td>
+      </tr>
+
+      <tr>
+        <td>People begin calling on the name of the Lord.</td>
+        <td>God preserves a people who seek and worship Him.</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+  
+<div class="navigation">
+
+
+  <a class="nav-button"
+    href="genesis-3-in-depth.html">
+← Review Genesis 3
+  </a>
+
+  <a class="nav-button gold"
+     href="genesis-in-depth.html">
+    Genesis In-Depth Studies
+  </a>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+  <p>&copy; 2026 Hightower Bible Ministry</p>
+
+  <p>To God Be the Glory</p>
+
+</footer>
+
+
+</body>
+</html>

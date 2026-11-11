@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A biblical conversation about Christmas, its history, human traditions, and the true identity and mission of Jesus Christ.">
+<title>Christmas: Have We Lost Sight of Jesus Christ? | HBM</title>
+<style>
+  :root {
+    --navy: #142e4b;
+    --gold: #b38b40;
+    --cream: #faf8f2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: #253345;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+  }
+  header {
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 42px 18px;
+  }
+  header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.3;
+    margin: 12px auto;
+    max-width: 800px;
+  }
+  header p { color: #f0d89b; }
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px 25px;
+  }
+  section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--gold);
+    box-shadow: 0 2px 8px #0000000d;
+  }
+  h2 {
+    color: var(--navy);
+    line-height: 1.3;
+  }
+  h3 { color: #785b25; }
+  .scripture {
+    background: #f5f0e5;
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+  .reflection {
+    font-weight: bold;
+    color: var(--navy);
+  }
+  a { color: #174e8a; }
+  a:focus-visible {
+    outline: 3px solid var(--gold);
+  }
+  .button {
+    display: inline-block;
+    background: var(--gold);
+    color: #152c46;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 8px;
+  }
+  .center { text-align: center; }
+  footer {
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 25px;
+  }
+  footer p { margin: 5px; }
+  @media (max-width: 600px) {
+    main { padding: 10px; }
+    section { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p>HIGHTOWER BIBLE MINISTRY</p>
+  <h1>Christmas: Have We Lost Sight of Jesus Christ?</h1>
+  <p>A Biblical Conversation About Faith, Tradition, and Truth</p>
+</header>
+
+<main>
+
+<section>
+  <h2>1. A Personal Reflection on Christmas</h2>
+  <p>When I think about Christmas today, I see a society
+  that places tremendous emphasis on Santa Claus,
+  Christmas trees, decorations, colorful lights,
+  buying presents, and exchanging gifts.</p>
+
+  <p>We see families gathering together, people showing
+  kindness, and individuals giving and receiving gifts
+  from family and friends, also to those who are less
+  fortunate. These are not necessarily bad things.
+  Giving, loving others, and spending time with family
+  can be wonderful expressions of kindness.</p>
+
+  <p>However, my concern is that somewhere along the way,
+  the true identity and purpose of Jesus Christ have
+  been overshadowed by the traditions and activities
+  surrounding Christmas.</p>
+
+  <p>I understand why Christian parents want their
+  children to experience the excitement of Christmas
+  morning. My concern is not simply about gifts
+  or family gatherings.</p>
+
+  <p class="reflection">My concern is whether we are
+  teaching our children and ourselves who Jesus Christ
+  truly is and why He came into the world.</p>
+
+  <p>The Bible tells us about the birth of Jesus Christ,
+  but it does not establish December 25 as the date
+  of His birth.</p>
+
+  <p>Jesus did not come merely so humanity could
+  commemorate His birth once a year. He came to
+  fulfill God's redemptive purpose.</p>
+
+  <div class="scripture">
+    <strong>Matthew 1:21; Luke 2:10-11;
+    John 1:14; John 3:16-17; 1 Timothy 1:15</strong>
+  </div>
+</section>
+
+<section>
+  <h2>2. Traditions of Mankind</h2>
+
+  <p>Jesus warned against placing human traditions
+  above the commandments of God.</p>
+
+  <div class="scripture">
+    <strong>Mark 7:8-9 (KJV)</strong>
+    <p>"For laying aside the commandment of God,
+    ye hold the tradition of men, as the washing
+    of pots and cups: and many other such like
+    things ye do.</p>
+    <p>And he said unto them, Full well ye reject
+    the commandment of God, that ye may keep
+    your own tradition."</p>
+  </div>
+
+  <p>In its context, Jesus was confronting religious
+  leaders whose traditions displaced God's commands.
+  The passage does not specifically address Christmas,
+  nor does it condemn every human tradition.</p>
+
+  <p>Nevertheless, it challenges believers to ask
+  whether any tradition has become more important
+  than obedience to God's Word.</p>
+
+  <p>I believe that as Christians mature in faith,
+  we should reconsider practices we have accepted
+  simply because they were passed down to us.</p>
+
+  <p class="reflection">Christmas is a tradition
+  of mankind, but Jesus Christ is not a tradition.
+  He is the eternal Son of God, our Lord and Savior.</p>
+</section>
+
+<section>
+  <h2>3. The Historical Origins of Christmas</h2>
+
+  <h3>Why December 25?</h3>
+  <p>Scripture does not identify the exact date of
+  Jesus' birth or command Christians to celebrate
+  His birthday annually.</p>
+
+  <p>December 25 became an established Christian
+  feast date in fourth-century Rome. Historians
+  discuss several possible explanations, including
+  connections with Roman winter observances and
+  early Christian calculations concerning the
+  conception and birth of Jesus.</p>
+
+  <p>The evidence does not establish one universally
+  accepted explanation for the choice of this date.</p>
+
+  <h3>Where Did Santa Claus Come From?</h3>
+  <p>The Santa Claus tradition developed partly from
+  stories associated with Saint Nicholas, a
+  fourth-century Christian bishop of Myra remembered
+  for generosity.</p>
+
+  <p>Dutch Sinterklaas customs and later American
+  literature and illustrations contributed to the
+  development of the modern Santa Claus character.</p>
+
+  <p>The familiar story of a man traveling in a flying
+  sleigh with reindeer and delivering presents around
+  the world is not a biblical teaching.</p>
+
+  <h3>Where Did Christmas Trees Originate?</h3>
+  <p>Evergreen plants were used in various ancient
+  winter customs. Decorated Christmas trees, more
+  closely resembling those used today, developed
+  in German-speaking Europe.</p>
+
+  <p>While some winter customs predate Christianity,
+  the history of the modern Christmas tree is complex.
+  Its use as decoration should not automatically
+  be equated with worshiping an idol.</p>
+
+  <div class="scripture">
+    <strong>Scriptures to Examine:</strong>
+    <p>Jeremiah 10:1-5; Exodus 20:3-5;
+    Romans 14:5-6; Colossians 2:16</p>
+  </div>
+
+  <p>Jeremiah 10 describes the making of idols.
+  We should examine its context carefully rather
+  than claiming that it directly describes the
+  modern Christmas tree.</p>
+
+  <h3>Historical Sources for Further Reading</h3>
+  <ul>
+    <li><a href="https://www.nationalgeographic.com/history/article/christmas-jesus-birthday-ancient-rome-saturnalia" target="_blank" rel="noopener noreferrer">National Geographic: December 25 and Ancient Rome</a></li>
+    <li><a href="https://news.berkeley.edu/2023/12/21/for-the-dutch-santa-is-tall-and-skinny-what-happened-to-him-in-america/" target="_blank" rel="noopener noreferrer">UC Berkeley: The Dutch Sinterklaas and Santa Claus</a></li>
+    <li><a href="https://www.history.com/articles/history-of-christmas-trees" target="_blank" rel="noopener noreferrer">HISTORY: The History of Christmas Trees</a></li>
+  </ul>
+
+  <p>Historical accounts help us understand traditions,
+  but Scripture remains the authority for Christian
+  faith and conduct.</p>
+</section>
+
+<section>
+  <h2>4. Santa Claus, Children, and Truthfulness</h2>
+
+  <p>Many children grow up believing that Santa Claus
+  is a real person who delivers gifts on Christmas
+  Eve. Later, they discover that the story was
+  not literally true.</p>
+
+  <p>I recognize that many sincere Christian families
+  celebrate Christmas while faithfully teaching
+  their children about Jesus Christ.</p>
+
+  <p>However, I am concerned when Santa Claus and
+  holiday excitement receive more attention
+  than the Savior.</p>
+
+  <p>Parents should consider the difference between
+  imaginative storytelling and presenting fiction
+  as fact. Not every child will experience a loss
+  of trust, but honesty matters in Christian parenting.</p>
+
+  <div class="scripture">
+    <strong>Scriptures:</strong>
+    <p>Ephesians 4:25; Proverbs 12:22;
+    Deuteronomy 6:6-7; Ephesians 6:4</p>
+  </div>
+
+  <p class="reflection">If we teach children to believe
+  in Jesus Christ, should we not also demonstrate
+  truthfulness in the way we raise them?</p>
+</section>
+
+<section>
+  <h2>5. Beyond the Manger: The Biblical Account</h2>
+
+  <h3>The Birth of Jesus — Luke 2:1-20</h3>
+  <p>Luke records that Jesus was laid in a manger
+  and that shepherds received the angelic
+  announcement of His birth.</p>
+
+  <p>The announcement was not merely that a child
+  had been born. The Savior, Christ the Lord,
+  had entered the world.</p>
+
+  <h3>The Wise Men — Matthew 2:1-12</h3>
+  <p>Traditional nativity scenes often show the
+  wise men beside the manger. However, Matthew
+  2:11 records that they entered a house and
+  saw the young child with Mary.</p>
+
+  <p>Scripture does not specify exactly three wise
+  men. It records three gifts: gold, frankincense,
+  and myrrh. The precise date of their visit
+  is not given.</p>
+
+  <h3>King Herod — Matthew 2:13-18</h3>
+  <p>Herod sought to destroy Jesus after learning
+  of His birth. He ordered the killing of young
+  boys in Bethlehem and its surrounding region.</p>
+
+  <p>God warned Joseph in a dream, and Joseph
+  took Mary and Jesus into Egypt.</p>
+
+  <p>These events reveal that the birth of Christ
+  was accompanied not only by rejoicing but
+  also by opposition.</p>
+</section>
+
+<section>
+  <h2>6. Who Is Jesus Christ, and Why Did He Come?</h2>
+
+  <p>The birth of Jesus marked the beginning of
+  His earthly life, not the beginning of His
+  existence.</p>
+
+  <p><strong>John 1:1 and John 1:14</strong>
+  reveal that the Word was God and became flesh.</p>
+
+  <p><strong>Matthew 1:23</strong> identifies
+  Jesus as Emmanuel, meaning "God with us."</p>
+
+  <p>Jesus did not enter the world simply to become
+  the center of an annual holiday.</p>
+
+  <p>He came to save sinners, reveal the Father,
+  proclaim the kingdom of God, and accomplish
+  the work of redemption.</p>
+
+  <div class="scripture">
+    <strong>Key Bible References</strong>
+    <ul>
+      <li>Matthew 1:21 — Saving His people from sin</li>
+      <li>Luke 19:10 — Seeking and saving the lost</li>
+      <li>John 3:16-17 — God's saving love</li>
+      <li>Philippians 2:5-11 — Christ's humility and deity</li>
+      <li>1 Corinthians 15:3-4 — Death and resurrection</li>
+      <li>Hebrews 9:26-28 — Sacrifice and future appearing</li>
+      <li>Acts 1:9-11 — His ascension and promised return</li>
+    </ul>
+  </div>
+
+  <p class="reflection">We cannot fully understand
+  the significance of the manger without
+  understanding the cross, the resurrection,
+  and the promise of Christ's return.</p>
+</section>
+
+<section>
+  <h2>7. Christian Liberty and Spiritual Growth</h2>
+
+  <p>Christians have different convictions about
+  observing Christmas.</p>
+
+  <p>Romans 14:5-6 teaches that believers may
+  regard particular days differently while
+  seeking to honor the Lord.</p>
+
+  <p>Colossians 2:16 warns against allowing others
+  to judge believers regarding religious
+  observances.</p>
+
+  <p>These passages deserve careful examination
+  alongside the warnings about human traditions.</p>
+
+  <p>My desire is not to condemn Christians who
+  celebrate Christmas. Rather, I encourage
+  believers to examine their practices as
+  they mature in their understanding of Scripture.</p>
+
+  <p class="reflection">Our relationship with Christ
+  should never be measured simply by whether
+  we celebrate December 25.</p>
+</section>
+
+<section>
+  <h2>8. Why Does Knowing the Truth Matter?</h2>
+
+  <div class="scripture">
+    <strong>Hosea 4:6 (KJV)</strong>
+    <p>"My people are destroyed for lack of knowledge:
+    because thou hast rejected knowledge,
+    I will also reject thee..."</p>
+  </div>
+
+  <p>Hosea addressed Israel's unfaithfulness and
+  the rejection of God's law and knowledge.</p>
+
+  <p>This does not mean someone will be condemned
+  simply for not knowing the history of Christmas.</p>
+
+  <p>But it reminds us of the seriousness of rejecting
+  God's truth. We should study Scripture and
+  respond faithfully to what we learn.</p>
+
+  <p><strong>Additional Scriptures:</strong>
+  Acts 17:11; 2 Timothy 2:15; John 8:31-32;
+  2 Corinthians 5:10.</p>
+
+  <h3>Questions for Personal Reflection</h3>
+  <ol>
+    <li>Have traditions overshadowed the true
+    identity of Jesus Christ?</li>
+    <li>Are we teaching our children biblical
+    truth or simply passing down customs?</li>
+    <li>Could a tradition distract us from Christ,
+    even when our intentions are good?</li>
+    <li>Are we willing to reconsider practices
+    that Scripture does not require?</li>
+    <li>How can we honor Jesus Christ every day,
+    rather than focusing on one holiday?</li>
+  </ol>
+</section>
+
+<section>
+  <h2>9. Beyond Christmas: Do You Truly Know Jesus Christ?</h2>
+
+  <p>Throughout this study, we have examined
+  Christmas traditions, historical origins,
+  the birth of Jesus Christ, and the importance
+  of knowing biblical truth.</p>
+
+  <p>But I would like to leave you with something
+  far more important than whether you choose
+  to celebrate Christmas.</p>
+
+  <p class="reflection">Do you truly know Jesus Christ?</p>
+
+  <p>It is possible to know the Christmas story
+  without personally knowing the Savior.</p>
+
+  <p>We can recognize the manger, shepherds,
+  wise men, and star of Bethlehem. We can
+  exchange gifts, sing songs, and attend
+  church services.</p>
+
+  <p>Yet none of these activities alone establishes
+  a saving relationship with Jesus Christ.</p>
+
+  <div class="scripture">
+    <strong>John 14:6 (KJV)</strong>
+    <p>"I am the way, the truth, and the life:
+    no man cometh unto the Father, but by me."</p>
+  </div>
+
+  <p>Jesus came to save sinners, reconcile us to God,
+  and offer eternal life through His death
+  and resurrection.</p>
+
+  <h3>A Personal Invitation</h3>
+
+  <p>If you have never placed your faith in Jesus
+  Christ, I encourage you to examine His Word,
+  recognize your need for salvation, repent
+  of your sins, and trust Him as Lord and Savior.</p>
+
+  <p>If you already belong to Christ, continue
+  growing in His Word, allowing the Holy Spirit
+  to transform your heart, thinking, and life.</p>
+
+  <p><strong>Further Study:</strong>
+  John 3:3; Romans 3:23; Romans 5:8;
+  Romans 10:9-10; 2 Corinthians 5:17;
+  John 17:3.</p>
+
+  <p class="reflection">Don't allow the traditions
+  of one particular day to become more important
+  than following Jesus Christ every day.</p>
+
+  <div class="scripture">
+    <strong>John 8:31-32 (KJV)</strong>
+    <p>"Then said Jesus to those Jews which
+    believed on him, If ye continue in my word,
+    then are ye my disciples indeed;</p>
+    <p>And ye shall know the truth, and the truth
+    shall make you free."</p>
+  </div>
+</section>
+
+<section class="center">
+  <h2>Continue Studying God's Word</h2>
+  <p>We encourage you to examine the Scriptures
+  and grow in your relationship with Jesus Christ.</p>
+
+  <a class="button" href="index.html">
+    Return to HBM Home
+  </a>
+  <a class="button" href="index.html#study-library">
+    Explore the Study Library
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>Hightower Bible Ministry</strong></p>
+  <p>Grounded in Truth, Growing in Christ.</p>
+  <p>Christmas: A Biblical Conversation</p>
+</footer>
+
+</body>
+</html>

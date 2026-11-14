@@ -48,6 +48,18 @@
 - HBM_Gospel_of_John_Chapter_4.pdf
   Printable Chapter 4 study.
 
+
+### John Printable PDF Studies
+
+- John 1: downloads/John_1_1-18_In-Depth_Bible_Study.pdf
+- John 2: downloads/John_2_In-Depth_Verse-by-Verse_Bible_Study.pdf
+- John 3: downloads/John_3_In-Depth_Verse-by-Verse_Bible_Study.pdf
+- John 4: HBM_Gospel_of_John_Chapter_4.pdf
+
+These files will remain in their current
+locations to preserve existing website links.
+
+
 ### Organization Status
 
 - Existing HTML files remain in the main directory.

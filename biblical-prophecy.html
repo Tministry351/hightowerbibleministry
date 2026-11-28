@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biblical Prophecy &amp; End Times | Hightower Bible Ministry</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #0b2d4f;
+    line-height: 1.7;
+  }
+
+  header {
+    background: #0b2d4f;
+    color: white;
+    padding: 20px 5%;
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header a:hover {
+    color: #e8b95b;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #123957, #0b2d4f);
+    color: white;
+    text-align: center;
+    padding: 65px 25px;
+    border-bottom: 5px solid #c59a4a;
+  }
+
+  .eyebrow {
+    color: #ffd98b;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.2;
+    margin: 15px 0;
+  }
+
+  .hero h2 {
+    color: #ffd98b;
+    font-size: 26px;
+    font-weight: normal;
+  }
+
+  .hero p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+  }
+
+  .hero-scripture {
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border: 1px solid #c59a4a;
+    border-radius: 10px;
+    font-style: italic;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 22px;
+  }
+
+  .intro-card {
+    background: white;
+    border: 1px solid #d4dde6;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 35px;
+  }
+
+  h2, h3 {
+    line-height: 1.3;
+  }
+
+  .intro-card h2 {
+    margin-top: 0;
+  }
+
+  .truth-box {
+    background: #f8f1e4;
+    border-left: 5px solid #c59a4a;
+    border-radius: 8px;
+    padding: 22px;
+    margin-top: 25px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 25px;
+  }
+
+  .study-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+  }
+
+  .study-card {
+    background: white;
+    border: 1px solid #d4dde6;
+    border-top: 5px solid #c59a4a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .study-banner {
+    background: #0b2d4f;
+    color: #ffd98b;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+
+  .study-content {
+    padding: 26px;
+  }
+
+  .study-content h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #c59a4a;
+    padding-bottom: 15px;
+  }
+
+  .lesson {
+    padding: 16px 0;
+    border-bottom: 1px solid #e1e6eb;
+  }
+
+  .lesson:last-child {
+    border-bottom: none;
+  }
+
+  .lesson strong {
+    display: block;
+  }
+
+  .reference {
+    display: block;
+    color: #526273;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .coming-soon {
+    display: inline-block;
+    color: #526273;
+    background: #eef1f4;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .button {
+    display: inline-block;
+    background: #0b2d4f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 12px;
+  }
+
+  .button:hover {
+    background: #214d71;
+  }
+
+  .approach {
+    margin-top: 40px;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #d4dde6;
+    border-left: 5px solid #c59a4a;
+  }
+
+  .approach li {
+    margin-bottom: 12px;
+  }
+
+  .ready-box {
+    background: #f8f1e4;
+    border: 1px solid #c59a4a;
+    border-radius: 12px;
+    margin-top: 35px;
+    padding: 35px;
+    text-align: center;
+  }
+
+  .gold-button {
+    display: inline-block;
+    background: #c59a4a;
+    color: #0b2d4f;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+
+  .gold-button:hover {
+    background: #dfb66d;
+  }
+
+  a:focus-visible {
+    outline: 3px solid #c59a4a;
+    outline-offset: 4px;
+  }
+
+  footer {
+    background: #0b2d4f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
+  .gold-text {
+    color: #ffd98b;
+    font-weight: bold;
+  }
+
+  @media (max-width: 750px) {
+    .study-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      padding: 40px 20px;
+    }
+
+    .hero h2 {
+      font-size: 21px;
+    }
+
+    .header-inner {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .intro-card,
+    .study-content,
+    .approach,
+    .ready-box {
+      padding: 22px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html">Hightower Bible Ministry</a>
+    <a href="learn-gods-word.html">Back to Learn God's Word</a>
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="eyebrow">Learn God's Word</div>
+
+  <h1>Biblical Prophecy &amp; End Times</h1>
+
+  <h2>Understanding God's Eternal Plan</h2>
+
+  <p>
+    Discover what Scripture reveals about God's prophetic
+    purposes, the last days, the return of Jesus Christ,
+    and His eternal kingdom.
+  </p>
+
+  <div class="hero-scripture">
+    <strong class="gold-text">Revelation 1:3 (KJV)</strong>
+
+    <p>
+      Blessed is he that readeth, and they that hear
+      the words of this prophecy, and keep those things
+      which are written therein: for the time is at hand.
+    </p>
+  </div>
+
+</section>
+
+<main>
+
+  <section class="intro-card">
+
+    <h2>Welcome to Biblical Prophecy</h2>
+
+    <p>
+      Hightower Bible Ministry is committed to helping
+      believers and nonbelievers understand biblical
+      prophecy through careful examination of Scripture,
+      without speculation, sensationalism, or fear.
+    </p>
+
+    <p>
+      From Genesis to Revelation, God reveals His eternal
+      purpose for mankind. His Word reveals the past,
+      the present, and the future, helping us understand
+      His redemptive plan through Jesus Christ.
+    </p>
+
+    <p>
+      Our study of biblical prophecy will remain centered
+      upon Jesus Christ, through whom God's eternal
+      purposes are fulfilled.
+    </p>
+
+    <div class="truth-box">
+      <h3>Central Truth</h3>
+
+      <p>
+        Biblical prophecy is not merely a revelation of
+        future events. It reveals God's eternal purpose,
+        centered in Jesus Christ, through whom mankind
+        is redeemed, believers are transformed, and
+        God's people will ultimately dwell with Him forever.
+      </p>
+    </div>
+
+  </section>
+
+  <h2 class="section-title">Explore the Study Series</h2>
+
+  <section class="study-grid">
+
+    <!-- PART I -->
+
+    <article class="study-card">
+
+      <div class="study-banner">PART I</div>
+
+      <div class="study-content">
+
+        <h2>Foundations of Biblical Prophecy</h2>
+
+        <p>
+          Establish a biblical understanding of God's
+          eternal purpose before examining individual
+          prophetic events.
+        </p>
+
+        <div class="lesson">
+
+          <strong>
+            Lesson 1 — God's Eternal Plan for Mankind
+          </strong>
+
+          <span class="reference">
+            Isaiah 46:9–10; Ephesians 1:9–10
+          </span>
+
+          <span class="coming-soon">In Development</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>Lesson 2 — What Are the Last Days?</strong>
+
+          <span class="reference">
+            Acts 2:16–21; Hebrews 1:1–2
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>Lesson 3 — Signs of Christ's Return</strong>
+
+          <span class="reference">
+            Matthew 24; Luke 21
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <!-- PART II -->
+
+    <article class="study-card">
+
+      <div class="study-banner">PART II</div>
+
+      <div class="study-content">
+
+        <h2>Prophetic Events</h2>
+
+        <p>
+          Examine significant prophetic events and their
+          relationship to God's revealed purposes.
+        </p>
+
+        <div class="lesson">
+
+          <strong>Lesson 4 — The Rapture of the Church</strong>
+
+          <span class="reference">
+            1 Thessalonians 4:13–18; 1 Corinthians 15:51–58
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>Lesson 5 — Daniel's Seventy Weeks</strong>
+
+          <span class="reference">Daniel 9:24–27</span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>Lesson 6 — The Antichrist and the Restrainer</strong>
+
+          <span class="reference">
+            2 Thessalonians 2:1–12; Revelation 13
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>Lesson 7 — The Great Tribulation</strong>
+
+          <span class="reference">
+            Matthew 24:15–22; Revelation 6–19
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>Lesson 8 — Israel in Biblical Prophecy</strong>
+
+          <span class="reference">
+            Romans 9–11; Zechariah 12
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <!-- PART III -->
+
+    <article class="study-card">
+
+      <div class="study-banner">PART III</div>
+
+      <div class="study-content">
+
+        <h2>The Return of Christ</h2>
+
+        <p>
+          Study the glorious return of Jesus Christ,
+          His kingdom, and His righteous judgment.
+        </p>
+
+        <div class="lesson">
+
+          <strong>
+            Lesson 9 — The Second Coming of Jesus Christ
+          </strong>
+
+          <span class="reference">
+            Acts 1:9–11; Revelation 19:11–21
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>Lesson 10 — The Millennial Kingdom</strong>
+
+          <span class="reference">Revelation 20:1–6</span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>
+            Lesson 11 — The Resurrection and Final Judgment
+          </strong>
+
+          <span class="reference">
+            John 5:28–29; Revelation 20:11–15
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <!-- PART IV -->
+
+    <article class="study-card">
+
+      <div class="study-banner">PART IV</div>
+
+      <div class="study-content">
+
+        <h2>Eternity &amp; Christian Readiness</h2>
+
+        <p>
+          Discover the eternal hope of believers and
+          how that hope should influence Christian
+          living today.
+        </p>
+
+        <div class="lesson">
+
+          <strong>
+            Lesson 12 — The New Heaven and New Earth
+          </strong>
+
+          <span class="reference">Revelation 21–22</span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+        <div class="lesson">
+
+          <strong>
+            Lesson 13 — Living in Preparation for Christ's Return
+          </strong>
+
+          <span class="reference">
+            Titus 2:11–14; 2 Peter 3:10–14
+          </span>
+
+          <span class="coming-soon">Coming Soon</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </section>
+
+  <section class="approach">
+
+    <h2>Our Approach to Biblical Prophecy</h2>
+
+    <ul>
+
+      <li>Scripture remains our final authority.</li>
+
+      <li>Scripture must be understood in its proper context.</li>
+
+      <li>Jesus Christ remains the central focus.</li>
+
+      <li>
+        Biblical truth must be distinguished from human
+        speculation and personal opinion.
+      </li>
+
+      <li>
+        Different prophetic interpretations will be
+        examined carefully in light of Scripture.
+      </li>
+
+      <li>
+        We will not attempt to establish a date
+        for Christ's return.
+      </li>
+
+      <li>
+        Biblical prophecy should encourage holiness,
+        faithfulness, evangelism, hope, and spiritual readiness.
+      </li>
+
+    </ul>
+
+    <div class="truth-box">
+
+      <strong>Our Teaching Commitment</strong>
+
+      <p>
+        Each completed lesson will include in-depth biblical
+        commentary, supporting Scriptures, practical Christian
+        application, reflection questions, a unique illustration,
+        and a downloadable PDF for personal or group study.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="ready-box">
+
+    <h2>Are You Ready?</h2>
+
+    <p>
+      <em>
+        Therefore be ye also ready: for in such an hour
+        as ye think not the Son of man cometh.
+      </em>
+    </p>
+
+    <strong>Matthew 24:44 (KJV)</strong>
+
+    <p>
+      God is not simply preparing a place for His people;
+      He is also preparing His people for that place.
+    </p>
+
+    <a href="learn-gods-word.html" class="gold-button">
+      Return to Learn God's Word
+    </a>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>&copy; 2026 Hightower Bible Ministry</p>
+
+  <p>Grounded in Truth, Growing in Christ</p>
+
+  <p class="gold-text">To God Be the Glory!</p>
+
+</footer>
+
+</body>
+</html>
